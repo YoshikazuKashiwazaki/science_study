@@ -1,8 +1,10 @@
 <html>
 <head>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-
+</script>
+<script type="text/x-mathjax-config">
  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
     TeX: { equationNumbers: { autoNumber: "AMS" }},
     tex2jax: {
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -10,7 +12,7 @@
     },
     "HTML-CSS": { matchFontHeight: false },
     displayAlign: "left",
-    displayIndent: "2em"
+    displayIndent: "1em"
   });
 </script>
 </head>
