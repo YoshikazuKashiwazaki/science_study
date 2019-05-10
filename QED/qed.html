@@ -1,6 +1,6 @@
 <html>
 <head>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?    config=TeX-MML-AM_CHTML' async>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -29,13 +29,14 @@ displayIndent: "2em"
 マクスウェル方程式における、磁場に関するガウスの法則
 \[
 \text{div } \pmb B=0 \qquad(\text{磁場に関するガウスの法則}）
+\[
 がある。これをベクトル解析の公式
 \[
-\text{div rot } \bar A =0
+ \text{div rot } \bar A =0
 \]
 と比較すると、$\bar B$は
 \[
-\bar B=\text{rot }\bar A \phantom{XXX}(3.6)
+\bar B=\text{rot }\bar A \phantom{XXX}
 \]
 と記述することができる。</br>
 $\bar A$は、<b>ベクトルポテンシャル</b>とよばれる。これを代入すると、
@@ -43,26 +44,26 @@ $\bar A$は、<b>ベクトルポテンシャル</b>とよばれる。これを�
 \text{rot}\left(\bar E + \frac{\partial \bar A}{\partial t}\right )=0
 \]
  
-これをベクトル解析の公式と比較すれば、$\bar E$が
+ベクトル解析の公式と比較すれば、$\bar E$が
 \[
-\bar E=-\text{grad }\phi-\frac{\partial \bar A}{\partial t} \phantom{XXX}(3.    8)
+\bar E=-\text{grad }\phi-\frac{\partial \bar A}{\partial t} \phantom{XXX}
 \]
-のように書ける。$\phi$は、<b>スカラーポテンシャル</b>とよばれる。$\phantom{X    XX}$（「電波工学」などでは、$V$, $V(\phi)$と表されている）
+のように書ける。$\phi$は、<b>スカラーポテンシャル</b>とよばれる。$\phantom{XXX}$（「電波工学」などでは、$V$, $V(\phi)$と表されている）
 </br>
-$\bar E$, $\bar B$は、$\phi$, $\bar A$（<b>電磁ポテンシャル</b>）を与えれば>    決まる。
+$\bar E$, $\bar B$は、$\phi$, $\bar A$（<b>電磁ポテンシャル</b>）を与えれば決まる。
 </br>
 $\pmb A$と$\phi$を決める方程式は、マクスウェル方程式から導かれる以下の式である。
 </br>
 $\epsilon_0\mu_0=c^{-2}$なので、
 \[
-\text{grad }\text{div }\pmb A-\Delta\pmb A + \frac{1}{c^2}\frac{\partial^2 \    pmb A}{\partial t^2}+ \frac{1}{c^2}\frac{\partial}{\partial t}\text{grad }\p    hi =\mu_0 \pmb j \qquad
+\text{grad }\text{div }\pmb A-\Delta\pmb A + \frac{1}{c^2}\frac{\partial^2 \pmb A}{\partial t^2}+ \frac{1}{c^2}\frac{\partial}{\partial t}\text{grad }\p    hi =\mu_0 \pmb j \qquad
 \]
 \[
--\epsilon_0\Delta\phi-\epsilon_0 \frac{\partial}{\partial t}\text{div }\pmb     A=\rho \qquad
+-\epsilon_0\Delta\phi-\epsilon_0 \frac{\partial}{\partial t}\text{div }\pmbA=\rho \qquad
 \]
 
 <p></p>
-<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">i    ndex.htmlに戻る</a>
+<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
 
