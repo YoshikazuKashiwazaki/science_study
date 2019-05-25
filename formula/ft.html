@@ -55,6 +55,21 @@ x=\frac{2\pi}{T}t=\omega t,\\
 dx=\frac{2\pi}{T}dt
 \]
 ゆえに, 時間$t$の関数$f(t)$のフーリエ級数展開は次のように示される.
+\begin{equation}
+f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +a_n\cos n\omega t \\
++\dots +b_1\sin \omega t+b_2\sin 2\omega t +b_3\sin 3\omega t+\dots +b_n\sin n\omega t+ \dots \\
+= \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos n\omega t +b_n\sin n\omega t)
+\end{equation}
+フーリエ係数は,次のように示される.
+\begin{equation}
+ a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(x)dx
+\end{equation}
+\begin{equation}
+ a_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\cos nx dx
+\end{equation}
+\begin{equation}
+ b_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\sin nx dx \qquad (n=1,2,3 \dots )
+\end{equation}
 
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
