@@ -27,18 +27,18 @@
  <H5>フーリエ級数</H5>
 \begin{equation}\label{first}
 f(x)=\frac{a_0}{2}+a_1\cos x+a_2\cos 2x+a_3\cos 3x+ \dots +a_n\cos nx \\
-+\dots +b_1\sin x+b_2\sin 2x +b_3\sin 3x+\dots\dots +b_n\sin nx+ \dots \\
++\dots +b_1\sin x+b_2\sin 2x +b_3\sin 3x+\dots +b_n\sin nx+ \dots \\
 = \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos nx +b_n\sin nx)
 \end{equation}
 <H5>フーリエ係数</H5>
 フーリエ級数$(1.1)$式の各項の係数（フーリエ係数）$a_0, a_n, b_n$は次の公式で示される。
-\begin{subequation}\lable{grp}
+\begin{subequation}\label{grp}
  a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(x)dx
 \end{subequation}
-\begin{subequation}\lable{grp}
+\begin{subequation}\label{grp}
  a_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\cos nx dx
 \end{subequation}
-\begin{subequation}\lable{grp}
+\begin{subequation}\label{grp}
  b_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\sin nx dx \qquad\text{(n=1,2,3,\dots)}
 \end{subequation}
 
