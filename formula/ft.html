@@ -31,7 +31,10 @@ f(x)=\frac{a_0}{2}+a_1\cos x+a_2\cos 2x+a_3\cos 3x+ \dots +a_n\cos nx \\
 = \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos nx +b_n\sin nx)
 \end{equation}
 <H5>フーリエ係数</H5>
-フーリエ級数$(1)$式の各項の係数（フーリエ係数）$a_0, a_n, b_n$は次の公式で示される。
+フーリエ級数$(1)$式の各項の係数（フーリエ係数）$a_0$, $a_n$, $b_n$は次の公式で示される.
+ </br>
+*基本波形の周期は有限（$2\pi$）である.
+＊フーリエ係数は, 「実」フーリエ係数である（後述する複素フーリエ係数ではない）.
 \begin{equation}
  a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(x)dx
 \end{equation}
@@ -39,8 +42,19 @@ f(x)=\frac{a_0}{2}+a_1\cos x+a_2\cos 2x+a_3\cos 3x+ \dots +a_n\cos nx \\
  a_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\cos nx dx
 \end{equation}
 \begin{equation}
- b_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\sin nx dx \qquad (n=1,2,3,\dots )
+ b_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\sin nx dx \qquad (n=1,2,3 \dots )
 \end{equation}
+
+ <H5>方形波（矩形波）のフーリエ係数</H5>
+ デジタル信号で用いられる基本波形は, 「凹凸」の形を持つ方形波（矩形波）である.</br>
+したがって、式＄（1)$-$(4)$に含まれる$x$（軸）を時間$t$（軸）, 周期$2\pi$を$T$に置き換える.
+\[
+2\pi : x = T : t,\\
+Tx=2\pi t,\\
+x=\frac{2\pi}{T}t=\omega t,\\
+dx=\frac{2\pi}{T}dt
+\]
+ゆえに, 時間$t$の関数$f(t)$のフーリエ級数展開は次のように示される.
 
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
