@@ -46,8 +46,8 @@ f(x)=\frac{a_0}{2}+a_1\cos x+a_2\cos 2x+a_3\cos 3x+ \dots +a_n\cos nx \\
 \end{equation}
 
  <H5>方形波（矩形波）のフーリエ係数</H5>
- デジタル信号で用いられる基本波形は, 「凹凸」の形を持つ方形波（矩形波）である.</br>
-したがって、式＄（1)$-$(4)$に含まれる$x$（軸）を時間$t$（軸）, 周期$2\pi$を$T$に置き換える.
+ デジタル信号で用いられる基本波形は, 「凹凸」の形をする方形波（矩形波）である.</br>
+したがって、式(＄1$)-($4$)に含まれる$x$（軸）を時間$t$（軸）, 周期$2\pi$を$T$に置き換える.
 \[
 2\pi : x = T : t,\\
 Tx=2\pi t,\\
@@ -60,12 +60,12 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 +\dots +b_1\sin \omega t+b_2\sin 2\omega t +b_3\sin 3\omega t+\dots +b_n\sin n\omega t+ \dots \\
 = \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos n\omega t +b_n\sin n\omega t)
 \end{equation}
-フーリエ係数は,次のように示される.
+各フーリエ係数は,次のように書き換えられる.
 \begin{equation}
  a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(x)dx
 \end{equation}
 \begin{equation}
- a_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\cos nx dx
+ a_n=\frac{1}{\pi} \frac{2\pi}{T} \int_{0}^{T} f(t)\cos \frac{2\pi n}{T}t dt =\frac{2}{T}\int_{-\fracT2}^{\fracT2} f(t)\cos n\omega t dt
 \end{equation}
 \begin{equation}
  b_n=\frac{1}{\pi} \int_{0}^{2\pi} f(x)\sin nx dx \qquad (n=1,2,3 \dots )
