@@ -38,8 +38,7 @@ $\nabla$（ナブラ）は, 座標$\pmb r$の各成分による偏微分演算�
 \nabla=\text{grad}=\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)
 \end{equation}
 
-単純化のため, 1次元（$x$軸）の話にする.
-偏微分の演算子は常微分の演算子で表せる.  
+単純化のため, 1次元（$x$軸）の話にすると,偏微分の演算子は常微分の演算子で表せる.  
 \begin{equation}
 \hat p= -i\hbar\frac{d}{dx}
 \end{equation}
@@ -53,7 +52,7 @@ E=\frac{p^2}{2m}+V(x)
 \begin{equation}
 i \hbar \frac{\partial}{\partial t}\Psi(x,t)=\left[ -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right] \Psi(x,t). \qquad(1.5)
 \end{equation}
- 上式をシュレーディンガー方程式と呼ぶ.</br>
+上式（線形の二階の微分方程式）をシュレーディンガー方程式と呼ぶ.</br>
 また,両辺に含まれる $\Psi$で示される関数（この場合は, $\Psi(x,t)$という表記）を波動関数と総称する.
 </br>
 波動関数の大きさ$|\Psi(x,t)|^2$は, 粒子の存在確率（密度）を表すと解釈される.</br>
@@ -98,8 +97,13 @@ U(r)=\frac{1}{4\pi\epsilon_0}\frac{1}{r}.
 すなわち数の組$(v_1, v_2, v_3, \dots)$で表現される.
 （<a href="https://yoshikazukashiwazaki.github.io/science_study/QED/qed.html">電磁気場の理論</a>）
 </br>
-
-
+シュレーディンガー方程式は, 上述のように線形二階微分方程式で表される. したがって, $\lvert x \rvert =\infnt$における一般解は, 2つの独立な解の, 
+任意な線型結合で表せる.</br>
+状態の<b>規格化</b>により, 1つの任意性はなくなる.</br>
+さらに、「ある物理的状況を設定すること」で, シュレーディンガー方程式の特解を得ることができる.</br>
+この状況設定を<b>境界条件</b>という.</br>
+シュレーディンガー方程式を解くことは, 様々な境界条件, すなわちスカラーポテンシャルにおける特解を求めること, といえる.
+</br>
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
