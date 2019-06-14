@@ -43,7 +43,7 @@ e^{ix}=\sum_{k=0}^{\infty} \frac{(i\theta)^k}{k!}
  \[
  \frac{d}{d\theta} \sin\theta=\cos\theta, \\
   \frac{d}{d\theta} \cos\theta=-\sin\theta,\\  
- \frac{d}{d\theta} -\sin\theta=-\cos\theta,\\
+ \frac{d}{d\theta} (-\sin\theta)=-\cos\theta,\\
    \frac{d}{d\theta} \cos\theta=\sin\theta.\\
  \]
  また,
@@ -53,23 +53,30 @@ e^{ix}=\sum_{k=0}^{\infty} \frac{(i\theta)^k}{k!}
  -1i=-i,\\
  (-i)i=1.
  \]
- $\sin \theta$や$\cos\theta$を微分する, 言い換えると$\frac{d}{d^theta}$を作用させること（<a href="https://yoshikazukashiwazaki.github.io/science_study/wf.html">微分演算子（作用素）</a>）は, 複素数$i$を$1$にかける操作と, 4回操作で元に戻る点で,
+ これらを見比べると, $\sin \theta$や$\cos\theta$を微分する, 言い換えると$\frac{d}{d\theta}$を作用させること（<a href="https://yoshikazukashiwazaki.github.io/science_study/wf.html">微分演算子（作用素）</a>）は, 複素数$i$を$1$にかける操作と, 4回操作で元に戻る点で,
  同等の周期性があると見なすことができる. これを以下のように表す.
  \[
  \frac{d}{d\theta}=i\omega
  \]
 また,
  \[
- \int dt=\frac{1}{i\omega}
+ \int d\theta=\frac{1}{i\omega}
  \]
  電気電子の界隈では, 複素数$i$と電流$i$の見分けがつくようにするため, 複素数は$j$と表すのが習慣である. したがって,
  \[
  \frac{d}{d\theta}=j\omega
  \]
  \[
- \int dt=\frac{1}{j\omega}
+ \int d\theta=\frac{1}{j\omega}
  \]
- となる.
+ となる. もとより, 変数$\theta$は, $x$など任意の文字で置き換えられる.
+\[
+ \frac{d}{dx}=j\omega
+ \]
+ \[
+ \int dx=\frac{1}{j\omega}.
+ \]
+ 
 <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
