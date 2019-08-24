@@ -6,7 +6,8 @@
 	    width:1200px;
 	}
 	.table-a td {
-	    width: calc(100% / 7);	    
+	    width: calc(100% / 7);	
+        }	
 	.table-a th {
 	    width: calc(100% / 7);
 	}
