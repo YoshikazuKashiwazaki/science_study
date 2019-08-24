@@ -1,6 +1,7 @@
 .table-a ,
 .table-b {
 	    border-collapse: collapse;
+	    border: 1px solid #000;
 	    cellpadding: 5px;
 	    width:1200px;
 	}
