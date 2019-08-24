@@ -1,15 +1,16 @@
 .table-a ,
 .table-b {
 	    border-collapse: collapse;
-	    border: 1px solid #000;
 	    cellpadding: 5px;
 	    width:1200px;
 	}
 	.table-a td {
-	    width: calc(100% / 7);	
+	    width: calc(100% / 7);
+	    border: 1px solid #000;
         }	
 	.table-a th {
 	    width: calc(100% / 7);
+	    border: 1px solid #000;
 	}
 	.table-a td[colspan="2"] {
 	    width: calc(100% / 7 * 2);
