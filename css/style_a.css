@@ -1,0 +1,19 @@
+.table-a ,
+.table-b {
+	    border-collapse: collapse;
+	    cellpadding: 5px;
+	    width:800px;
+	}
+	.table-a td {
+	    width: calc(100% / 7);
+	    border: 1px solid #000;
+	}
+	.table-a td[colspan="2"] {
+	    width: calc(100% / 7 * 2);
+	}
+	.table-a td[colspan="3"] {
+	    width: calc(100% / 7 * 3);
+	}
+	.table-b td {
+	    border: 1px solid #000;
+	}
