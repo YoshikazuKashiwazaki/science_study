@@ -32,8 +32,8 @@
 誘導電動機（誘導モーター）
 </H4>
  
-原理＆特徴
-<ul><li>いわゆる「アラゴの円板」</li>
+ <H5>原理＆特徴</H5>
+<ul><li>「アラゴの円板」</li>
 <li>[電源]-[電動機（回転：無負荷）]{鉄損のみ（固定費）}</li>
 <ul>[電源]-[電動機（回転：有負荷）]-[例：洗濯機]{鉄損＋銅損（変動費＝始動時0）}</li>
  <li>滑り（s）：$N=(1-s)Ns$ ⇔ $s=\frac{Ns}{Ns-N}$
@@ -51,9 +51,16 @@
 このことから, 誘導電動機は,"非<a href="https://yoshikazukashiwazaki.github.io/science_study/em/sm/synchronous_motor.html">同期電動機</a>"とも呼ばれる.
  </br> 
  <p></p>
-<H5></H5>
-
+<H5>誘導モーターの出力</H5>
+<p></p>
+二次入力＝二次銅損＋機械的出力
 \[
+P_2=VI=P_{c2}+P_0\\
+=3\frac{r_2}{s}I_2^2=3 r_2 I_2^2+3(\frac{1-s}{s}r_2)I_2^2
+\]
+「入力:銅損:出力」の比は次のとおり.
+\[
+p_2:P_{c2}:P_0=1:s:(1-s)
 \]
  <a href="https://yoshikazukashiwazaki.github.io/science_study/em/motor.html">物理ノート>電磁気回路の基礎と応用>電動機　に戻る</a>
 
