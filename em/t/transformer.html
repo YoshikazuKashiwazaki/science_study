@@ -1,0 +1,57 @@
+
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+<link rel="stylesheet" href="../css/style_a.css">
+</head>
+
+<body>
+<H2>
+物理のノート
+</H2>
+<H3>
+電磁気回路の基礎と応用
+</H3>
+<H4>
+変圧器
+</H4>
+ <p></p>
+発電機は, 機械的エネルギー（主に回転運動で得る）を電気エネルギーに変換する機械の総称. 電気エネルギーを機械的エネルギーに変換する<a href="https://yoshikazukashiwazaki.github.io/science_study/em/motor.html">電動機</a>と機構的に逆である.
+ </br> 
+ <p></p>
+<H5>変圧器の誘導起電力</H5>
+
+\[
+E=2.22k \frac{pn}{60} N_s \phi_m \\
+ =4.44k \frac{pn}{120} N_s \phi_m \\
+ =4.44k f n \phi_m
+\]
+$n$:巻数
+$N_s$：同期速度[$rpm$]
+$k$：（巻線）係数
+  <p></p>
+<ul>
+ <li>交流発電機の一種である同期発電機の誘導起電力も, 回転子の回転速度（同期速度）および磁束に比例する.</li>
+ <li>負荷電流は交流波形である. 整流によって直流波形に変換される.</li>
+</ul>
+ 
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+</body>
+</html>
