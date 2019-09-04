@@ -40,11 +40,11 @@
  \]
  複素数と共役複素数は<b>互いに共役な複素数</b>と呼び, 次の関係を満たす.
  \[
- z_n+z^*=2a_n \\
-  z_n*z^*=\lvert z_n \rvert ^2=(a_n+ib_n)(a_n-ib_n)=a_n^2 +b_n^2\\
- a_n=\frac{z_n+z_n^*}{2}\\
-b_n=\frac{z_n-z_n^*}{2i}\\
-z_n=\frac{z_n-z_n^*}{2}-ib_n\\
+ z_n+z^*=2a_n, \\
+  z_n*z^*=\lvert z_n \rvert ^2=(a_n+ib_n)(a_n-ib_n)=a_n^2 +b_n^2, \\
+ a_n=\frac{z_n+z_n^*}{2}, \\
+b_n=\frac{z_n-z_n^*}{2i}, \\
+z_n=\frac{z_n-z_n^*}{2}-ib_n \\
 \]
  
  
@@ -66,6 +66,14 @@ e^{i\theta}=\sum_{k=0}^{\infty} \frac{(i\theta)^k}{k!} \\
  \cos\theta=i\theta -i\frac{\theta^3}{3!}+i\frac{\theta^5}{5!}- \dots
 \]
  <p></p>
+オイラーの公式を変形すると, 複素指数関数$e^{\pm ix}$と$\sin\theta$, $\cos\theta$の関係が次のようにも表せる.
+ \[
+ e^{i\-theta}=\cos\theta - i\,\sin\theta, \\
+\cos\theta=\frac{e^{ix}+e^{-ix}}{2}, \\
+\sin\theta=\frac{e^{ix}-e^{-ix}}{2i}
+ \]
+ <p></p>
+ 
  ところで, 
  \[
  \frac{d}{d\theta} \sin\theta=\cos\theta, \\
@@ -89,7 +97,7 @@ e^{i\theta}=\sum_{k=0}^{\infty} \frac{(i\theta)^k}{k!} \\
  \[
  \int d\theta=\frac{1}{i\omega}
  \]
- 電気電子の界隈では, 虚数$i$と電流$i$の見分けがつくようにするため, 虚数は$j$と表すのが習慣である. したがって,
+ 電磁気の界隈では, 虚数$i$と電流$i$の見分けがつくようにするため, 虚数は$j$と表すのが習慣である. したがって,
  \[
  \frac{d}{d\theta}=j\omega
  \]
