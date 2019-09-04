@@ -84,14 +84,28 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 <H5>複素フーリエ係数</H5>
 <p></p>
 
-時間$t$の関数$f(t)$のフーリエ級数展開は$（5）$のように示された.
+時間$t$の関数$f(t)$のフーリエ級数展開は（5）のように示された.
  <p></p>
  これに以下の式を代入する.（>>> <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/cn/vo.html">三角関数と複素数</a>）
 \begin{equation}
  \cos n\omega t=\frac{e^{in\omega t}+e^{-in\omega t}}{2}, \\
 \sin n\omega t=\frac{e^{in\omega t}-e^{-in\omega t}}{2i}
  \end{equation}
- 
+（５）の右辺は次式に変換される.
+\begin{equation}
+f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty {\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\frac{1}{2}(a_n+ib_n)e^{-in\omega t}}
+\end{equation}
+ここで, 上式に含まれる係数を<b>複素フーリエ係数</b>と呼び, 次のように定義する.
+\begin{equation}
+c_0=\frac{a_0}{2},\\
+c_n=\frac{(a_n-ib_n)}{2},\\
+c_{-n}=\frac{(a_n+ib_n)}{2}
+\end{equation}
+これらの式を整理すると,以下のようになり, これを<b>複素フーリエ級数</b>と呼ぶ.
+\begin{equation}
+f(t)= \sum_{n=-\infty}^\infty c_ne^{in\omega t}
+\end{equation}
+
  <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
