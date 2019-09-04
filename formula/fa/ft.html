@@ -32,7 +32,15 @@
 このような周期性のない波形を<b>非周期関数</b>という（これに対して, 周期性を持つ関数を<b>周期関数</b>と呼ぶ）.
 <p></p>周期$T$$\rightarrow$$\infty$, すなわち「周期が無限に長くなった（繰り返し）波形」と見なして, フーリエ級数を見直す.
 <p></p>
-
+フーリエ変換は, 次のように定義する.
+\[
+ F(\omega)=\int_{-\infty}^{\infty} f(x) e^{-i \omega x}dx
+ \]
+ <H4>フーリエ変換の逆変換</H4>
+逆フーリエ変換は, フーリエ変換を変形して次のように定義する.
+\[
+f(x)=\frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{i \omega x}d\omega
+ \]
 
  <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
