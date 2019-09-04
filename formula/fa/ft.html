@@ -81,7 +81,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 このような周期性のない波形を<b>非周期関数</b>という（これに対して, 周期性を持つ関数を<b>周期関数</b>と呼ぶ）.
 <p></p>周期$T$$\rightarrow$$\infty$, すなわち「周期が無限に長くなった（繰り返し）波形」と見なして, フーリエ級数を見直す.（フーリエ変換は, 後述）
 <p></p>
-<H5>複素フーリエ係数</H5>
+<H5>複素フーリエ級数および, その係数</H5>
 <p></p>
 
 時間$t$の関数$f(t)$のフーリエ級数展開は（5）のように示された.
@@ -91,7 +91,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
  \cos n\omega t=\frac{e^{in\omega t}+e^{-in\omega t}}{2}, \\
 \sin n\omega t=\frac{e^{in\omega t}-e^{-in\omega t}}{2i}
  \end{equation}
-（５）の右辺は次式に変換される.
+(５)の右辺は次式に変換される.
 \begin{equation}
 f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty {\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\frac{1}{2}(a_n+ib_n)e^{-in\omega t}}
 \end{equation}
@@ -99,7 +99,7 @@ f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty {\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\fr
 \begin{equation}
 c_0=\frac{a_0}{2},\\
 c_n=\frac{(a_n-ib_n)}{2},\\
-c_{-n}=\frac{(a_n+ib_n)}{2}
+c_{-n}=C^*=\frac{(a_n+ib_n)}{2}
 \end{equation}
 これらの式を整理すると,以下のようになり, これを<b>複素フーリエ級数</b>と呼ぶ.
 \begin{equation}
