@@ -31,7 +31,7 @@
 <H4>
 フーリエ解析
 </H4>
-<H5>畳み込み積分（たたみ込み, 合成積, 接合積, Convolution）</H5>
+<H5>畳み込み積分（たたみ込み, 合成積, 接合積, Convolution）...</H5>
  <p></p>
 関数$f_1(t)$, $f_2(t)$のフーリエ変換をそれぞれ$F_1(\omega)$, $F_2(\omega)$とする.
 \[
@@ -52,23 +52,23 @@ f_1(t)*f_2(t)=\int_{-\infty}^{\infty} f_1(x)f_2(t-x) dx
 =\int_{-\infty}^{\infty} f_1(x) e^{i\omega x} F_2(\omega) dx \\
 =F_1(\omega) F_2(\omega) 
 \]  
-たたみこみ積分$f_1(t)*f_2(t)$のフーリエ変換$\Gamma \left[f_1(t)*f_2(t) \right]$は,  $f_1(t)$, $f_2(t)$の各フーリエ変換$F_1(\omega)$, $F_2(\omega)$の積$F_1(\omega) F_2(\omega) $に等しい.
+たたみこみ積分$f_1(t)*f_2(t)$のフーリエ変換$\mathcal{F} \left[f_1(t)*f_2(t) \right]$は,  $f_1(t)$, $f_2(t)$の各フーリエ変換$F_1(\omega)$, $F_2(\omega)$の積$F_1(\omega) F_2(\omega) $に等しい.
  <p></p>
  すなわち,
  \[
- \Gamma \left[f_1(t)*f_2(t) \right]=F_1(\omega) F_2(\omega) 
+ \mathcal{F} \left[f_1(t)*f_2(t) \right]=F_1(\omega) F_2(\omega) 
  \]
  これを<b>時間的たたみこみ定理</b>と呼ぶ.
  <p></p>
  逆に, 
   \[
- \Gamma^{-1} \left[F_1(\omega) \right]= f_1(t) , \\
- \Gamma^{-1} \left[F_2(\omega) \right]= f_2(t) , 
+ \mathcal{F}^{-1} \left[F_1(\omega) \right]= f_1(t) , \\
+ \mathcal{F}^{-1} \left[F_2(\omega) \right]= f_2(t) , 
  \]
 とすると, $F_1(\omega)$*$F_2(\omega)$の逆変換は
  \[
- \Gamma^{-1} \left[F_1(\omega)*F_2(\omega) \right]= 2\pi f_1(t)f_2(t) , \\
- \Gamma \left[f_1(t)f_2(t) \right]= \frac{1}{2\pi}F_1(\omega)*F_2(\omega) \\
+ \mathcal{F}^{-1} \left[F_1(\omega)*F_2(\omega) \right]= 2\pi f_1(t)f_2(t) , \\
+ \mathcal{F} \left[f_1(t)f_2(t) \right]= \frac{1}{2\pi}F_1(\omega)*F_2(\omega) \\
  =\frac{1}{2\pi} \int_{-\infty}^{\infty} F_1(y)*F_2(\omega-y)dy
  \]
  これを<b>周波数たたみこみ定理</b>と呼ぶ.
