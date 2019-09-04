@@ -99,11 +99,16 @@ f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty {\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\fr
 \begin{equation}
 c_0=\frac{a_0}{2},\\
 c_n=\frac{(a_n-ib_n)}{2},\\
-c_{-n}=c^*=\frac{(a_n+ib_n)}{2}
+c_{-n}=c^*=\frac{(a_n+ib_n)}{2}. \qquad{\text{n=1,2,3,\dots}}
 \end{equation}
 これらの式を整理すると,以下のようになり, これを<b>複素フーリエ級数</b>と呼ぶ.
 \begin{equation}
 f(t)= \sum_{n=-\infty}^\infty c_ne^{in\omega t}
+\end{equation}
+なお, 上式から次式が得られる.
+\begin{equation}
+c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-in\omega t}dt, \\
+c_-n=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
 \end{equation}
 
  <p></p>
