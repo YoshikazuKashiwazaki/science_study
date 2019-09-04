@@ -37,21 +37,21 @@
  <p></p>
 関数$f_1(t)$, $f_2(t)$のフーリエ変換をそれぞれ$F_1(\omega)$, $F_2(\omega)$とする.
 \[
-f_1(t)=\int_{\infty}^{\infty} F_1(\omega)e^{-i\omega t} d \omega
+f_1(t)=\int_{-\infty}^{\infty} F_1(\omega)e^{-i\omega t} d \omega
 \]
 \[
-f_2(t)=\int_-{\infty}^{\infty} F_2(\omega)e^{-i\omega t} d \omega
+f_2(t)=\int_{-\infty}^{\infty} F_2(\omega)e^{-i\omega t} d \omega
 \] 
 ここで,記号$*$を用いて「畳み込み（たたみこみ：convolution）」または, 合成積, 接合積などと呼ばれる積分を定義する. 
 \[
-f_1(t)*f_2(t)=\int_-{\infty}^{\infty} f_1(x)f_2(t-x) dx
+f_1(t)*f_2(t)=\int_{-\infty}^{\infty} f_1(x)f_2(t-x) dx
 \] 
 たたみこみ積分をフーリエ変換する.
 \[
-\int_-{infty}^{infty} \left[f_1(t)*f_2(t) \right]=\int_-{\infty}^{\infty} \left[\int_-{\infty}^{\infty} f_1(x)f_2(t-x) \right] e^{i\omega t} dt\\
-=\int_-{\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega t}\right] dx \\
-=\int_-{\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{-i\omega (t-x)} dt \right] e^{i\omega x}dx \\
-=\int_-{\infty}^{\infty} f_1(x) e^{i\omega x} F_2(\omega) dx \\
+\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x) \right] e^{i\omega t} dt\\
+=\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega t}\right] dx \\
+=\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{-i\omega (t-x)} dt \right] e^{i\omega x}dx \\
+=\int_{-\infty}^{\infty} f_1(x) e^{i\omega x} F_2(\omega) dx \\
 =F_1(\omega) F_2(\omega) 
 \]  
 <p></p>
