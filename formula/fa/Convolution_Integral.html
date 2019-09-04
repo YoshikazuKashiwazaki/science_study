@@ -35,9 +35,17 @@
 </H4>
 <H5>畳み込み積分（たたみ込み, 合成積, 接合積, Convolution）</H5>
  <p></p>
+関数$f_1(t)$, $f_2(t)$のフーリエ変換をそれぞれ$F_1(\omega)$, $F_2(\omega)$とする.
 \[
-E_1=4.44f n_1 \phi_m
+f_1(t)=\int_0^{\inf} F_1(\omega)e^{-i\omega t} d \omega
 \]
+\[
+f_2(t)=\int_0^{\inf} F_2(\omega)e^{-i\omega t} d \omega
+\] 
+ここで,記号$*$を用いて「畳み込み（たたみこみ：convolution）」または, 合成積, 接合積などと呼ばれる積分を定義する. 
+\[
+f_2(t)*f_2(t)=\int_-{\inf}^{\inf} f_1(x)f_2(t-x) dx
+\] 
 <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
