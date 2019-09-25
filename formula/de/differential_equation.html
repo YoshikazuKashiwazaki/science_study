@@ -31,7 +31,8 @@
  </H3>
  <p></p>
 本ノートで使用する主な微分方程式および, その一般解を記す.
-<H4>
+ <p></p>
+ <H4>
 定数係数の線形微分方程式
 </H4>
  <p></p>
@@ -53,7 +54,6 @@ f(x)=C e^{\int g(x)dx}
 <H5>
 2階線形常微分方程式
 </H5>
-</H5>
  \begin{equation}
  \frac{d^2}{dx^2} f(x)+kf(x)=0
  \end{equation}
@@ -69,8 +69,27 @@ f(x)=C_5 x + C_6=0
  \end{equation}
 
  $k$, $C_{1\dots 6}$は, 任意定数
-
- 
+ <p></p>                                                                                                              
+[証明]</br>
+証明には, 特性方程式を用いる.
+<p></p>
+<H6>
+線形性
+ </H6>
+2階線形常微分方程式
+\begin{equation}
+a_1 \frac{d^2}{dx^2}f(t) +a_2\frac{d^2}{dx^2}f(t)+a_3f(t)=g(t)
+\end{equation}
+において, g_1(t), g_2(t)とした場合の解をそれぞれf_1(t), f_2(t)とする.</br>
+このとき,
+\begin{equation}
+g(t)=b_1 g_1(t)+b_2 g_2(t)
+\end{equation}
+の解は,次のようになる.
+\begin{equation}
+f(t)=b_1 f_1(t)+b_2 f_2(t)
+\end{equation}
+すなわち, 2つの解の一次結合が解になる. このようにいくつかの解を重ね合わせて新しい解を作ること（<b>重ね合わせの原理</b>という）ができる性質を有することを<b>線形性</b>と呼ぶ.　また, この線形性を備えた系を<b>線形システム</b>と称する.
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
