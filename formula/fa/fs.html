@@ -103,7 +103,7 @@ c_{-n}=c^*=\frac{(a_n+ib_n)}{2}. \qquad \text{n=1,2,3,}\dots
 \begin{equation}
 f(t)= \sum_{n=-\infty}^\infty c_ne^{in\omega t}
 \end{equation}
-式(1)と比較すると, 整数＄n$の範囲に, $-\infty \leq n<0$が加わっている.
+式(1)と比較すると, 整数$n$の範囲に, $-\infty \leqq n<0$が加わっている.
 <p></p>
 なお, 上式から次式（複素フーリエ係数$c_n$）が得られる.
 \begin{equation}
@@ -112,7 +112,7 @@ c_{-n}=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
 \end{equation}
 <p></p>
 <b>[複素フーリエ係数$c_n$を求める際の考え方]</b></br>
-式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$）.
+式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$, すなわち（$\lvert \infty \rvert　>m$））.
 \begin{equation}
 f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{i(n-m)\omega t} 
 \end{equation}
@@ -120,7 +120,7 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 \begin{equation}
 \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt= \sum_{n=-\infty}^\infty c_n \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(n-m)\omega t}dt
 \end{equation}
-両辺を$m$（$m=0, \pm1, \pm2, \dots$）について和をとる（$\lvert \infty \rvert>m$）.
+両辺を$m$（$m=0, \pm1, \pm2, \dots$）について和をとる.
 \begin{equation}
 \sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt = \sum_{m=-\infty}^{\infty} \sum_{n=-\infty}^\infty c_n \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(n-m)\omega t} dt
 \end{equation}
@@ -136,11 +136,12 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 \]
 $\delta$（クロネッカーのデルタ）を用いて,
 \begin{equation}
-\sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt =T\delta_{mn}
+\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt =c_n T\delta_{mn}
 \end{equation}
 \begin{equation}
-\sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt = \sum_{m=-\infty}^{\infty} \sum_{n=-\infty}^\infty c_n T\delta_{mn}
+c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt
 \end{equation}
+<p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
