@@ -91,7 +91,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
  \end{equation}
 (５)の右辺は次式に変換される.
 \begin{equation}
-f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty \left{\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\frac{1}{2}(a_n+ib_n)e^{-in\omega t}\right}
+f(t)= \frac{a_0}{2}+ \sum_{n=1}^\infty \left(\frac{1}{2}(a_n-ib_n)e^{in\omega t} +\frac{1}{2}(a_n+ib_n)e^{-in\omega t}\right)
 \end{equation}
 ここで, 上式に含まれる係数を<b>複素フーリエ係数</b>と呼び, 次のように定義する.
 \begin{equation}
@@ -126,7 +126,7 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 \end{equation}
 上式(16)右辺の積分の部分について, オイラーの公式を用いて変形する.
 \begin{equation}
-\int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(m-n)\omega t} dt=\int_{-\frac{T}{2}}^{\frac{T}{2}}\left{ \cos[(m-n)\omega t]-i\sin[(m-n)\omega t]\right}dt
+\int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(m-n)\omega t} dt=\int_{-\frac{T}{2}}^{\frac{T}{2}}\left( \cos[(m-n)\omega t]-i\sin[(m-n)\omega t]\right)dt
 \end{equation}
 式(17)において,$m=n$の時には,$\cos(m-m)\omega t=\cos 0=1$,$i\sin(m-m)\omega t=i\sin 0=0$となる.</br>
 <p></p>
