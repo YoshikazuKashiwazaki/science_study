@@ -103,13 +103,24 @@ c_{-n}=c^*=\frac{(a_n+ib_n)}{2}. \qquad \text{n=1,2,3,}\dots
 \begin{equation}
 f(t)= \sum_{n=-\infty}^\infty c_ne^{in\omega t}
 \end{equation}
-なお, 上式から次式が得られる.
+なお, 上式から次式（複素フーリエ係数$c_n$）が得られる.
 \begin{equation}
 c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-in\omega t}dt, \\
 c_{-n}=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
 \end{equation}
+<p></p>
+[複素フーリエ係数を求める際の考え方]</br>
+式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$）.
+\begin{equation}
+f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}
+\end{equation}
+両辺を$-\pi=-\frac{T}{2}$から$\pi=\frac{T}{2}$まで積分する.
+\begin{equation}
+\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-im\omega t}
+\end{equation}
 
  <p></p>
+
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
