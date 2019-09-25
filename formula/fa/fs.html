@@ -112,7 +112,7 @@ c_{-n}=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
 \end{equation}
 <p></p>
 <b>[複素フーリエ係数$c_n$を求める際の考え方]</b></br>
-式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$, すなわち（$\lvert \infty \rvert　>m$））.
+式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$, すなわち$\lvert \infty \rvert >m$）.
 \begin{equation}
 f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{i(n-m)\omega t} 
 \end{equation}
@@ -128,21 +128,28 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 \begin{equation}
 \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(m-n)\omega t} dt=\int_{-\frac{T}{2}}^{\frac{T}{2}}\left( \cos[(m-n)\omega t]-i\sin[(m-n)\omega t]\right)dt
 \end{equation}
-式(17)において,$m=n$の時には,$\cos(m-m)\omega t=\cos 0=1$,$i\sin(m-m)\omega t=i\sin 0=0$となる.</br>
+式(17)において,$m=n$の時には,
+\[
+\cos(m-m)\omega t=\cos 0=1,\\
+i\sin(m-m)\omega t=i\sin 0=0.
+\]
+となる.
 <p></p>
 これより,
 \[
 \delta_{mn}=\binom{0}{1}
 \]
- \qquad \text{(m \ne n) \qquad \text{(m = n)
+ただし, $m \ne n$の時, $\delta_{mn}=0$, $m = n$の時, $\delta_{mn}=1$ 
 <p></p>
 $\delta$（クロネッカーのデルタ）を用いて,
 \begin{equation}
 \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt =c_n T\delta_{mn}
 \end{equation}
+$c_n$が左辺に来るように, 両辺を整理して
 \begin{equation}
 c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt
 \end{equation}
+式(13)が導かれた.
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
