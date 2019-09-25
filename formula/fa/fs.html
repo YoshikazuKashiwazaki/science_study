@@ -109,18 +109,18 @@ c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-in\omega t}dt, \\
 c_{-n}=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
 \end{equation}
 <p></p>
-[複素フーリエ係数を求める際の考え方]</br>
+<b>[複素フーリエ係数$c_n$を求める際の考え方]</b></br>
 式(12)の両辺に, $e^{-im\omega t}$を掛ける（$m=0, \pm1, \pm2, \dots$）.
 \begin{equation}
-f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}
+f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{i(n-m)\omega t} 
 \end{equation}
 両辺を$-\pi=-\frac{T}{2}$から$\pi=\frac{T}{2}$まで積分する.
 \begin{equation}
-\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-im\omega t}
+\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt= \sum_{n=-\infty}^\infty c_n \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(n-m)\omega t}dt
 \end{equation}
 両辺を$m$（$m=0, \pm1, \pm2, \dots$）について和をとる.
 \begin{equation}
-\sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}= \sum_{m=-\infty}^{\infty} \sum_{n=-\infty}^\infty c_ne^{in\omega t} \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-im\omega t}
+\sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt = \sum_{m=-\infty}^{\infty} \sum_{n=-\infty}^\infty c_n \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(n-m)\omega t} dt
 \end{equation}
 
 <p></p>
