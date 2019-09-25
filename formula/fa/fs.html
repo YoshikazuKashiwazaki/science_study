@@ -126,9 +126,16 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 \begin{equation}
 \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(m-n)\omega t} dt=\int_{-\frac{T}{2}}^{\frac{T}{2}}\left{ \cos[(m-n)\omega t]-i\sin[(m-n)\omega t]\right}dt
 \end{equation}
-
+式(17)において,$m=n$の時には,$\cos(m-m)\omega t=\cos 0=1$,$i\sin(m-m)\omega t=i\sin 0=0$となる.</br>
 <p></p>
-
+これより,
+\[
+\delta_{mn}=\left{ 0 \qquad \text{(m \ne n), 1\qquad \text{(m = n)
+\]
+$\delta$（クロネッカーのデルタ）を用いて,
+\begin{equation}
+\sum_{m=-\infty}^{\infty} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-im\omega t}dt =T\delta_{mn}
+\end{equation}
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
