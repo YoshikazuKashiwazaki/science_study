@@ -26,64 +26,19 @@
 <H2>
 物理のノート
 </H2>
+公式類>微分方程式の解法
 <H3>
-公式類
-</H3>
+ </H3>
+ <p></p>
+本ノートで使用する主な微分方程式および, その一般解を記す.
 <H4>
-畳み込み積分（たたみ込み, 合成積, 接合積, Convolution ...）
+定数係数の線形な微分方程式
 </H4>
-<H5>フーリエ変換</H5>
  <p></p>
-関数$f_1(t)$, $f_2(t)$のフーリエ変換をそれぞれ$F_1(\omega)$, $F_2(\omega)$とする.
-\[
-f_1(t)=\int_{-\infty}^{\infty} F_1(\omega)e^{-i\omega t} d \omega
-\]
-\[
-f_2(t)=\int_{-\infty}^{\infty} F_2(\omega)e^{-i\omega t} d \omega
-\] 
-ここで,記号$*$を用いて「畳み込み（たたみこみ：convolution）」または, 合成積, 接合積などと呼ばれる積分を定義する. 
-\[
-f_1(t)*f_2(t)=\int_{-\infty}^{\infty} f_1(x)f_2(t-x) dx
-\] 
-たたみこみ積分をフーリエ変換する.
-\[
-\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]e^{i\omega t} dt=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x) \right] e^{i\omega t} dt\\
-=\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega t}\right] dx \\
-=\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega (t-x)} dt \right] e^{i\omega x}dx \\
-=\int_{-\infty}^{\infty} f_1(x) e^{i\omega x} F_2(\omega) dx \\
-=F_1(\omega) F_2(\omega) 
-\]  
-たたみこみ積分$f_1(t)*f_2(t)$のフーリエ変換$\mathcal{F} \left[f_1(t)*f_2(t) \right]$は,  $f_1(t)$, $f_2(t)$の各フーリエ変換$F_1(\omega)$, $F_2(\omega)$の積$F_1(\omega) F_2(\omega) $に等しい.
+ 一次元（たとえば, $x$軸）で考えると常微分方程式である. 多次元で考える場合は, 偏微分方程式として扱う。
  <p></p>
- すなわち,
- \[
- \mathcal{F} \left[f_1(t)*f_2(t) \right]=F_1(\omega) F_2(\omega) 
- \]
- これを<b>時間的たたみこみ定理</b>と呼ぶ.
- <p></p>
- 逆に, 
-  \[
- \mathcal{F}^{-1} \left[F_1(\omega) \right]= f_1(t) , \\
- \mathcal{F}^{-1} \left[F_2(\omega) \right]= f_2(t) , 
- \]
-とすると, $F_1(\omega)$*$F_2(\omega)$の逆変換は
- \[
- \mathcal{F}^{-1} \left[F_1(\omega)*F_2(\omega) \right]= 2\pi f_1(t)f_2(t) , \\
- \mathcal{F} \left[f_1(t)f_2(t) \right]= \frac{1}{2\pi}F_1(\omega)*F_2(\omega) \\
- =\frac{1}{2\pi} \int_{-\infty}^{\infty} F_1(y)*F_2(\omega-y)dy
- \]
- これを<b>周波数たたみこみ定理</b>と呼ぶ.
-<p></p>
- <H5>ラプラス変換</H5>
- フーリエ変換の時と同様に,記号$*$を用いて, たたみこみ（convolution）, 合成積, 接合積などと呼ばれる積分を定義する. 
-\[
-f_1(t)*f_2(t)=\int_{0}^{\infty} f_1(t-\xi)f_2(\xi) d\xi
-\] 
- $\xi$:xi
- <p></p>
- ラプラス変換における積分の下限は, （フーリエ変換と異なり） 初期値$0$から始まる.
- <p></p>
----> <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/lt.html">ラプラス変換</a> 
+
+ 
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
