@@ -37,9 +37,9 @@
  <p></p>
  一次元（たとえば, $x$軸）で考えると常微分方程式である. 多次元で考える場合は, 偏微分方程式として扱える.
  <p></p>
-<H3>
+<H5>
  1階線形常微分方程式
- </H3>
+ </H5>
  \begin{equation}
  \frac{d}{dx} f(x)+g(x)f(x)=0
  \end{equation}
@@ -49,6 +49,26 @@ f(x)=C e^{\int g(x)dx}
  \end{equation}
  $C$は, 任意定数（Constant）
  
+<H5>
+2階線形常微分方程式
+</H5>
+</H5>
+ \begin{equation}
+ \frac{d^2}{dx2} f(x)+kf(x)=0
+ \end{equation}
+ 一般解は,
+\begin{equation}
+f(x)=C_1 \sin \sqrt{k} x+ C_2 \cos \sqrt{k} x \qquad \text{(k>0)}
+ \end{equation}
+\begin{equation}
+f(x)=C_3 e^{\sqrt{k} x}+ C_4 e^{\sqrt{k} x} \qquad \text{(k<0)}
+ \end{equation}
+\begin{equation}
+f(x)=C_5 x + C_6
+ \end{equation}
+
+ $k$, $C_{1\dots 6}$は, 任意定数（Constant）
+
  
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
