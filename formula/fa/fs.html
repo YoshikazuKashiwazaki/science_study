@@ -127,8 +127,8 @@ f(t)e^{-im\omega t}= \sum_{n=-\infty}^\infty c_ne^{in\omega t} e^{-im\omega t}= 
 上式(16)右辺の積分の部分のみを取り出し, オイラーの公式を用いて次のように変形する.
 \begin{equation}
 \int_{-\frac{T}{2}}^{\frac{T}{2}} e^{-i(m-n)\omega t} dt=\int_{-\frac{T}{2}}^{\frac{T}{2}}\left( \cos[(m-n)\omega t]-i\sin[(m-n)\omega t]\right)dt\\
-=\int_{-\frac{T}{2}}^{\frac{T}{2}} \cos(m-n)\omega t - \int_{-\frac{T}{2}}^{\frac{T}{2}} i\sin(m-n)\omega t dt \\
-=[\sin(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}-[-\cos(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}
+=\int_{-\frac{T}{2}}^{\frac{T}{2}} \cos(m-n)\omega t dt - \int_{-\frac{T}{2}}^{\frac{T}{2}} i\sin(m-n)\omega t dt \\
+=[\sin(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}-i[-\cos(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}
 \end{equation}
 式(17)において,$m=n$の時には,
 \[
@@ -138,7 +138,7 @@ i\sin(m-m)\omega t=i\sin 0=0.
 すなわち,
 \[
 [\sin(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}=[0]_{-\frac{T}{2}}^{\frac{T}{2}}=0, \\
-[-\cos(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}=[-1]_{-\frac{T}{2}}^{\frac{T}{2}}=-T.
+[-\cos(m-n)\omega t]_{-\frac{T}{2}}^{\frac{T}{2}}=[-t]_{-\frac{T}{2}}^{\frac{T}{2}}=-T.
 \]
 となる.
 一方, $m \ne n$の時には,
