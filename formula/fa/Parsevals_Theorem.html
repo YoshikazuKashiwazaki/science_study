@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+
+<body>
+<H2>
+物理のノート
+</H2>
+ <p></p>
+公式集>フーリエ級数展開に関する公式
+ <p></p>
+<H4>Parseval（パーシバル）の等式</H4>
+
+\begin{equation}
+c_n=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-in\omega t}dt, \\
+c_{-n}=c^*=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{in\omega t}dt, \\
+\end{equation}
+
+ <p></p>
+<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+</body>
+</html>
