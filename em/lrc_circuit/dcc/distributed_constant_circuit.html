@@ -46,13 +46,15 @@ LRC回路 ＞ 分布定数回路（伝送線路）とインピーダンス整合
 <H5>分布定数回路の電圧・電流に関する微分方程式</H5>
 <p></p>
 断面積が一定の並行導体が$z$軸方向に無限に伸びていると仮定する.</br>
-上記分布定数回路の等価回路において,単位長あたりの直列インピーダンス$Z_s$, 並列アドミタンス$Y_p$は次のように記述される
+上記分布定数回路の等価回路において,単位長あたりの直列インピーダンス$Z_s$, 並列アドミタンス$Y_p=\frac{1}{Z_p}$は次のように記述される
 （インピーダンスは"流れにくさ", アドミタンスはインピーダンスの逆数で"流れやすさ"を表す）. 
 \begin{equation}
 Z_s=R+ j X_L=R+ j\omega L , \\
 Y_p=\frac{1}{R}+ j\frac{1}{X_c}=G+ j\omega C.
 \end{equation}
-この場合における線路上の電圧$V$,電流$I(=VZ)$は次のように表される.
+$G$:コンダクタンス
+<p></p>
+この場合, 線路上の電圧$V$,電流$I(=VZ)$は次のように表される.
 \begin{equation}
 \frac{dV}{dz}=-Z_s I
 \end{equation}
@@ -68,7 +70,12 @@ Y_p=\frac{1}{R}+ j\frac{1}{X_c}=G+ j\omega C.
 \begin{equation}
 \frac{d^2I}{dz^2}=-\frac{d}{dz}(Y_p V)=\frac{dY_p}{dz} V +(-Y_p)\frac{dV}{dz}=0+(-Y_p)(-Z_s I)=Z_s Y_p I=\gamma^2 I
 \end{equation}
-ただし, $\gamma$は,
+導体の長さ$z$を極限まで短くした場合に$Z_s$, $Y_p$は限りなく$0$に近づく. ゆえに,
+\[
+\frac{dZ_s}{dz}=0, \\
+\frac{dY_p}{dz}=0.
+\]
+なお, $\gamma$は,
 \begin{equation}
 \gamma=\alpha + j\beta=\sqrt{Z_s Y_p}=\sqrt{(R+ j\omega L)(G+ j\omega C)}
 \end{equation}
@@ -76,6 +83,7 @@ Y_p=\frac{1}{R}+ j\frac{1}{X_c}=G+ j\omega C.
 <p></p>
 $\alpha$:減衰定数, $\beta$:位相定数
 <p></p>
+<H5>一般解が示す波動性と特性インピーダンス</H5>
 式(4)(5)は, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/de/differential_equation.html">定数係数の2階線形常微分方程式</a>である.
 <p></p>
 したがって, 一般解は次のように導出される.
@@ -84,13 +92,17 @@ V(z)=V_1 e^{-\gamma z} + V_2 e^{\gamma z}
 \end{equation}
 
 \begin{equation}
-I(z)=I_1 e^{-\gamma z} + I_2 e^{\gamma z}
+I(z)=I_1 e^{-\gamma z} + I_2 e^{\gamma z}\\
+=\frac{1}{Z_0}(V_1 e^{-\gamma z} + V_2 e^{\gamma z})
 \end{equation}
-
+なお, $Z_0$は<b>特性インピーダンス</b>であり,
+\begin{equation}
+Z_0=\left \sqrt{\frac{Z_s}{Y_p}}=\left \sqrt{\frak{R+ j\omega L}{G+ j\omega C}.
+\end{eqution}
 式(6)(7)の右辺第1項は, $z$の正方向への進行<b>波</b>, 右辺第2項は負方向への後進<b>波</b>を表す. 回路（伝送線路）でありながら<b>波</b>（波動）として捉えることができる
 ことが興味深い. 
 <p></p>
-この分布定数回路上における伝搬の説明が, 電磁波の伝搬を理解・論考するうえで役に立つ.
+これらの分布定数回路上における伝搬の説明が, 電磁波の伝搬を理解・論考するうえで効いてくる.
 <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
