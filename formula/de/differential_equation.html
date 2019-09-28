@@ -70,8 +70,7 @@ f(x)=C_5 x + C_6=0
 
  $k$, $C_{1\dots 6}$は, 任意定数
  <p></p>                                                                                                              
-[手順]
- <p></p>
+ [解き方の手順]</br>
  特性方程式を用いて解く.</br>
 定数係数の2階線形常微分方程式を次のように表す.
 \[
@@ -83,24 +82,30 @@ a_1 \lambda^2 +a_2\lambda +a_3=0
 \]
 となる. 特性方程式の解$\lambda$を用いると微分方程式の一般解$f(t)$は次のように表される.
 \[
-f(t)=C_1 e^{-\gamma z}+C_2 e^{\gamma z}
+f(t)=C_1 e^{-i\omega t}+C_2 e^{i\omega t}
 \]
 $C_1$,$C_2$は任意定数.
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/em/lrc_circuit/dcc/distributed_constant_circuit.html">分布定数回路の電圧, 電流における微分方程式</a>の解法を例にとると,
 \[
- a_1=1, a_2=0, a_3=-\gamma^2
+ a_1=1, \\
+a_2=0, \
+a_3=-\gamma^2
 \]
 につき,
 \[
-\lambda^2 -\gamma^2=0
+\lambda^2 -\gamma^2=0 \\
 \lambda=\mp\gamma
 \]
 ゆえに, $V_1$,$V_2$を任意定数として,
 \[
 V(z)=V_1 e^{-\gamma z}+V_2 e^{\gamma z}.
 \]
- 
+  $\gamma$は,
+\begin{equation}
+\gamma=\alpha + j\beta=\sqrt{Z_s Y_p}=\sqrt{(R+ j\omega L)(G+ j\omega C)}
+\end{equation}
+であり, 虚数$j$を含む<b>伝搬定数</b>という.
 <p></p>
 <H6>
 線形性
