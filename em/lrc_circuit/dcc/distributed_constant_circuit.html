@@ -46,7 +46,7 @@ LRC回路 ＞ 分布定数回路（伝送線路）とインピーダンス整合
 <H5>分布定数回路の電圧 電流に関する微分方程式</H5>
 <p></p>
 断面積が一定の並行導体が$z$軸方向に無限に伸びていると仮定する.</br>
-このときに等価回路における単位長あたりの直列インピーダンス$Z_s, 並列アドミタンス$Y_p$は次のようになる
+このときに等価回路における単位長あたりの直列インピーダンス$Z_s$, 並列アドミタンス$Y_p$は次のようになる
 （インピーダンスは"流れにくさ", アドミタンスはインピーダンスの逆数で"流れやすさ"を表す. 
 \begin{equation}
 Z_s=R+ j X_L=R+ j\omega L , \\
@@ -56,6 +56,7 @@ Y_p=\frac{1}{R}+ j\frac{1}{X_c}=G+ j\omega C.
 \begin{equation}
 \frac{dV}{dz}=-Z_s I
 \end{equation}
+
 \begin{equation}
 \frac{dI}{dz}=-Y_p I
 \end{equation}
@@ -63,6 +64,7 @@ Y_p=\frac{1}{R}+ j\frac{1}{X_c}=G+ j\omega C.
 \begin{equation}
 \frac{d^2V}{dz2}=-\frac{d}{dz}(Z_s I)=\frac{dZ_s}{dz} I +(-Z_s)\frac{dI}{dz}=0+(-Z_s)(-Y_p V)=Z_s Y_p V=\gamma^2 V
 \end{equation}
+
 \begin{equation}
 \frac{d^2I}{dz2}=-\frac{d}{dz}(Y_p V)=\frac{dY_p}{dz} V +(-Y_p)\frac{dV}{dz}=0+(-Y_p)(-Z_s I)=Z_s Y_p I=\gamma^2 I
 \end{equation}
