@@ -56,12 +56,35 @@ $c_n$を求める際の考え方</a>）
 \[
 \delta_{ij}=\binom{0}{1}
 \]
-ただし, $i \ne j$の時, $\delta_{ij}=0$（直交関係である,といっても立体空間における"直角"の位置関係を表すわけではない. あくまで計算上の話.）, 
+ただし, $i \ne j$の時, $\delta_{ij}=0$（直交関係である,といっても立体空間における"直角"の位置関係を表すわけではない. あくまで計算上の話である.）, 
 <p></p>
 $i = j$の時, $\delta_{ij}=1$ 
 <p></p>
 の関係がある. 基底$\pmb e_j^*$を$\pmb e_i$の<b>双対基底</b>という.
 <p></p>
+ベクトル空間$V$において、$\pmb R$,$V$,$V^*$からいくつかのテンソル積を作って得られる空間, 例えば
+\begin{equation}
+V \otimes V \otimes V \otimes V^* \otimes V \otimes V^*
+\end{equation}
+の元も, 前述の定義の通り, テンソルと呼ぶ.
+<p><-p>
+ テンソルを<b>型</b>に分ける. $V$を$1$, $V^*$を$-1$とすると,(1)の場合は,$ [1,1,1,-1,1,-1]$型と表現する.
+ ただし、
+ \[
+ V \otimes V^*=V^* \otimes V 
+ \]
+同型であることから,(1)式の$V$,$V^*$を入れ替えてまとめる.
+\begin{equation}
+V \otimes V \otimes V \otimes V\otimes V^*  \otimes V^*
+\end{equation}
+この場合, $V$,$V^*$の数はそれぞれ$4$,$2$であることから, $(4,2)$型である,という.
+ <p></p>
+ 一般化するとベクトル空間$V$上の$(p,q)$型のテンソル全体を$\pmb T_q^p(V)$と記すことにする.
+ <p></p>
+ 
+ 
+<p></p>
+
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
