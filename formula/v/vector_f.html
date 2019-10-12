@@ -60,17 +60,14 @@
  f(x)=a_1\cos x+a_2\cos 2x+a_3\cos 3x \\
  =A_1\frac{1}{\sqrt{\pi}}\cos x+A_2\frac{1}{\sqrt{\pi}}\cos 2x+A_3\frac{1}{\sqrt{\pi}}\cos 3x
  \end{equation}
-\begin{equation}
- f(x)=a_1\cos x+a_2\cos 2x+a_3\cos 3x
- \end{equation}
+
  上式の$\frac{1}{\sqrt{\pi}}\cos x$と$\frac{1}{\sqrt{\pi}}\cos 2x$の内積に対して, 次のような積分を行う.
 \begin{equation}
 \frac{1}{\pi} \int_0^{2\pi} \frac{1}{\sqrt{\pi}}a_1\cos x \cdot \frac{1}{\sqrt{\pi}}\cos 2x dx=\frac{1}{\pi} \int_0^{2\pi} a_1\cos x \cdot \cos 2x dx \\
- =\frac{1}{\pi}\left(\frac{1}{2} \left(\int_0^{2\pi} \cos(1-2)x dx + \int_0^{2\pi} \cos(1+2)x dx \right) \right)\\
- =\frac{1}{\pi}\left(\frac{1}{2} \frac{1}{-1} \left[ \sin(-1)x \right]_0^{2\pi} + \frac{1}{3}\left[ \sin 3x \right]_0^{2\pi} \right) \right)\\
+ =\frac{1}{\pi}\left(\frac{1}{2} (\int_0^{2\pi} \cos(1-2)x dx + \int_0^{2\pi} \cos(1+2)x dx ) )\\
+ =\frac{1}{\pi}\left(\frac{1}{2} \frac{1}{-1} [ \sin(-1)x \right]_0^{2\pi} + \frac{1}{3}[ \sin 3x \right]_0^{2\pi} ) )\\
  =\frac{1}{\pi}\left(\frac{1}{2} (-1)( \sin(-2\pi)-\sin 0 ) + \frac{1}{3}( \sin(-2\pi)-\sin 0) ) )\\
  =0
- 
  \end{equation} 
 同じように, $\frac{1}{\sqrt{\pi}}\cos 2x$と$\frac{1}{\sqrt{\pi}}\cos 3x$, $\frac{1}{\sqrt{\pi}}\cos 3x$と$\frac{1}{\sqrt{\pi}}\cos x$の各内積および積分に対しても$0$になる.
  <p></p>
