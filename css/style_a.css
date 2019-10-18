@@ -3,8 +3,8 @@ body {
 	text-align:center;		
 }
 div#pagebody {
-	width:1194px; margin:0 auto;	
-	text-align:left;	/*テキストの配置を左揃えにする*/
+	width:796px; margin:0 auto;	
+	text-align:left;	
 	background-image:url("images/bg_pagebody.gif");	
 	background-repeat:repeat-y;		
 	background-color:#ffffff;		
