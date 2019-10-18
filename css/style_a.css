@@ -1,3 +1,14 @@
+body {
+	background-color:#999999;	
+	text-align:center;		
+}
+div#pagebody {
+	width:1194px; margin:0 auto;	
+	text-align:left;	/*テキストの配置を左揃えにする*/
+	background-image:url("images/bg_pagebody.gif");	
+	background-repeat:repeat-y;		
+	background-color:#ffffff;		
+}
 .table-a ,
 .table-b {
 	    border-collapse: collapse;
