@@ -41,7 +41,7 @@
 \text{grad }\phi \equiv \left(\frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z}\right) \qquad（\text{grad}(=gradient)は, \nabla（nabla）とも書かれる）
 \end{equation}
 \begin{equation}
-\text{rot }\pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, \text{curl}, \nabla \text{×}とも書かれる）
+\text{rot }\pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, \text{curl}, \nabla \timesとも書かれる）
 \end{equation}
 <p></p>
 \begin{equation}
@@ -65,19 +65,19 @@ A_x &A_y &A_z
 <p></p>
 記号$\times$（クロス積）, $\cdot$（ドット積）を用いるベクトル解析の公式
 \begin{equation}
-\text{grad}(f\pmb A)=\pmb A \text{・}\text{grad }f + f\text{div }\pmb A, 
+\text{grad}(f\pmb A)=\pmb A \times\text{grad }f + f\text{div }\pmb A, 
 \end{equation}
 \begin{equation}
 \text{rot }(f\pmb A)=\text{grad }f × \pmb A + f\text{rot }\pmb A, 
 \end{equation}
 \begin{equation}
-\text{div}(\pmb A \text{×} \pmb B)=\pmb B \text{・}\text{rot }\pmb A - \pmb A \text{・}\text{rot }\pmb B, 
+\text{div}(\pmb A \times \pmb B)=\pmb B \cdot\text{rot }\pmb A - \pmb A \cdot\text{rot }\pmb B, 
 \end{equation}
 \begin{equation}
-\text{rot}(\pmb A \text{×} \pmb B)=\pmb A\text{div }\pmb B - \pmb B \text{div }\pmb A + (\pmb B \text{・}\text{grad})\pmb A - (\pmb A \text{・}\text{grad})\pmb B, 
+\text{rot}(\pmb A \times \pmb B)=\pmb A\text{div }\pmb B - \pmb B \text{div }\pmb A + (\pmb B \cdot\text{grad})\pmb A - (\pmb A \cdot\text{grad})\pmb B, 
 \end{equation}
 \begin{equation}
-\text{grad}(\pmb A\text{・}\pmb B)=(\pmb A \text{・}\text{grad})\pmb B + (\pmb B \text{・}\text{grad})\pmb A + \pmb A \text{×} \text{rot }\pmb B + \pmb B \text{×} \text{rot }\pmb A. 
+\text{grad}(\pmb A\cdot\pmb B)=(\pmb A \cdot\text{grad})\pmb B + (\pmb B \cdot\text{grad})\pmb A + \pmb A \times \text{rot }\pmb B + \pmb B \times \text{rot }\pmb A. 
 \end{equation}
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
  </div>
