@@ -204,24 +204,28 @@ $i$,$j$は添え字である.
 \]
 偏微分を添え字で表して, 次のように書き記す.
 \[
-\pmb p_uv=\frac{\partial^2 \pmb p}{\partial u \partial v}\\
+\pmb p_{uv}=\frac{\partial^2 \pmb p}{\partial u \partial v}\\
 =(\frac{\partial^2 x}{\partial u \partial v},\frac{\partial^2 y}{\partial u \partial v},\frac{\partial^2 z}{\partial u \partial v})
 \]
 $\pmb p_u(u_0,v_0)$,$\pmb p_v(u_0,v_0)$はともに, $\pmb p(u_0,v_0)$における接ベクトルとなる（一次独立で, 接平面の基）.
-\begin{equation}
-ds^2=\sum g_{ij}du^i du^j
-\end{equation}
+<p></p>
 
 ここで次のように, 内積$\cdot$（ドット積）, 関数$L,M,N$を用いて表す式を, <b>第二基本形式</b>と定義する.
 \begin{equation}
--d\pmb p \cdot e\p=Ldu^2+2M du dv + N dv^2
+-d\pmb p \cdot d\pmb e=Ldu^2+2M du dv + N dv^2
 \end{equation}
 
 これに対して 第一基本形式は,内積$\cdot$（ドット積）, 関数$E,F,G$を用いて次のように表される.
 \begin{equation}
-d\pmb p \cdot d\p=Edu^2+2F du dv + C dv^2
+d\pmb p \cdot d\pmb p=Edu^2+2F du dv + C dv^2
 \end{equation}
 <p></p>
+<H4>Gauss曲率</H4>
+<p></p>
+第一基本形式と第二基本形式に含まれる関数を用いて,Gauss曲率$K$を次のように定義する.
+\begin{equation}
+K=\frac{LN-M^2}{EG-F^2}
+\end{equation}
 
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
