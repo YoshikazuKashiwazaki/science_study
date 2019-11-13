@@ -205,10 +205,20 @@ $i$,$j$は添え字である.
 偏微分を添え字で表して, 次のように書き記す.
 \[
 \pmb p_{uv}=\frac{\partial^2 \pmb p}{\partial u \partial v}\\
-=(\frac{\partial^2 x}{\partial u \partial v},\frac{\partial^2 y}{\partial u \partial v},\frac{\partial^2 z}{\partial u \partial v})
+=\left(\frac{\partial^2 x}{\partial u \partial v},\frac{\partial^2 y}{\partial u \partial v},\frac{\partial^2 z}{\partial u \partial v}\right )
 \]
 $\pmb p_u(u_0,v_0)$,$\pmb p_v(u_0,v_0)$はともに, $\pmb p(u_0,v_0)$における接ベクトルとなる（一次独立で, 接平面の基）.
 <p></p>
+外積$\pmb p_u \times \pmb p_v$は, 接平面と直交するベクトルであり, 自身の長さ$\lvert \pmb p_u \times \pmb p_v \rvert$で割った$\pmb e$すなわち単位方ベクトルは
+次のように記される.
+\begin{equation}
+\pmb e=\frac{1}{\lvert \pmb p_u \times \pmb p_v \rvert} \pmb p_u \times \pmb p_v
+\end{equation}
+接ベクトル$\pmb p_u(u_0,v_0)$,$\pmb p_v(u_0,v_0)$と, 単位方ベクトル$\pmb e$は直交する.したがって内積$\cdot$（ドット積）を用いて,
+\begin{equation}
+\pmb p_u \cdot \pmb e=0, \\
+\pmb p_v \cdot \pmb e=0.
+\end{equation}
 
 ここで次のように, 内積$\cdot$（ドット積）, 関数$L,M,N$を用いて表す式を, <b>第二基本形式</b>と定義する.
 \begin{equation}
