@@ -90,9 +90,7 @@
  \]
  である.
   <p></p>
- 上半平面$\pmb H^+=\lbrace z=x+iy\in \pmb C; y>0\rbrace$
-<p></p>
- と単位円$D=\lbrace w=u+iv\in \pmb C; \lvert \omega \rvert ^2=u^2+v^2<1 \rbrace$
+ 上半平面$\pmb H^+=\lbrace z=x+iy\in \pmb C; y>0\rbrace$と単位円$D=\lbrace w=u+iv\in \pmb C; \lvert \omega \rvert ^2=u^2+v^2<1 \rbrace$
 <p></p>
 は
  \begin{equation}
@@ -123,12 +121,33 @@ $z$が半弧上を$1,i,-1$（すなわち$z=e^{it}(=\cos t+ i\sin t)$におい�
 \begin{equation}
 ds^2=\frac {dz dz^*}{y^2}=\frac{d(x+iy)d(x-iy)}{y^2}=\frac{dx^2+dy^2}{y^2} 
 \end{equation}
- $z^*=\bar{z}$は, $z(=x+iy)$の<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/cn/vo.html">共役複素数</a>. 
+ $z^*(=\bar{z})$は, $z(=x+iy)$の<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/cn/vo.html">共役複素数</a>. 
 <p></p>
  このリーマン計量は, <b>ポアンカレ計量</b>と呼ばれる.[>>><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/v/tensor.html">基本計量テンソル</a>]
 <p></p>
-
-<p></p>
+上半平面$\pmb H^+$上のポアンカレ計量すなわち
+ \begin{equation}
+ ds^2=\frac{dz dz^*}{y^2}
+ \end{equation}
+ に対応する, 単位円$D$上の計量を求める.
+ <p></p>
+ (1)式$z=\frac{i(1-w)}{1+w}$より,
+ \begin{equation}
+ dz=\frac{-2id\omega}{(1+\omega)^2},\\
+ dz^*=\frac{2id\omega^*}{(1+\omega)^2},\\
+ y=\frac{z-z^*}{2i}=\frac{1-\lvert \omaga \rvert ^2}{(1+\omega}{1+\omega^*}.
+ \end{equation}
+ これらを(2)式に代入する.
+ \begin{equation}
+ ds^2=\frac{dz dz^*}{y^2}=\frac{\left\lbrace\frac{-2id\omega}{(1+\omega)^2}\right\rbrace \left\lbrace\frac{2id\omega^*}{(1+\omega)^2}\right\rbrace}{\frac{1-\lvert \omaga \rvert ^2}{(1+\omega}{1+\omega^*}}\\
+ =\frac{4dwdw^*}{(1-\lvert \omega \rvert^2)^2}.
+ \end{equation}
+ この結果得られた次式を
+ \begin{equation}
+ ds^2=\frac{4dwdw^*}{(1-\lvert \omega \rvert^2)^2}
+ \end{equation}
+ 単位円版$D=\lbrace \omega\in\pmb C;\lvert\omega\rvert\lt 1\rbrace$のポアンカレ計量と呼ぶ.
+ <p></p>
  <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
