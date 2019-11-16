@@ -171,11 +171,11 @@ $\pmb T_q^0(V)$または$(0,q)$型のテンソルを<b>q階共変テンソル</b
 しかし, ユークリッド・ベクトル空間やシンプレティック・ベクトル空間など非退化（符号指数$(p,q)$に対して$p+q$は$V$の次元に等しいとの仮定をする）な双線形形式$\pmb G(\pmb x,\pmb y)$（極座標）が1つ指定され, 
 なおかつこの双線形形式が線形変換において保存されるような, 幾何固有の変換が許される場合には, 型の異なるテンソルも同一視することができる.
 <p></p>
-基本双線形形式
+<b>基本双線形形式</b>
 \begin{equation}
 \pmb G(\pmb x,\pmb y)=\sum_{i,j=1}^n g_{ij}x^i y^j
 \end{equation}
-をテンソル$V$上における2階対称共変テンソルとみなしたものを, <b>基本計量テンソル</b>と呼ぶ.
+を, <b>テンソル$V$上における2階対称共変テンソルとみなしたもの</b>を, <b>基本計量テンソル</b>と呼ぶ.
 <p></p>
 非退化の場合, ベクトル$\pmb y \in V$と, 線形形式$\pmb G(\pmb \cdot, \pmb y) \in V^*$は1対1で対応する.言い換えると, 双線形形式$\pmb G$を介して, 
 $V$上の反変ベクトルと共変ベクトルは1対1で対応する.これらを同伴ベクトルと呼び, テンソル解析では同一視することが多い.
@@ -189,7 +189,8 @@ y^i=\sum_{j-1}^n g^{ij}y_j
 <p></p>
 <H4>3次元ベクトル空間における曲面の第一基本形式</H4>
 <p></p>
-次の式を, 3次元ベクトル空間における曲面の第一基本形式と呼ぶ. 基本計量テンソルと類似の形をしている.
+次の式で表される$ds^2$を, 3次元ベクトル空間における曲面の<b>第一基本形式</b>（または,<b>Riemann（リーマン）計量</b>と呼ぶ. 基本計量テンソルと類似している.
+[>>><a href="https://yoshikazukashiwazaki.github.io/science_study/em/lrc_circuit/hg/hyperbolic_geometry.html">ポアンカレ計量</a>]
 <p></p>
 \begin{equation}
 ds^2=\sum g_{ij}du^i du^j
@@ -256,7 +257,22 @@ d\pmb p \cdot d\pmb p=Edu^2+2F du dv + G dv^2
 \begin{equation}
 K=\frac{LN-M^2}{EG-F^2}
 \end{equation}
-
+<p></p>
+<H4>曲線の長さ</H4>
+<p></p>
+第一基本形式またはリーマン計量$ds^2=\sum g_{ij}du^i du^j$により,曲線$\gamma(t)=(u^1(t),u^2(t)), 0\leqq t\leqq a$の長さ$L(\gamma)$は,
+\begin{equation}
+L(\gamma)=\int_0^a \sqrt {\sum g_{ij} \frac{du^i}{dt}\frac{du^j}{dt}}dt
+\end{equation}
+と記される.
+<p></p>
+この曲線$\gamma(t)$が二点$p=\gamma(0),q=\gamma(1)$を結ぶ最短距離であるための条件は, すべての$\epsilon$に対して,
+\[
+L(\gamma_epsilon)\geqq L(\gamma).
+\]
+ここで曲線$\gamma_\epsilon$とは,点$p,q$を固定して曲線$\gamma$を少し動かして得られる曲線を指すものとする.
+<p></p>
+<img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/v/images/Riemann_curve.png" width="400" height="355" alt="">
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
