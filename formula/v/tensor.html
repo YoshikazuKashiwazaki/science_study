@@ -282,7 +282,11 @@ L(\gamma_\varepsilon)\geqq L(\gamma).
 <p></p>
 を満たすような,曲線の族を考える.
 <p></p>
-ここで,$\gamma_0=\gamma, \xi^i(0)=\xi^j(a)=0$とする.したがって,
+ここで,
+\begin{equation}
+\gamma_0=\gamma, \xi^i(0)=\xi^j(a)=0
+\end{equation}
+とする.したがって,
 \[
 \gamma_\varepsilon(0)=\gamma(0),\\
 \gamma_\varepsilon(a)=\gamma(a).
@@ -295,12 +299,22 @@ L(\gamma_\varepsilon)\geqq L(\gamma).
 <p></p>
 (14)(15)式より,
 \begin{equation}
-L(\gamma_\varepsion)=\int_0^a \sqrt {\sum g_{ij}(\gamma_\varepsion(t)) \frac{d(u^i(t)+\varepsilon\xi^i(t))}{dt}\frac{d(u^j(t)+\varepsilon\xi^j(t))j}{dt}}dt
+L(\gamma_\varepsilon)=\int_0^a \sqrt {\sum g_{ij}(\gamma_\varepsilon(t)) \frac{d(u^i(t)+\varepsilon\xi^i(t))}{dt}\frac{d(u^j(t)+\varepsilon\xi^j(t))j}{dt}}dt
 \end{equation}
-を得て, $\varepsilon$で微分して,$\varepsilon=0$とおく.すなわち(16)式より
+を得て, $\varepsilon$で微分して,$\varepsilon=0$とおく.すなわち(17)式より
 \begin{equation}
 \frac{d}{d\varepsilon} L(\gamma_\varepsilon)\vert_{\varepsilon=0} =\int_0^a \sum \left(\frac{\partial g_{ij}}{\partial u^k} \xi^k \frac{du^i}{dt}\frac{du^j}{dt}+2g_{ij}\frac{d\xi^i}{dt}\frac{d\xi^j}{dt}\right)dt
 \end{equation}
+となる.
+<p></p>
+さらにここで
+\begin{equation}
+\frac{d}{dt}\sum g_{ij}\xi^i\frac{du^j}{dt}=\sum \frac{\partial g_{ij}}{\partial u^k}\frac{du^k}{dt}\xi^i \frac{du^j}{dt}+g_{ij}\frac{d\xi^i}{dt}\frac{du^j}{dt}+g_{ij}\xi^i\frac{d^2 u^j}{dt^2}
+\end{equaiton}
+および,(7)式すなわち$\gamma_0=\gamma, \xi^i(0)=\xi^j(a)=0$を併用する.その結果、(19)式は,
+\begin{equation}
+\frac{d}{d\varepsilon} L(\gamma_\varepsilon)\vert_{\varepsilon=0} =-2\sum_a^b \sum \lbrace g_{kj}\frac{d^2 u^j}{dt^2}+\left(\frac{\partial g_{kj}}{\partial u^i}-\frac{1}{2}\frac{\partial g_{ij}}{\partial u^k}\right)\frac{du^i}{dt}\frac{du^j}{dt}\rbrace \xi^k dt.
+\end{equaiton}
 
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
