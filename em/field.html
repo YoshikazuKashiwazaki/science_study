@@ -66,17 +66,17 @@
 E=E_0 e^{jwt},\\
 H=H_0 e^{jwt}.
 \end{equation}
-(1)式（アンペール - マクスウェルの法則） に(6)(8)式を代入し,変形する.$\varepsilon=\varepsilon_0$,$\mu=\mu_0$（真空中の誘電率, 透磁率）とする. 
+(1)式（アンペール - マクスウェルの法則） に(6)(7)式を代入し,変形する.右辺は(8)式の時間因子に着目して微分する.なお, $\varepsilon=\varepsilon_0$,$\mu=\mu_0$（真空中の誘電率, 透磁率）とする. 
 \begin{equation}
 \frac{1}{\mu}\text{rot } \pmb B=\frac{1}{\mu}\nabla\times \pmb B\\
  =\nabla \times \pmb H=\sigma \pmb E+ \varepsilon\frac{\partial \pmb E}{\partial t}=\sigma \pmb E+ \varepsilon jw \pmb E\\
  =(\sigma+jw\varepsilon)\pmb E
 \end{equation}
-これより,
+すなわち,
  \begin{equation}
 \nabla \times \pmb H=(\sigma+jw\varepsilon)\pmb E.
  \end{equation}
-(2)式についても同様に, 
+(2)式の右辺についても(6)式を代入し, 微分する. 
   \begin{equation}
 \nabla \times \pmb E=-jw\varepsilon \pmb H
  \end{equation}
@@ -89,9 +89,9 @@ H=H_0 e^{jwt}.
 \begin{equation}
  \nabla\cdot \pmb B=\mu\nabla\cdot \pmb H=0
  \end{equation}
- 右辺は(2)(6)式で変形して,
+(13)式の左辺に(12)式を代入する.また 右辺は(2)(6)式で変形する.
  \begin{equation}
-\nabla\times(\nabla \times \pmb H)=(\sigma+jw\varepsilon)\nabla\times \pmb E,
+\nabla\times(\nabla \times \pmb H)=(\sigma+jw\varepsilon)\nabla\times \pmb E,\\
  0-\nabla^2\pmb H=jw\mu(\sigma+jw\varepsilon)\pmb H.
  \end{equation}
 (12)式の右辺に(11)式を代入する.
