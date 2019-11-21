@@ -30,20 +30,20 @@
 </H4>
  <H5>直角座標</H5>
 \begin{equation}
-\text{div }\pmb E \equiv \frac{\partial E_x}{\partial x}+ \frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}   \qquad（\text{div}は, divergence（発散）の意味で, \nabla \cdotとも書かれる）
+\text{div }\pmb E =\nabla\cdot \pmb E=\equiv \frac{\partial E_x}{\partial x}+ \frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}   \qquad（\text{div}は, divergence（発散）の意味で, \nabla \cdotとも書かれる）
 \end{equation}
 \begin{equation}
-\Delta \phi \equiv \frac{\partial^2 \phi}{\partial x^2}+\frac{\partial^2 \phi}{\partial y^2}+\frac{\partial^2 \phi}{\partial z^2}　\qquad（記号\Deltaは, \nabla^2とも書かれ, ラプラシアン（Laplacian）と読む）
+\Delta \phi =\nabla ^2 \phi\equiv \frac{\partial^2 \phi}{\partial x^2}+\frac{\partial^2 \phi}{\partial y^2}+\frac{\partial^2 \phi}{\partial z^2}　\qquad（記号\Deltaは, \nabla^2とも書かれ, ラプラシアン（Laplacian）と読む）
 \end{equation}
 \begin{equation}
-\text{grad }\phi \equiv \left(\frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z}\right) \qquad（\text{grad}(=gradient)は, \nabla（nabla）とも書かれる）
+\text{grad }\phi =\nabla\phi=\equiv \left(\frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z}\right) \qquad（\text{grad}(=gradient)は, \nabla（nabla）とも書かれる）
 \end{equation}
 \begin{equation}
-\text{rot }\pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, rotation（回転）の意味で,\text{curl}, \nabla \timesとも書かれる）
+\text{rot }\pmb A =\nabla\times \pmb A=\equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, rotation（回転）の意味で,\text{curl}, \nabla \timesとも書かれる）
 \end{equation}
 <p></p>
 \begin{equation}
-\text{rot } \pmb A=
+\text{rot } \pmb A=\nabla\times \pmb A=
 \begin{vmatrix}
 \pmb i &\pmb j &\pmb k\\
 \frac{\partial}{\partial x} &\frac{\partial}{\partial y} &\frac{\partial}{\partial z}\\
@@ -58,7 +58,7 @@ A_x &A_y &A_z
 \text{rot grad }\phi=\nabla \times (\nabla \phi)=0,  \phantom{XXX}
 \end{equation}
 \begin{equation}
-\text{rot rot } \pmb A=\text{grad div }\pmb A-\Delta\pmb A. 
+\text{rot rot } \pmb A=\nabla\times(\nabla\times \pmb A)=\text{grad div }\pmb A-\Delta\pmb A. 
 \end{equation}
 <p></p>
 記号$\times$（クロス積）, $\cdot$（ドット積）を用いるベクトル解析の公式
