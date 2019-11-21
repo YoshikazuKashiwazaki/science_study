@@ -30,7 +30,7 @@
 </H4>
  <H5>直角座標</H5>
 \begin{equation}
-\text{div }\pmb E \equiv \frac{\partial E_x}{\partial x}+ \frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}  
+\text{div }\pmb E \equiv \frac{\partial E_x}{\partial x}+ \frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}   \qquad（\text{div}は, divergence（発散）の意味で, \nabla \cdotとも書かれる）
 \end{equation}
 \begin{equation}
 \Delta \phi \equiv \frac{\partial^2 \phi}{\partial x^2}+\frac{\partial^2 \phi}{\partial y^2}+\frac{\partial^2 \phi}{\partial z^2}　\qquad（記号\Deltaは, \nabla^2とも書かれ, ラプラシアン（Laplacian）と読む）
@@ -39,7 +39,7 @@
 \text{grad }\phi \equiv \left(\frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z}\right) \qquad（\text{grad}(=gradient)は, \nabla（nabla）とも書かれる）
 \end{equation}
 \begin{equation}
-\text{rot }\pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, \text{curl}, \nabla \timesとも書かれる）
+\text{rot }\pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_x}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, rotation（回転）の意味で,\text{curl}, \nabla \timesとも書かれる）
 \end{equation}
 <p></p>
 \begin{equation}
@@ -52,7 +52,7 @@ A_x &A_y &A_z
 \end{equation}
 上記の演算子の間には, 次の<b>恒等式</b>が成立する.
 \begin{equation}
-\text{div rot }\pmb A=0, \phantom{XXX}
+\text{div rot }\pmb A=\nabla \times (\nabla \cdot \pmb A)=0, \qquad（ベクトル恒等式）
 \end{equation}
 \begin{equation}
 \text{rot grad }\phi=0,  \phantom{XXX}
