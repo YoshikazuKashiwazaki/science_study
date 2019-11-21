@@ -55,6 +55,12 @@
 \begin{equation}
 \pmb i=\sigma \pmb E \qquad
 \end{equation}
+  <p></p>
+<H5>
+ヘルムホルツ方程式
+</H5>
+<p></p>
+
 ここで,電場（電界の強さ）$\pmb E$と磁場（すなわち磁界の強さ）$\pmb H$が,時間因子$e^{j\theta}=e^{jwt}$を持つとする.例えば,
 \begin{equation}
 E=E_0 e^{jwt},\\
@@ -74,12 +80,36 @@ H=H_0 e^{jwt}.
   \begin{equation}
 \nabla \times \pmb E=-jw\varepsilon \pmb H
  \end{equation}
- 
- <p></p>
+(10)式の両辺の$\text{rot}=\nabla\times$をとる.
+\begin{equation}
+\nabla\times(\nabla \times \pmb H)=(\sigma+jw\varepsilon)\nabla\times \pmb E,
+ \nabla(\nabla\cdot \pmb H)-\nabla^2\pmb H=(\sigma+jw\varepsilon)\nabla\times \pmb E.
+ \end{equation}
+ (4)(6)式より,
+\begin{equation}
+ \nabla\cdot \pmb B=\mu\nabla\cdot \pmb H=0
+ \end{equation}
+ 右辺は(2)(6)式で変形して,
+ \begin{equation}
+\nabla\times(\nabla \times \pmb H)=(\sigma+jw\varepsilon)\nabla\times \pmb E,
+ 0-\nabla^2\pmb H=jw\mu(\sigma+jw\varepsilon)\pmb H.
+ \end{equation}
+(12)式の右辺に(11)式を代入する.
+\begin{equation}
+\nabla^2\pmb H-\gamma\pmb H=0.
+ \end{equation}
+ 同様にして,
+ \begin{equation}
+\nabla^2\pmb E-\gamma^2\pmb E=0
+ \end{equation}
+ ただし、$\gamma$は,
+\begin{equation}
+\gamma^2=jw\mu(\sigma+jw\varepsilon)
+ \end{equation}
+ という伝搬定数である.
+ <p></p> 
 
-<H5>
-ヘルムホルツ方程式
-</H5>
+()()式を<b>ヘルムホルツ方程式</b>と呼ぶ.
  <p></p> 
 <H5>
 アンペアの周回積分の法則
