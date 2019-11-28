@@ -37,7 +37,25 @@
  一次元（たとえば, $x$軸）で考えると常微分方程式である. 多次元で考える場合は, 偏微分方程式として扱える.
  <p></p>
 <H4>
- 1階線形常微分方程式
+ 1階線形常微分方程式（変数分離法）
+ </H4>
+ \begin{equation}
+ \frac{d}{d\omega}F(w)+\frac{\omega}{2a}F(\omega)=0.
+ \end{equation} 
+ この式を変形する.
+  \[
+ \frac{F(\omega)^{'}}{F(\omega)}=-\frac{\omega}{2a}
+ \]
+両辺を$\omega$について積分すると一般解が得られる.
+\begin{equation}
+\int \frac{F(\omega)^{'}}{F(\omega)} d\omega= \int -\frac{\omega}{2a}d\omega,\\
+\log F(\omega)=-\frac{\omega^2}{4a}+C^{'},\\
+ F(\omega)=e^{-\frac{\omega^2}{4a}+C^{'}}=C e^{-\frac{\omega^2}{4a}}.\qquad\text{##C=e^{C^{'}}}
+\end{equation} 
+ [>>><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/ft_normal_distribution.html">ガウス分布のフーリエ変換</a>]
+ <p></p>
+ <H4>
+ 1階線形常微分方程式（定数変化法）
  </H4>
  \begin{equation}
  \frac{d}{dx} f(x)+g(x)f(x)=0
@@ -50,7 +68,7 @@ f(x)=C e^{\int g(x)dx}
  <p></p>
  <p></p>
 <H4>
-2階線形常微分方程式
+2階線形常微分方程式（特性方程式による解法）
 </H4>
  \begin{equation}
  \frac{d^2}{dx^2} f(x)+kf(x)=0
