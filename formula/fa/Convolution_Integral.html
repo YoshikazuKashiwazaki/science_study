@@ -46,7 +46,7 @@ f_1(t)*f_2(t)=\int_{-\infty}^{\infty} f_1(x)f_2(t-x) dx
 \] 
 たたみこみ積分をフーリエ変換する.
 \[
-\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]e^{i\omega t} dt=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x) \right] e^{i\omega t} dt\\
+\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]e^{i\omega t} dt=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x)dx \right] e^{i\omega t} dt\\
 =\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega t}\right] dx \\
 =\int_{-\infty}^{\infty} f_1(x)\left[f_2(t-x) e^{i\omega (t-x)} dt \right] e^{i\omega x}dx \\
 =\int_{-\infty}^{\infty} f_1(x) e^{i\omega x} F_2(\omega) dx \\
