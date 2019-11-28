@@ -61,7 +61,7 @@ F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
 \begin{equation}
  \frac{d}{d\omega}F(w)=\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx\right)\\
  =\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2}e^{-i\omega x}dx\right)\\
- =\int_{-\infty}^{\infty} (-ix)e^{-ax^2}e^{-i\omega x}dx\\
+ =\int_{-\infty}^{\infty} e^{-ax^2}(-ix)e^{-i\omega x}dx\\
  =-i \int_{-\infty}^{\infty} \left(-\frac{1}{2a}\right)\left(\frac{d}{dx}e^{-ax^2}\right)e^{-i\omega x}dx\\
 =\frac{i}{2a}\left[ e^{-ax^2}e^{-i\omega x}\right]_{-\infty}^{\infty}-\frac{i}{2a}(-i\omega)\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx \qquad\text{##部分積分法}\\
 =-\frac{\omega}{2a}\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx\\
