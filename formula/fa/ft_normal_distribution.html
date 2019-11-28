@@ -68,25 +68,25 @@ F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
 =-\frac{\omega}{2a}\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx\\
 = -\frac{\omega}{2a}F(\omega)
  \end{equation} 
- ゆえに,
+ ゆえに,次の一階常微分方程式が得られる.
  \begin{equation}
  \frac{d}{d\omega}F(w)+\frac{\omega}{2a}F(\omega)=0.
  \end{equation} 
- この式を変形する.
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/de/differential_equation.html">変数分離形</a>で一般解を求めるために,この式を変形する.
   \[
  \frac{F(\omega)^{'}}{F(\omega)}=-\frac{\omega}{2a}
  \]
-両辺を$\omega$について積分する.
+両辺を$\omega$について積分すると一般解が導かれる.
 \begin{equation}
 \int \frac{F(\omega)^{'}}{F(\omega)} d\omega= \int -\frac{\omega}{2a}d\omega,\\
 \log F(\omega)=-\frac{\omega^2}{4a}+C^{'},\\
  F(\omega)=e^{-\frac{\omega^2}{4a}+C^{'}}=C e^{-\frac{\omega^2}{4a}}.\qquad\text{##C=e^{C^{'}}}
 \end{equation} 
- さて,
+次に任意定数$C$を求める.まず,
 \[
  F(0)=Ce^0=C
  \]
- また, フーリエ変換後の(5)式と,ガウスの積分公式(4)より,任意定数$C$は次のようになる.
+である.また, フーリエ変換後の(5)式と,ガウスの積分公式(4)より,任意定数$C$は次のようになる.
 \begin{equation}
  F(0)=\int_{-\infty}^{\infty} e^{-ax^2-0}dx=\int_{-\infty}^{\infty} e^{-ax^2}dx=\sqrt{\frac{\pi}{a}}.
  \end{equation} 
