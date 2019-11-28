@@ -62,9 +62,18 @@ F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
  =\int_{-\infty}^{\infty} (-ix)e^{-ax^2-i\omega x}\frac{dx}{d\omega}\\
  =-i \int_{-\infty}^{\infty} \left(-\frac{1}{2a}\right)\left(\frac{d}{dx}e^{-ax^2}\right)e^{-i\omega x}dx\\
 =\frac{i}{2a}\left[ e^{-ax^2}e^{-i\omega x}\right]_{-\infty}^{\infty}-\frac{i}{2a}(-i\omega)\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx \qquad\text{##部分積分法}\\
-=-\frac{\omega}{2a}\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx
+=-\frac{\omega}{2a}\int_{-\infty}^{\infty}e^{-ax^2}e^{-i\omega x}dx\\
+= -\frac{\omega}{2a}F(\omega)
  \end{equation} 
- 
+ ゆえに,
+ \begin{equation}
+ \frac{d}{d\omega}F(w)+\frac{\omega}{2a}F(\omega)=0.
+ \end{equation} 
+ この式を変形する.
+  \[
+ \frac{F(\omega)^{'}}{F(\omega)}=-\frac{\omega}{2a}
+ \]
+両辺を$\omega$で積分する.
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
