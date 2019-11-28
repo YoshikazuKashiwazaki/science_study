@@ -52,14 +52,14 @@
  \end{equation}
  さて, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/ft.html">フーリエ変換の定義</a>より,(3)式をフーリエ変換する.
  \begin{equation}
-F(w)=\int_{-\infty}^{\infty} f(x)e^{-i^omega x}dx\\
- =\int_{-\infty}^{\infty} e^{-ax^2}e^{-i^omega x}dx\\
- =\int_{-\infty}^{\infty} e^{-ax^2-i^omega x}dx.
+F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
+ =\int_{-\infty}^{\infty} e^{-ax^2}e^{-i\omega x}dx\\
+ =\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx.
  \end{equation}
 (5)式の両辺を$\frac{d}{d\omega}$で微分する.ここで,微分と積分の順序は交換可能とする.
-\frac{d}{d\omega}F(w)=\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2-i^omega x}dx\left)\\
- =\int_{-\infty}^{\infty} (-ix)e^{-ax^2-i^omega x}dx\\
- =-i \int_{-\infty}^{\infty} \left(-\frac{1}{2a}\right)\left(\frac{d}{dx}e^{-ax^2}\right)e^{-i^omega x}dx
+\frac{d}{d\omega}F(w)=\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx\left)\\
+ =\int_{-\infty}^{\infty} (-ix)e^{-ax^2-i\omega x}dx\\
+ =-i \int_{-\infty}^{\infty} \left(-\frac{1}{2a}\right)\left(\frac{d}{dx}e^{-ax^2}\right)e^{-i\omega x}dx
 
  \end{equation} 
  
