@@ -43,11 +43,15 @@
  f(x)=\frac{1}{\sqrt{2\pi}}\exp \left[-\frac{x^2}{2}\right]=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}.
  \end{equation}
 
-(2)式を次のようにみなす.
+(2)式を次のようにみなして,ガウス関数と呼ぶことにする.
   \begin{equation}
  f(x)=exp[-ax^2]=e^{-ax^2}.
  \end{equation}
-(3)式に対する次の積分を, ガウスの積分公式と呼ぶ.
+ 下図は,$a=1$の場合のグラフである）.
+ <p></p>
+  <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/fa/images/gd_f1_a1r.png" width="400" height="300" alt="">
+ <p></p>
+ (3)式に対する次の積分を, ガウスの積分公式と呼ぶ.
  \begin{equation}
 \int_{-\infty}^{\infty} f(x)dx=\int_{-\infty}^{\infty} e^{-ax^2}dx=\sqrt{\frac{\pi}{a}}.
  \end{equation}
@@ -95,6 +99,23 @@ F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
  \begin{equation}
  F(\omega)=\sqrt{\frac{\pi}{a}}e^{-\frac{\omega^2}{4a}}.
  \end{equation} 
+ 下図は, $a=1$の場合のグラフである.
+ <p></p>
+<img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/fa/images/gd_Tf1_a1r.png" width="400" height="300" alt=""> 
+ <p></p>
+ ガウス関数および, フーリエ変換したガウス関数のグラフを重ねて表示する（$a=1$の場合）.それぞれ上と同様に,黒、青の線で示している.
+ <p></p>
+ <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/fa/images/gd_f1_Tf1_a_1.png" width="400" height="300" alt=""> 
+ <p></p>
+$a=0.1$の場合は次のようになる. 
+<p></p>
+ <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/fa/images/gd_f1_Tf1_a_0_1.png" width="400" height="300" alt=""> 
+ <p></p>
+$a=1$,$a=0.1$のグラフをすべて重ねてみると,
+ <p></p>
+ <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/fa/images/gd_f1_Tf1_a_0_1and1_r.png" width="400" height="300" alt=""> 
+ <p></p>
+ ガウス関数の$a$の値が小さくなるほど（釣鐘の裾が広がるほど）, フーリエ変換したガウス関数の幅は狭くなり,高くなる様子がみられる.
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
