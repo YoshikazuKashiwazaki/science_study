@@ -51,7 +51,6 @@
  下図は,$a=1$の場合のグラフである.Canopyで描画した. 入力したソースコードをグラフの下に記す.
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/gd_f1_a1r.png" width="400" height="300" alt="">
- <p></p>
  <table class="table-a"><tr><td>
  <pre><code class="prettyprint linenums">
 import matplotlib.pyplot as plt
@@ -115,6 +114,17 @@ F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
  <p></p>
 <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/gd_Tf1_a1r.png" width="400" height="300" alt=""> 
  <p></p>
+<table class="table-a"><tr><td>
+ <pre><code class="prettyprint linenums">
+import matplotlib.pyplot as plt
+import numpy as np
+a = 1
+data_x = np.linspace(-20,20,100)
+data_y = np.sqrt(np.pi/a) * np.exp( - ((data_x **2) /(4 * a)))
+plt.plot(data_x,data_y, linewidth=2, color='blue')
+plt.show()
+ </code></pre>
+  </td></tr></table>
 釣鐘型のガウス関数をフーリエ変換すると,同じく釣鐘型になった.
  <p></p>
  ガウス関数および, フーリエ変換したガウス関数のグラフを重ねて表示する（$a=1$の場合）.それぞれ上記同様に,黒、青の線で示している.
