@@ -43,3 +43,8 @@ div#pagebody {
 	.table-b td {
 	    border: 1px solid #000;
 	}
+
+code {
+  font-size: 14px
+  line-height: 1.6;
+}
