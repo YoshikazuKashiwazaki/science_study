@@ -52,6 +52,7 @@
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/gd_f1_a1r.png" width="400" height="300" alt="">
  <p></p>
+ <table><tr><td>
  <pre><code class="prettyprint linenums">
 import matplotlib.pyplot as plt
 import numpy as np
@@ -61,6 +62,7 @@ data_y = np.exp( - (a * (data_x **2 )))
 plt.plot(data_x,data_y, linewidth=2, color='black')
 plt.show()
  </code></pre>
+  </td></tr></table>
  さて(3)式のガウス関数に対する次の積分を, <b>ガウスの積分公式</b>と呼ぶ.
  \begin{equation}
 \int_{-\infty}^{\infty} f(x)dx=\int_{-\infty}^{\infty} e^{-ax^2}dx=\sqrt{\frac{\pi}{a}}.
