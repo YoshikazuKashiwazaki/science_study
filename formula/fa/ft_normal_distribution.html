@@ -68,13 +68,13 @@ plt.show()
  \end{equation}
  これを利用しつつ, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/ft.html">フーリエ変換の定義</a>にしたがって,(3)式をフーリエ変換する.
  \begin{equation}
-F(w)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
+F(\omega)=\int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx\\
  =\int_{-\infty}^{\infty} e^{-ax^2}e^{-i\omega x}dx\\
  =\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx.
  \end{equation}
 (5)式の両辺を$\frac{d}{d\omega}$で微分する.ここで,微分と積分の順序は交換可能とする.
 \begin{equation}
- \frac{d}{d\omega}F(w)=\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx\right)\\
+ \frac{d}{d\omega}F(\omega)=\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2-i\omega x}dx\right)\\
  =\frac{d}{d\omega}\left(\int_{-\infty}^{\infty} e^{-ax^2}e^{-i\omega x}dx\right)\\
  =\int_{-\infty}^{\infty} e^{-ax^2}\left(\frac{d}{d\omega}e^{-i\omega x}\right)dx \qquad\text{##微分と積分の順序を交換}\\
  =\int_{-\infty}^{\infty} e^{-ax^2}(-ix)e^{-i\omega x}dx\\
