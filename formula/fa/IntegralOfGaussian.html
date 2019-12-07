@@ -33,7 +33,26 @@
 ガウスの積分公式（Integral of Gaussian）
 </H4>
  <p></p>
-
+\begin{equation}
+\int_{-\infty}^{\infty} f(x)dx=\int_{-\infty}^{\infty} e^{-ax^2}dx=\sqrt{\frac{\pi}{a}}
+\end{equation} 
+ を導出する.
+ <p></p>
+ まず,
+ \begin{equation}
+I=\int_{-\infty}^{\infty} e^{-ax^2}dx
+\end{equation} 
+ と置くと,これは$x$軸についてのガウス関数の積分である.次に,３次元空間に拡張して考えて,(2)式が$y$軸におけるガウス関数の積分とすると,
+ \begin{equation}
+I=\int_{-\infty}^{\infty} e^{-ay^2}dy
+\end{equation} 
+となる.
+(2)(3)式の両辺をかけて, $x,y$軸に関する二重積分を行う.
+ \begin{equation}
+I^2=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-ax^2}e^{-ay^2}dxdy\\
+ =\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-a(x^2+y^2)}dxdy
+\end{equation} 
+ 
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
