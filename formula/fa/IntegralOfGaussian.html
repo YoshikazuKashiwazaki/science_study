@@ -70,7 +70,20 @@ I^2=\int_{0}^{\infty} e^{-a r^2} 2\pi r dr\\
 \begin{equation}
 I=\sqrt {\frac{\pi}{a}}.
 \end{equation} 
- 
+[参考図]$y=e^{-x}$
+ <p></p>
+  <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/exponential_function_minus.png" width="400" height="308" alt="">
+ <p></p>
+ <pre><code class="prettyprint">
+import matplotlib.pyplot as plt
+import numpy as np
+
+data_x = np.linspace(-3,2,30)
+data_y = np.exp( - data_x)
+plt.plot(data_x,data_y, linewidth=2, color='black')
+plt.show()
+ </code></pre>
+ <p></p>
  
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
