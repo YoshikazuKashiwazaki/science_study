@@ -1,0 +1,98 @@
+
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+<link rel="stylesheet" href="../css/style_a.css">
+</head>
+
+<body>
+<H2>
+物理のノート
+</H2>
+<H3>
+公式類>フーリエ解析
+</H3>
+<H4>
+方形パルス（矩形波）のフーリエ級数
+</H4>
+ <p></p>
+  <p></p>
+  <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_1.png" width="400" height="292" alt="">
+ <p></p>
+ <pre><code class="prettyprint">
+# -*- coding: utf-8 -*-
+from scipy import signal
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(8,6), dpi=100)
+ax = fig.add_subplot(111)
+
+x = np.linspace(-100, 100, 115, endpoint=True)
+y = 1 * signal.square(np.pi * (x+1))
+plt.plot(x, y,linewidth=2, color='k')
+
+plt.ylim(-2, 2)
+plt.xlim(-10, 10)
+plt.axhline(y=0, color='k')
+
+plt.title('Square pulse')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+ax.grid(True)
+
+plt.show()
+ </code></pre>
+ 
+  <p></p>
+  <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_1.png" width="400" height="292" alt="">
+ <p></p>
+ <pre><code class="prettyprint">
+# -*- coding: utf-8 -*-
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(8,6), dpi=100)
+ax = fig.add_subplot(111)
+
+f = 10000
+t = np.linspace(-100, 100, 300, endpoint=True)
+ft1 = (4/(np.pi))*(np.sin(2*np.pi*f*t))
+ft2 = (4/(np.pi))*(np.sin(2*np.pi*f*t))+(4/(3*np.pi))*(np.sin(3*2*np.pi*f*t))
+ft3 = (4/(np.pi))*(np.sin(2*np.pi*f*t))+(4/(3*np.pi))*(np.sin(3*2*np.pi*f*t))+(4/(5*np.pi)*np.sin(5*2*np.pi*f*t))
+plt.plot(t,ft1,linewidth=1, color='R')
+plt.plot(t,ft2,linewidth=1, color='G')
+plt.plot(t,ft3,linewidth=1, color='K')
+plt.ylim(-2, 2)
+plt.xlim(-10, 10)
+plt.axhline(y=0, color='k')
+
+plt.title('Square pulse')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+ax.grid(True)
+
+plt.show()
+ </code></pre>
+ <p></p>
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+</body>
+</html>
