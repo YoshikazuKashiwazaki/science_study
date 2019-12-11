@@ -31,9 +31,10 @@
 公式類>フーリエ解析
 </H3>
 <H4>
-方形パルス（矩形波）のフーリエ級数
+方形派（矩形波）のフーリエ級数
 </H4>
  <p></p>
+ デジタル信号などで見られる方形波（矩形波）は次のような形をしている.
   <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_sin_signal.png" width="400" height="310" alt="">
  <p></p>
@@ -61,7 +62,15 @@ ax.grid(True)
 
 plt.show()
  </code></pre>
- 
+  <p></p>
+上記のグラフでは台形になっているが,これを$t=0$で$f(t)=-1$および$1$を非連続に跳んでいる.この方形波が示す関数をフーリエ級数展開する.
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/fs.html">フーリエ級数の公式</a>より,時間$t$の関数$f(t)$のフーリエ級数展開は,
+\begin{equation}
+f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +a_n\cos n\omega t \\
++\dots +b_1\sin \omega t+b_2\sin 2\omega t +b_3\sin 3\omega t+\dots +b_n\sin n\omega t+ \dots \\
+= \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos n\omega t +b_n\sin n\omega t)
+\end{equation}
+ と示されるが, この方形波は奇関数（$f(t)=-f(-t)$）であるから, $\cos n\omega x$の項は消え,$\sin n\omega x$の項のみが残る.
   <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_fs_sin.png" width="400" height="297" alt="">
  <p></p>
