@@ -63,7 +63,7 @@ ax.grid(True)
 plt.show()
  </code></pre>
   <p></p>
-上記のグラフでは台形になっているが,これを$t=0$で$f(t)=-1$および$1$を非連続に跳んでいる, とする.この方形波が示す関数をフーリエ級数展開する.
+上記のグラフでは台形になっているが,これを$t=0$で$f(t)=-1$および$1$を非連続に跳んでいる, とする（canopy をうまく使いこなせませんでした）.この方形波が示す関数をフーリエ級数展開する.
  <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/fs.html">フーリエ級数の公式</a>より,時間$t$の関数$f(t)$のフーリエ級数展開は,
 \begin{equation}
 f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +a_n\cos n\omega t \\
@@ -86,10 +86,9 @@ b_n=\binom{0 \qquad\text{nが偶数のとき}}{\frac{4}{n\pi}\qquad\text{nが奇
  \end{equation}
 これより,
  \begin{equation}
- f(t)=\frac{4}{\pi}\sigma_{n=\text{odd number}}^{\infty}\frac{1}{n}\sin n\omega t\\
+ f(t)=\frac{4}{\pi}\sum_{n=\text{odd number}}^{\infty}\frac{1}{n}\sin n\omega t\\
  =\frac{4}{\pi}\left( \sin \omega t + \frac{1}{3}\sin 3\omega t+\frac{1}{5}\sin 5\omega t \dots\right)\\
- =\frac{4}{\pi} \sin 2\pi f t + \frac{4}{3 \pi}\sin 6\pi f t+\frac{4}{5\pi}\sin 10\pi f t \dots
-
+ =\frac{4}{\pi} \sin 2\pi f t + \frac{4}{3 \pi}\sin 6\pi f t+\frac{4}{5\pi}\sin 20\pi f t \dots
  \end{equation}
  (3)式の第3項までをグラフに描画する. 第1項が赤, 第2項が緑, 第3項が黒の曲線で示されている.
  <p></p>
