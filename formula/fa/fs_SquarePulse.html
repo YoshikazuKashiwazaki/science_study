@@ -78,9 +78,15 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
  =\frac{2}{T}\left\lbrace \int_{-\frac{T}{2}}^{0} -\sin n\omega t dt + \int_{0}^{\frac{T}{2}} \sin n\omega t dt\right\rbrace\\
  =\frac{2}{T}\left\lbrace \left[\frac{1}{n\omega} \cos n\omega t \right]{-\frac{T}{2}}^{0} + \left[ \frac{-1{n\omega}\cos n\omega t\right]_{0}^{\frac{T}{2}} \right\rbrace\\
 =\frac{2}{n\omega T}\left\lbrace [1-\cos (-n\pi)]- [ \cos n\pi -1] \right\rbrace\\
- 
+=\frac{2}{n\pi}(1-\cos n\pi)\\
+=\frac{2}{n\pi}(1-(-1)^n)
 \end{equation}
-  <p></p>
+ ゆえに, 
+ \begin{equation}
+b_n=\binom{0 \text={nが偶数のとき}}{\frac{4}{n\pi}\text={nが奇数のとき}}
+ \end{equation}
+
+ <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_fs_sin.png" width="400" height="297" alt="">
  <p></p>
  <pre><code class="prettyprint">
