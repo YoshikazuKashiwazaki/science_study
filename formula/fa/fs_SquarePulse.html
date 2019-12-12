@@ -147,6 +147,30 @@ plt.show()
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_cos_signal.png" width="600" height="438" alt="">
  <p></p>
+ <pre><code class="prettyprint">
+# -*- coding: utf-8 -*-
+from scipy import signal
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(8,6), dpi=100)
+ax = fig.add_subplot(111)
+
+x = np.linspace(-100, 100, 115, endpoint=True)
+y = 1 * signal.square(np.pi * (x-11.5))
+plt.plot(x, y,linewidth=2, color='k')
+
+plt.ylim(-2, 2)
+plt.xlim(-10, 10)
+plt.axhline(y=0, color='k')
+
+plt.title('Square pulse')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+ax.grid(True)
+
+plt.show()
+</code></pre>
  <p></p>
  この方形波は偶関数（$f(t)=f(-t)$）であるから, $\sin n\omega x$の項は消え,$\cos n\omega x$の項のみが残る.すなわち, フーリエ係数$a_n$が残る.<p></p>
  $f(t)=\pm 1$として計算する.
@@ -175,6 +199,35 @@ a_n=\binom{\frac{4}{n\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{n\pi}\qquad\text{m
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_fs_cos.png" width="600" height="444" alt="">
  <p></p>
+ <pre><code class="prettyprint">
+ # -*- coding: utf-8 -*-
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(8,6), dpi=100)
+ax = fig.add_subplot(111)
+
+f = 10000
+t = np.linspace(-100, 100, 300, endpoint=True)
+
+ft1 = (4/(np.pi))*(-np.cos(2*np.pi*f*t))
+ft2 = (4/(np.pi))*(-np.cos(2*np.pi*f*t))+(4/(3*np.pi))*(np.cos(3*2*np.pi*f*t))
+ft3 = (4/(np.pi))*(-np.cos(2*np.pi*f*t))+(4/(3*np.pi))*(np.cos(3*2*np.pi*f*t))-(4/(5*np.pi)*np.cos(5*2*np.pi*f*t))
+
+plt.plot(t,ft1,linewidth=1, color='R')
+plt.plot(t,ft2,linewidth=1, color='G')
+plt.plot(t,ft3,linewidth=1, color='K')
+plt.ylim(-2, 2)
+plt.xlim(-10, 10)
+plt.axhline(y=0, color='k')
+
+plt.title('Square pulse')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+ax.grid(True)
+
+plt.show()
+</code></pre>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
