@@ -97,6 +97,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 =\frac{2}{n\pi}(1-\cos n\pi)\\
 =\frac{2}{n\pi}\lbrace 1-(-1)^n \rbrace .
 \end{equation}
+ ここで,
  \[
  \cos n \pi=(-1)^n
  \]
@@ -193,6 +194,7 @@ plt.show()
 =\frac{2}{n\omega T}\left\lbrace -[-\sin \frac{n\pi}{2}-0]+ [\sin \frac{n\pi}{2}+\sin \frac{n\pi}{2}]-[0-\sin \frac{n\pi}{2}] \right\rbrace\\
 =\frac{2}{(2m-1)\pi}\lbrace -2(-1)^m\rbrace.
 \end{equation}
+ここで,
  \[
  n=2m-1 \qquad (n=1,2,3 \dots)
  \]
@@ -203,7 +205,7 @@ plt.show()
  である.
   ゆえに, 
  \begin{equation}
-a_n=\binom{\frac{4}{n\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{n\pi}\qquad\text{m=3,7,11,...}}
+a_n=\binom{\frac{4}{(2m-1)\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{(2m-1)\pi}\qquad\text{m=3,7,11,...}}
  \end{equation}
  これより,
  \begin{equation}
