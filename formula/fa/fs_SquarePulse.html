@@ -97,6 +97,14 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 =\frac{2}{n\pi}(1-\cos n\pi)\\
 =\frac{2}{n\pi}\lbrace 1-(-1)^n \rbrace .
 \end{equation}
+ \[
+ \cos n \pi=(-1)^n
+ \]
+ である.また
+ \[
+ \omega T=2\pi f T=2\pi.
+ \]
+ である.
  ゆえに, 
  \begin{equation}
 b_n=\binom{0 \qquad\text{nが偶数のとき}}{\frac{4}{n\pi}\qquad\text{nが奇数のとき}}
@@ -186,9 +194,13 @@ plt.show()
 =\frac{2}{(2m-1)\pi}\lbrace -2(-1)^m\rbrace.
 \end{equation}
  \[
- n=2m-1
+ n=2m-1 \qquad (n=1,2,3 \dots)
  \]
- と置き換えている.
+ と置き換えている.また,
+ \[
+ \sin n \frac{\pi}{2}=-(-1)^n
+ \]
+ である.
   ゆえに, 
  \begin{equation}
 a_n=\binom{\frac{4}{n\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{n\pi}\qquad\text{m=3,7,11,...}}
