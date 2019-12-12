@@ -147,8 +147,8 @@ plt.show()
  \begin{equation}
  b_n=\frac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} f(t)\cos n\omega t dt \qquad (n=1,2,3 \dots )\\
  =\frac{2}{T}\left\lbrace \int_{0}^{\frac{T}{2}} -\cos n\omega t dt + \int_{\frac{T}{2}}^{T} \cos n\omega t dt\right\rbrace\\
- =\frac{2}{T}\left\lbrace \left[\frac{1}{n\omega} -\sin n\omega t \right]_{-\frac{T}{2}}^{0} + \left[ \frac{-1}{n\omega}\sin n\omega t\right]_{0}^{\frac{T}{2}} \right\rbrace\\
-=\frac{2}{n\omega T}\left\lbrace [1-\sin (-n\pi)]+ [ \sin n\pi -1] \right\rbrace\\
+ =\frac{2}{T}\left\lbrace \left[\frac{-1}{n\omega} \sin n\omega t \right]_{0}^{\frac{T}{2}} + \left[ \frac{1}{n\omega}\sin n\omega t\right]_{\frac{T}{2}}^{T} \right\rbrace\\
+=\frac{2}{n\omega T}\left\lbrace [\sin n\pi -0]+ [ 0-\sin n\pi] \right\rbrace\\
 =\frac{2}{n\pi}(1-\sin n\pi)\\
 =\frac{2}{n\pi}\lbrace 1-(-1)^n \rbrace .
 \end{equation}
