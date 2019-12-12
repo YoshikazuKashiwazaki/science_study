@@ -116,7 +116,7 @@ b_n=\binom{0 \qquad\text{nが偶数のとき}}{\frac{4}{n\pi}\qquad\text{nが奇
  =\frac{4}{\pi}\left( \sin \omega t + \frac{1}{3}\sin 3\omega t+\frac{1}{5}\sin 5\omega t +\dots\right)\\
  =\frac{4}{\pi} \sin 2\pi f t + \frac{4}{3 \pi}\sin 6\pi f t+\frac{4}{5\pi}\sin 10\pi f t +\dots
  \end{equation}
- (5)式の第3項までをグラフに描画する. 第1項が赤, 第1項と第2項の和が緑, 第3項までの和が黒の曲線で示されている（$f=10000$）.
+ (5)式の第3項までをグラフに描画する. 第1項が赤, 第1項と第2項の和が緑, 第3項までの和が黒の曲線で示されている.
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_beroreFT_fs_sin.png" width="600" height="445" alt="">
  <p></p>
@@ -214,7 +214,7 @@ a_n=\binom{\frac{4}{(2m-1)\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{(2m-1)\pi}\qq
  =\frac{4}{\pi}\left( \cos \omega t - \frac{1}{3}\cos 3\omega t+\frac{1}{5}\cos 5\omega t- \dots\right)\\
  =\frac{4}{\pi} \sin 2\pi f t - \frac{4}{3 \pi}\cos 6\pi f t+\frac{4}{5\pi}\cos 10\pi f t- \dots
  \end{equation}
- (8)式の第3項までをグラフに描画する. 第1項が赤, 第1項と第2項の和が緑, 第3項までの和が黒の曲線で示されている（$f=10000$）.
+ (8)式の第3項までをグラフに描画する. 第1項が赤, 第1項と第2項の和が緑, 第3項までの和が黒の曲線で示されている.
  <p></p>
   <img border="0" src="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/images/SquarePulse_fs_cos.png" width="600" height="444" alt="">
  <p></p>
@@ -247,6 +247,15 @@ ax.grid(True)
 
 plt.show()
 </code></pre>
+偶関数でも奇関数と同様に, 低周波が方形波の大まかな輪郭を形成し, 高周波が角の尖った部分を形作ることが読み取れる.
+<p></p>
+ <H5>
+[注記]2019.12.13
+</H5>
+なお,グラフの横軸を見ると, 上述のサイン波・コサイン波の周期は約18秒. すなわち, 周波数はおよそ$1/18=0.056$Hzである.
+<p></p>
+pythonコードでは, "$f=10000$"とパラメータを置いているが, プロットする点の数などによって変わるようだ.使いながら仕様や特徴を理解していこうと思う.
+<p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
