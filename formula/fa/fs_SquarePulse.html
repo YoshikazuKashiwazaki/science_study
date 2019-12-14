@@ -107,10 +107,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
  \]
  である.
  ゆえに, 
- \begin{equation}
-b_n=\binom{0 \qquad\text{nが偶数のとき}}{\frac{4}{n\pi}\qquad\text{nが奇数のとき}}
- \end{equation}
- 
+
 \begin{equation}
 b_n = \left\lbrace
 \begin{array}{cc}
@@ -215,8 +212,13 @@ plt.show()
  <p></p>
   ゆえに, 
  \begin{equation}
-a_n=\binom{\frac{4}{(2m-1)\pi} \qquad\text{m=1,5,9,...}}{-\frac{4}{(2m-1)\pi}\qquad\text{m=3,7,11,...}}
- \end{equation}
+b_n = \left\lbrace
+\begin{array}{cc}
+\frac{4}{(2m-1)\pi} \qquad\text{m=1,5,9,...}\\
+-\frac{4}{(2m-1)\pi}\qquad\text{m=3,7,11,...}
+\end{array}
+ \right\rbrace
+\end{equation}
  これより,
  \begin{equation}
  f(t)=\frac{4}{\pi}\sum_{m=1}^{\infty}\frac{-(-1)^m}{2m-1}\cos (2m-1)\omega t\\
