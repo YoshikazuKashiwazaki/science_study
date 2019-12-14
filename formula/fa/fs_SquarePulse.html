@@ -77,7 +77,7 @@ f(t)=\frac{a_0}{2}+a_1\cos \omega t+a_2\cos 2\omega t+a_3\cos 3\omega t+ \dots +
 +\dots +b_1\sin \omega t+b_2\sin 2\omega t +b_3\sin 3\omega t+\dots +b_n\sin n\omega t+ \dots \\
 = \frac{a_0}{2}+ \sum_{n=1}^\infty (a_n\cos n\omega t +b_n\sin n\omega t)
 \end{equation}
- と示されるが, この方形波は奇関数（$f(t)=-f(-t)$）であるから, $\cos n\omega x$の項は消え,$\sin n\omega x$の項のみが残る.すなわち, フーリエ係数$b_n$が残る（$ a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(t)dt$も消える）.<p></p>
+ と示されるが, この方形波は奇関数（$f(t)=-f(-t)$）であるから, $\cos n\omega x$の項は消え,$\sin n\omega x$の項のみが残る（奇関数の場合と同様に, $ a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(t)dt$も消える）.すなわち, フーリエ係数$b_n$が残る（$ a_0=\frac{1}{\pi} \int_{0}^{2\pi} f(t)dt$も消える）.<p></p>
  $f(t)=\pm 1$として計算する.
  <p></p>
  フーリエ係数$a_0$は,
@@ -265,7 +265,7 @@ plt.show()
 </H6>
 なお,上述のサイン波・コサイン波の周期はグラフの横軸を見ると, 約18秒. すなわち, 周波数はおよそ$1/18=0.056$Hzである.
 <p></p>
-pythonコードでは, "$f=10000$"とパラメータを置いているが, プロットする点の数などによって変わるようだ.使いながらコードやアプリ（Canopy）の仕様を理解していこうと思う.
+pythonコードでは, "$f=10000$"とパラメータを置いているが, プロットする点の数などによって変動するので暫定値としている.
 <p></p>
 <H5>
  <b>今後の宿題</b> 
