@@ -30,15 +30,23 @@
 公式類>フーリエ解析
 </H3>
 <H4>
-デルタ関数のフーリエ級数
+デルタ関数のフーリエ変換
 </H4>
  <p></p>
-\begin{equation}
-\int_{-\infty}^{\infty} d\delta dt=1
+ デルタ関数$\delta(x)$は,$x$軸上の一点たとえば, $x=0$において$\delta (0)=\infty$となるような特異な関数である.
+ <p></p>
+デルタ関数の積分値は$1$であると考える.
+ \begin{equation}
+\int_{-\infty}^{\infty} \delta(x) dx=1
  \end{equation}
+物理的にはデルタ関数は, 電気回路に流れる瞬間的なパルス波のような現象を記述するものといえるが, それ単独で関数として表すことは数学的には難しい. 
+ <p></p>
+ そこで次のような定義を行う.これは「デルタ関数と積分可能な関数$f(x)$との積」を作り, それを積分すると$f(0)$に一致する,ということを示す.
 \begin{equation}
-\int_{-\infty}^{\infty} f(x) d\delta dt=f(0)
+\int_{-\infty}^{\infty} f(x) \delta(x) dx=f(0)
  \end{equation}
+
+ 
 
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
