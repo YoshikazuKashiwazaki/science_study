@@ -43,17 +43,21 @@
 \int_{-\infty}^{\infty} \delta(x) dx=1
  \end{equation}
 物理的にはデルタ関数は, 電気回路に流れる瞬間的なパルス波のような現象を記述するものといえる（そのため,デルタ関数は単位インパルス関数ともよばれる）.
-ただし, 特異な関数であるゆえに単独で定義することが数学的には難しい. 
+<p></p>
+ デルタ関数は, イギリスの物理学者ディラック（P.A.M.Dirac 1902-84）により導入された.
  <p></p>
- そこで次のような定義を行う.これは「デルタ関数と積分可能な関数$f(x)$との積」を作り, それを積分すると$f(0)$に一致する,ということを示す.
-\begin{equation}
-\int_{-\infty}^{\infty} f(x) \delta(x) dx=f(0)
- \end{equation}
 <H4>
  <b>デルタ関数のフーリエ変換</b>
 </H4>
+  <p></p>
+フーリエ変換の準備としてまず, 次のような定義を行う.これは「デルタ関数と積分可能な関数$f(x)$との積」を作り, それを積分すると$f(0)$に一致する,
+ということを示す.
+\begin{equation}
+\int_{-\infty}^{\infty} f(x) \delta(x) dx=f(0)
+\end{equation}
+
 <p></p>
-デルタ関数のフーリエ変換は,その <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/ft.html">定義</a>と前述の(2)式より,
+デルタ関数のフーリエ変換は, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/fa/ft.html">その定義</a>と,前述の(2)式より,
   \begin{equation}
  F[\delta(x)]=\int_{-\infty}^{\infty} \delta(x) e^{-i \omega x}dx \qquad \text{フーリエ変換の定義}\\
  =e^{-i \omega 0}　\qquad \text{(2)式の定義より}\\
@@ -66,7 +70,7 @@
 \delta (x)= F^{-1}[\delta(x)]= F^{-1}[1]=\frac{1}{2\pi}\int_{-\infty}^{\infty} 1 \cdot e^{-i \omega x}d\omega \\
  =\frac{1}{2\pi}\int_{-\infty}^{\infty}  e^{-i \omega x}d\omega
 \end{equation}
- 
+デルタ関数は特異な関数であるがゆえに数学的に厳密な定義は高度な知識が要求されるが, (4)式はデルタ関数の表現として理工学の分野などで広く利用されている.
  <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
