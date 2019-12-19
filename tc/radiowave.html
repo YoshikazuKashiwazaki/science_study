@@ -43,7 +43,7 @@
  <p></p>
 なお,磁場（磁界）$H_y$とは直交する.さてこの平面波$E_x$の波動方程式（波動関数）$\Psi(x, t)$は, 次のように表される.
 \begin{equation}
-\Psi(x, t)=E_x=E_0 e^{j(kx-wt)}\qquad
+\Psi(x, t)=E_x=E_0 e^{j(-kz+wt)}\qquad
 \end{equation}
  ここで$k$は波数で, <a href="https://yoshikazukashiwazaki.github.io/science_study/em/lrc_circuit/dcc/distributed_constant_circuit.html">伝搬定数</a>$\gamma$との間に,
 \begin{equation}
@@ -56,7 +56,7 @@
 \begin{equation}
 \nabla^2\pmb E -\gamma^2\pmb E =0 \qquad
  \end{equation}
-ここで直角座標における, $z$軸に沿って進行する平面波を考える. 電場の振幅が生じる方向を$x$軸（$zx$平面）, 磁場の振幅の生じる方向を$y$軸（$yz$平面）と見なす.
+前述した通り, 直角座標における, $z$軸に沿って進行する平面波を考える. 電場の振幅が生じる方向を$x$軸（$zx$平面）, 磁場の振幅の生じる方向を$y$軸（$yz$平面）と見なす.
  </br>
  直角座標において$E_x$のみが存在するとき,
  \begin{equation}
@@ -77,7 +77,9 @@
  \begin{equation}
 E_x=E_{1}e^{j(-kz+wt)}+E_{2}e^{j(kz+wt)}\qquad
 \end{equation}
- 右辺の第1項は$z$軸を正の方向に進む進行波, 第2項は逆に進む反射波を表す.
+ 右辺の第1項は$z$軸を正の方向に進む進行波, 第2項は逆に進む反射波を表す（$E_{0\dots n}$は任意定数）.
+ <p></p>
+ (1)式は,進行波のみを考えた場合を表す.
  <p></p>
 <H5>
  <b>領域内に波源が存在する場合</b>
