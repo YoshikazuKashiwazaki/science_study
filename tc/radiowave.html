@@ -36,13 +36,21 @@
 <H6>
  <b>一方向成分のみを持つ波動方程式の一般解</b>
  </H6>
-３次元空間で, 進行方向が$x$軸に沿って進む横波（座標に関する独立変数が1つ, つまり1次元の場合）における平面波の波動方程式（波動関数）$\Psi(x, t)$は, 次のように表される.
+ 波源から放射された電磁波は,放射源を中心に球面状に伝搬する球面波と見なせる.<p></p>
+しかし,波源から十分遠方に離れた球面波は,振幅と位相が一定の波と近似することができる.これは便宜上, 平面波と呼ばれる.平面波は, 波源のない電磁波と見なす.
+ <p></p>
+さて３次元空間で, 進行方向が$z$軸に沿って進む電場（電界）の横波（座標に関する独立変数が1つ, つまり1次元の場合）を考える.磁場（磁界）$H_y$とは直交する.さてこの平面波$E_x$の波動方程式（波動関数）$\Psi(x, t)$は, 次のように表される.
 
 \begin{equation}
-\Psi(x, t)=e^{i(kx-wt)}\qquad
+\Psi(x, t)=E_x=E_0 e^{j(kx-wt)}\qquad
 \end{equation}
-
-上式の導出を考える.
+ ここで$k$は波数で, <a href="https://yoshikazukashiwazaki.github.io/science_study/em/lrc_circuit/dcc/distributed_constant_circuit.html">伝搬定数</a>$\gamma$との間に,
+\begin{equation}
+\gamma=\jk=\alfa + j\beta
+\end{equation}
+の関係がある.
+ <p></p>
+(1)式の導出を考える.
  <a href="https://yoshikazukashiwazaki.github.io/science_study/em/field.html">ヘルムホルツ方程式</a>より
 \begin{equation}
 \nabla^2\pmb E -\gamma^2\pmb E =0 \qquad
