@@ -120,7 +120,7 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
 \end{equation}
 さて $\psi=H_z$について,時間因子$t$を持つ,と見なして(5)式を適用する.
 \begin{equation}
-\psi=H_z=e^{j\omega t-kx}
+\psi=H_z=e^{j\omega t-k_z z}
 \end{equation}
  (5)(8)(11)式から
   \begin{equation}
@@ -133,10 +133,16 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
  <p></p>
  (8)式の$H_z$に関する常微分方程式を偏微分方程式と見なして,$\beta_g^2$と併せて変形する
   \begin{equation}
-\frac{1}{H_z}\frac{\partial^2 H_z}{\partial z^2} =k_{z}^{2}=-\beta_g^2\\ 
-\frac{\partial}{\partial z}H_z =-j\beta_g  H_z\\
-\frac{\partial}{\partial z} =-k_z
+\frac{1}{H_z}\frac{\partial^2 H_z}{\partial z^2} =k_{z}^{2}=-\beta_g^2
+ \end{equation}
+ ところで,(12)式を微分すると次のようになる.
+ \begin{equation}
+\frac{\partial}{\partial z}H_z =\frac{\partial}{\partial z}e^{j\omega t-k_z z}\\
+ =-k e^{j\omega t-k_z z}\\
+ =-j\beta_g  H_z\\
 \end{equation}
+ ここで$k_z=j\beta$と置き換えている.
+<p></p>
  <H6>
   <b>(1)-2 TMモード</b>
 </H6>
