@@ -108,7 +108,7 @@ $A_{1\dots nは任意定数である.$Y,Z$についても(10)式と同様の一�
  ここでは方形導波管を例に,空間内を伝搬する電磁波の分布状態を, 上述の直交座標系におけるスカラー波動方程式の一般解に境界条件を適用することで記述する.
 <p></p>
  導波管内を伝搬する電磁波は, 波の進行方向成分を$z$軸にとった場合, $E_z=0$のTEモード（E:Electronic）および$H_z=0$のTMモード（M:Magnetic）
- の2つに分類される.
+ の2つに分類される.ここでは管内を真空(減衰定数$\alpha=0$）,管壁は完全導体とする.
  <p></p>
  <H6>
   <b>(1)-1 TEモード</b>
@@ -143,6 +143,18 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
  =-j\beta_g  H_z\\
 \end{equation}
  ここで$k_z=j\beta$と置き換えている.
+<p></p>
+ 次に,アンペール-マクスウェルの法則[>>><a href="">マクスウェル方程式(1)</a>]より,
+\begin{equation}
+\frac{1}{\mu_0}\text{rot } \pmb B=\text{rot } \pmb H \\
+= \begin{vmatrix}
+\pmb i &\pmb j &\pmb k\\
+\frac{\partial}{\partial x} &\frac{\partial}{\partial y} &\frac{\partial}{\partial z}\\
+H_x &H_y &H_z 
+\end{vmatrix}
+= \varepsilon_0\frac{\partial \pmb E}{\partial t}=j\omega \varepsilon_0  
+\end{equation}
+ ただし, 波源はないとするので$\pmb j=0$.
 <p></p>
  <H6>
   <b>(1)-2 TMモード</b>
