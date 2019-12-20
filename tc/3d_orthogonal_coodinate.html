@@ -163,7 +163,7 @@ H_x &H_y &H_z
 \pmb i E_x\\
 \pmb j E_y\\
 \pmb k E_z\\
- \end{bmatrix}
+ \end{bmatrix}.
 \end{equation}
  ただし, アンペール-マクスウェルの法則において今回,波源はないと見なすので$\pmb j=0$としている.
 <p></p>
@@ -180,20 +180,33 @@ E_x &E_y &o
 \pmb i H_x\\
 \pmb j H_y\\
 \pmb k H_z\\
- \end{bmatrix}
+ \end{bmatrix}.
 \end{equation} 
- (17)の行列を展開して得られる,3つのベクトルに関する等式のうち$\pmb i$について整理する.
+ (14)の行列を展開して得られる,3つのベクトルに関する等式のうち$\pmb i$について整理する.
 \begin{equation}
- \frac{\partial}{\partial y}H_z \pmb i - \frac{\partial}{\partial y}H_z \pmb i=j\omega \varepsilon_0 E_x \pmb i \\
-\frac{\partial}{\partial y}H_z  - \frac{\partial}{\partial y}H_z =j\omega \varepsilon_0 E_x  \\
-\frac{\partial}{\partial y}H_z  + j\beta_g H_z =j\omega \varepsilon_0 E_x  \qquad \text{(13)式より}
+ \frac{\partial}{\partial y}H_z \pmb i - \frac{\partial}{\partial y}H_y \pmb i=j\omega \varepsilon_0 E_x \pmb i \\
+\frac{\partial}{\partial y}H_z  - \frac{\partial}{\partial y}H_y =j\omega \varepsilon_0 E_x  \\
+\frac{\partial}{\partial y}H_z  + j\beta_g H_y =j\omega \varepsilon_0 E_x  \qquad \text{(13)式より}
  \end{equation} 
- (18)の行列を展開して得られる,3つのベクトルに関する等式の1つは$\pmb j$について次のようになる.
+ (15)の行列を展開して得られる,3つのベクトルに関する等式の1つは$\pmb j$について次のようになる.
 \begin{equation}
- \frac{\partial}{\partial x}0 \pmb j - \frac{\partial}{\partial z}E_x \pmb j=-j\omega \mu_0 H_y \pmb j\\
-- \frac{\partial}{\partial z}E_x =-j\omega \mu_0  H_y \\
-j\beta_g E_x =-j\omega \mu_0 H_y  \qquad \text{(13)式より}
+ \frac{\partial}{\partial z}E_x \pmb j-\frac{\partial}{\partial x}0 \pmb j  =-j\omega \mu_0 H_y \pmb j\\
+\frac{\partial}{\partial z}E_x =-j\omega \mu_0  H_y \\
+-j\beta_g E_x =-j\omega \mu_0 H_y  \qquad \text{(13)式より}
  \end{equation} 
+ (17)式より,
+\begin{equation}
+H_y=\frac{\beta_g}{\omega \mu_0} E_x  
+\end{equation} 
+ (18)式を(16)式に代入する.
+\begin{equation}
+\frac{\partial}{\partial y}H_z  + j\beta_g \frac{\beta_g}{\omega \mu_0} E_x =j\omega \varepsilon_0 E_x ,\\
+\left( \frac{j\beta_{g}^2}{\omega \mu_0}-j\omega \varepsilon_0 \right)E_x =-\frac{\partial}{\partial y}H_z ,\\
+E_x =-\frac{1}{ \left( \frac{j\beta_{g}^2}{\omega \mu_0}-j\omega \varepsilon_0 \right)}\frac{\partial}{\partial y}H_z\\
+=-\frac{\omega \mu_0}{ \left( j\beta_{g}^2-j\omega^2 \mu_0\varepsilon_0 \right)}\frac{\partial}{\partial y}H_z\\
+=-\frac{-j\omega \mu_0}{ k^2 -j\beta_{g}^2}\frac{\partial}{\partial y}H_z\\
+ \end{equation} 
+ 
  <p></p>
  <H6>
   <b>(1)-2 TMモード</b>
