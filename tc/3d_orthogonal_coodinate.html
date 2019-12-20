@@ -114,17 +114,18 @@ $A_{1\dots nは任意定数である.$Y,Z$についても(10)式と同様の一�
   <b>(1)-1 TEモード</b>
 </H6>
 <p></p>
-上述の(7)(8)式より,次式が得られる.
+<!--
+ 上述の(7)(8)式より,次式が得られる.
 \begin{equation}
 k_x^2+k_y^2+k_z^2 +k^2 =0 \\ 
 \end{equation}
-<!--
-さて $\psi=H_z$について,時間因子$t$を持つ,と見なして(5)式を適用する.
+-->
+$\psi=H_z$について,時間因子$t$を持つ,と見なして(5)式を適用する.
  [>>> <a href="https://yoshikazukashiwazaki.github.io/science_study/tc/radiowave.html">一方向成分のみを持つ波動方程式の一般解</a>]
 \begin{equation}
-\psi=H_z=e^{j\omega t-k_z z}
+\psi=H_z=e^{j{\omega t-k_z z}}
 \end{equation}
- (5)(8)(11)式から
+<!-- (5)(8)(11)式から
   \begin{equation}
 \frac{\partial^2 H_z}{\partial x^2}+\frac{\partial^2 H_z}{\partial y^2}+\frac{d^2 H_z}{d z^2} +k^2 H_z =0 \\
 \frac{\partial^2 H_z}{\partial x^2}+\frac{\partial^2 H_z}{\partial y^2}+k_z^2 H_z + k^2 H_z =0 \\
@@ -138,17 +139,17 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
 \frac{1}{H_z}\frac{\partial^2 H_z}{\partial z^2} =k_{z}^{2}=-\beta_g^2
  \end{equation}
 -->
-ところで,(12)式を微分すると次のようになる.
+さて(12)式を微分すると次のようになる.
  \begin{equation}
-\frac{\partial}{\partial z}H_z =\frac{\partial}{\partial z}e^{j\omega t-k_z z}\\
- =-k e^{j\omega t-k_z z}\\
+\frac{\partial}{\partial z}H_z =\frac{\partial}{\partial z}e^{j{\omega t-k_z z}}\\
+ =-jk e^{j{\omega t-k_z z}}\\
  =-j\beta_g  H_z\\
 \end{equation}
 ゆえに,
  \begin{equation}
 \frac{\partial}{\partial z}=-j\beta_g\\
 \end{equation}
- ここで$k_z=j\beta$と置き換えている.
+ ここで$k_z=-j\beta$と置き換えている.
 <p></p>
  次に,アンペール-マクスウェルの法則[>>><a href="https://yoshikazukashiwazaki.github.io/science_study/em/field.html">マクスウェル方程式(1)</a>]より,
 \begin{equation}
@@ -187,8 +188,12 @@ E_x &E_y &o
 \frac{\partial}{\partial y}H_z  - \frac{\partial}{\partial y}H_z =j\omega \varepsilon_0 E_x  \\
 \frac{\partial}{\partial y}H_z  + j\beta_g H_z =j\omega \varepsilon_0 E_x  \qquad \text{(16)式より}
  \end{equation} 
- (18)式を展開して得られる3つの等式の1つは次のようになる.
-
+ (18)式を展開して得られる3つの等式の1つは$\pmb j$に関する式は次のようになる.
+\begin{equation}
+ \frac{\partial}{\partial x}0 \pmb j - \frac{\partial}{\partial z}E_x \pmb j=-j\omega \mu_0 H_y \pmb j\\
+- \frac{\partial}{\partial z}E_x =-j\omega \mu_0  H_y \\
+j\beta_g E_x =-j\omega \mu_0 H_y  \qquad \text{(16)式より}
+ \end{equation} 
  <p></p>
  <H6>
   <b>(1)-2 TMモード</b>
