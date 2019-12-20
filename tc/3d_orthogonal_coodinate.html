@@ -223,7 +223,30 @@ x=0,x=a \text{において} E_y=0,\\
 y=0,y=b \text{において} E_x=0 
  \end{equation} 
  である.
-(10)式に,(17)(18)(19)(20)式と,(22)の境界条件を代入して整理する.
+(6)(10)式に,(17)(18)(19)(20)式と,(22)の境界条件を代入して整理する.
+(6)式より
+ \begin{equation}
+\psi=H_z(x)H_z(y)H_z(z)=H_x H_y H_z.
+ \end{equation}
+導波管内での電磁波は定在波として(11)式で$t=0$とすると,
+\begin{equation}
+H_z=e^{j(\omega 0-k_z z)}=e^{-j k_z z)}=e^{-j \beta_g z)}.
+\end{equation} 
+(20)(21)式より,$E_y$を消去して,
+\begin{equation}
+H_x=-\frac{\beta_g}{\omega \mu_0} \frac{j\omega \mu_0}{ }\frac{\partial H_z}{\partial x}\\
+ =-\frac{j\beta_g}{k^2 -\beta_{g}^2}\frac{\partial H_z}{\partial x}\\
+  =-\frac{j\beta_g}{k^2 -\beta_{g}^2}\frac{\d H_x}{\d x}\\
+\frac{j\beta_g}{k^2 -\beta_{g}^2}\frac{\d H_x}{\d x}+H_x=0 
+ \end{equation} 
+$A=\frac{1}{\frac{j\beta_g}{k^2 -\beta_{g}^2}}$と置き換えると. 
+\begin{equation}
+\frac{j\beta_g}+A H_x=0 \\
+\log H_x=-A+C^{'}\\
+H_x=e^{(-\frac{1}{\frac{j\beta_g}{k^2 -\beta_{g}^2}}+C^{'})}\\
+=e^{(\frac{j(k^2 -\beta_{g}^2)}{\frac{\beta_g}}+C^{'})}
+ \end{equation} 
+ 
 \begin{equation}
 \psi(x,y,z)=H_z=H_{mn}\cos \left(\frac{m\pi}{a}x \right)\cos \left(\frac{n\pi}{b}y \right)e^{-j\beta_g z}
  \end{equation} 
