@@ -144,7 +144,7 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
 \end{equation}
  ここで$k_z=j\beta$と置き換えている.
 <p></p>
- 次に,アンペール-マクスウェルの法則[>>><a href="">マクスウェル方程式(1)</a>]より,
+ 次に,アンペール-マクスウェルの法則[>>><a href="https://yoshikazukashiwazaki.github.io/science_study/em/field.html">マクスウェル方程式(1)</a>]より,
 \begin{equation}
 \frac{1}{\mu_0}\text{rot } \pmb B=\text{rot } \pmb H \\
 = \begin{vmatrix}
@@ -158,7 +158,24 @@ H_x &H_y &H_z
 \pmb k E_z\\
  \end{bmatrix}
 \end{equation}
- ただし, アンペール-マクスウェルの法則おいては今回,波源はないと見なすので$\pmb j=0$.
+ ただし, アンペール-マクスウェルの法則において今回,波源はないと見なすので$\pmb j=0$としている.
+<p></p>
+また,ファラデーの電磁誘導の法則[>>><a href="https://yoshikazukashiwazaki.github.io/science_study/em/field.html">マクスウェル方程式(1)</a>]より,
+\begin{equation}
+\text{rot } \pmb E \\
+= \begin{vmatrix}
+\pmb i &\pmb j &\pmb k\\
+\frac{\partial}{\partial x} &\frac{\partial}{\partial y} &\frac{\partial}{\partial z}\\
+E_x &E_y &o 
+\end{vmatrix}
+= -\frac{\partial \pmb B}{\partial t}=-\mu\frac{\partial \pmb H}{\partial t}\\
+=-j\omega \mu_0  \begin{bmatrix}
+\pmb i H_x\\
+\pmb j H_y\\
+\pmb k H_z\\
+ \end{bmatrix}
+\end{equation}
+ 
 <p></p>
  <H6>
   <b>(1)-2 TMモード</b>
