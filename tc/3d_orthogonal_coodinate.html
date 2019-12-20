@@ -123,7 +123,7 @@ k_x^2+k_y^2+k_z^2 +k^2 =0 \\
 $\psi=H_z$について,時間因子$t$を持つ,と見なして(5)式を適用する.
  [>>> <a href="https://yoshikazukashiwazaki.github.io/science_study/tc/radiowave.html">一方向成分のみを持つ波動方程式の一般解</a>]
 \begin{equation}
-\psi=H_z=e^{j{\omega t-k_z z}}
+\psi=H_z=e^{j(\omega t-k_z z)}
 \end{equation}
 <!-- (5)(8)(11)式から
   \begin{equation}
@@ -141,8 +141,8 @@ $\psi=H_z$について,時間因子$t$を持つ,と見なして(5)式を適用�
 -->
 さて(12)式を微分すると次のようになる.
  \begin{equation}
-\frac{\partial}{\partial z}H_z =\frac{\partial}{\partial z}e^{j{\omega t-k_z z}}\\
- =-jk e^{j{\omega t-k_z z}}\\
+\frac{\partial}{\partial z}H_z =\frac{\partial}{\partial z}e^{j(\omega t-k_z z)}\\
+ =-jk e^{j(\omega t-k_z z)}\\
  =-j\beta_g  H_z\\
 \end{equation}
 ゆえに,
@@ -175,24 +175,24 @@ H_x &H_y &H_z
 \frac{\partial}{\partial x} &\frac{\partial}{\partial y} &\frac{\partial}{\partial z}\\
 E_x &E_y &o 
 \end{vmatrix}
-= -\frac{\partial \pmb B}{\partial t}=-\mu\frac{\partial \pmb H}{\partial t}\\
+= -\frac{\partial \pmb B}{\partial t}=-\mu\frac{\partial \pmb H}{\partial t}
 =-j\omega \mu_0  \begin{bmatrix}
 \pmb i H_x\\
 \pmb j H_y\\
 \pmb k H_z\\
  \end{bmatrix}
 \end{equation} 
- (17)式を展開して得られる3つの等式のうち$\pmb i$に関する式を変形する.
+ (17)の行列を展開して得られる,3つのベクトルに関する等式のうち$\pmb i$について整理する.
 \begin{equation}
  \frac{\partial}{\partial y}H_z \pmb i - \frac{\partial}{\partial y}H_z \pmb i=j\omega \varepsilon_0 E_x \pmb i \\
 \frac{\partial}{\partial y}H_z  - \frac{\partial}{\partial y}H_z =j\omega \varepsilon_0 E_x  \\
-\frac{\partial}{\partial y}H_z  + j\beta_g H_z =j\omega \varepsilon_0 E_x  \qquad \text{(16)式より}
+\frac{\partial}{\partial y}H_z  + j\beta_g H_z =j\omega \varepsilon_0 E_x  \qquad \text{(13)式より}
  \end{equation} 
- (18)式を展開して得られる3つの等式の1つは$\pmb j$に関する式は次のようになる.
+ (18)の行列を展開して得られる,3つのベクトルに関する等式の1つは$\pmb j$について次のようになる.
 \begin{equation}
  \frac{\partial}{\partial x}0 \pmb j - \frac{\partial}{\partial z}E_x \pmb j=-j\omega \mu_0 H_y \pmb j\\
 - \frac{\partial}{\partial z}E_x =-j\omega \mu_0  H_y \\
-j\beta_g E_x =-j\omega \mu_0 H_y  \qquad \text{(16)式より}
+j\beta_g E_x =-j\omega \mu_0 H_y  \qquad \text{(13)式より}
  \end{equation} 
  <p></p>
  <H6>
