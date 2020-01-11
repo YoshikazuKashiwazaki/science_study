@@ -57,7 +57,13 @@ $r_j$は座標,$p_j$は運動量である.
 <H5>
  <b>シュレーディンガー方程式</b>
  </H5>
-さて,古典力学における, 運動エネルギー$T$と位置エネルギー$V$の和が一定になることを示す力学的エネルギー保存則$E=T+V$は, $T=\frac12 mv^2=\frac{p^2}{2m}$より,
+不確定性関係は, 運動量$p$と位置$r$のみならず, エネルギー$E$と時間$t$の間にも生じる.
+</br>
+したがって, $E$を微分演算子で示すと、
+\begin{equation}
+E=i\hbar\frac{\partial}{\partial t}.
+\end{equation}
+ さて,古典力学における, 運動エネルギー$T$と位置エネルギー$V$の和が一定になることを示す力学的エネルギー保存則$E=T+V$は, $T=\frac12 mv^2=\frac{p^2}{2m}$より,
 \begin{equation}
 E=\frac{p^2}{2m}+V(x)
 \end{equation}
@@ -65,18 +71,14 @@ E=\frac{p^2}{2m}+V(x)
  <p></p>
  (5)式に、量子化の手続きを施す.
 \begin{equation}
-i \hbar \frac{\partial}{\partial t}\Psi(x,t)=\left[ -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right] \Psi(x,t). \qquad
+E\Psi(x,t)=\left[ -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right] \Psi(x,t), \qquad
+\hbar \frac{\partial}{\partial t}\Psi(x,t)=\left[ -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x) \right] \Psi(x,t). \qquad
 \end{equation}
 上式（線形の二階の微分方程式）をシュレーディンガー方程式と呼ぶ.</br>
 また, 両辺に含まれる $\Psi$（Psi. LaTeXでは \Psi と表記）で示される関数（この場合は, $\Psi(x,t)$という表記）を波動関数（波動方程式）と総称する.
 </br>
 波動関数の大きさ$|\Psi(x,t)|^2$は, 粒子の存在確率（密度）を表すと解釈される.</br>
-不確定性関係は, 運動量$p$と位置$r$のみならず, エネルギー$E$と時間$t$の間にも生じる.
-</br>
-したがって, $E$を微分演算子で示すと、
-\begin{equation}
-E=i\hbar\frac{\partial}{\partial t}.
-\end{equation}
+
 <p></p>
 右辺に現れる微分作用素
 \begin{equation}
