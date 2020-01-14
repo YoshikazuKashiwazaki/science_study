@@ -170,7 +170,7 @@ a=\langle \Psi \vert \hat A \vert\Psi \rangle,\\
 ここで,1次元における座標と運動量における不確定さについて考える.</br>
 (2)式より
 \begin{equation}
-[r_j,p_j]=[xp]=xp-px=i\hbar
+[\hat r_j,\hat p_j]=[\hat x,\hat p]=\hat x \hat p-\hat p \hat x=i\hbar
  \end{equation}
 また期待値を,
 \begin{equation}
@@ -179,10 +179,14 @@ a=\langle \Psi \vert \hat A \vert\Psi \rangle,\\
 とする.不確定さの積を求めるための準備をする.
 \begin{equation}
 (\Delta x)^2(\Delta p)^2=\langle \Psi \vert \hat x^2 \vert\Psi \rangle \langle \Psi \vert \hat p^2 \vert\Psi \rangle\\
-\geq \frac{\vert \langle \Psi \vert \hat x^2 \vert\Psi \rangle vert^2
+\geq \frac{\vert \langle \Psi \vert \hat x \hat p-\hat p \hat x \vert\Psi \rangle vert^2}{4}\\
+=\frac{\vert \langle \Psi \vert i\hbar \vert\Psi \rangle vert^2}{4}\\
+=\frac{\vert \langle \Psi \vert \hbar \vert\Psi \rangle vert^2}{4}
  \end{equation}
-
-
+ゆえに,
+\begin{equation}
+(\Delta x)(\Delta p)\geq \frac{\hbar}{2}.
+ \end{equation}
 <p></p>
 <H5>
  <b>ボーア半径とリュードベリ定数</b>
