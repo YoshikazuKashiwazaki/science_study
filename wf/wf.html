@@ -101,11 +101,13 @@ i \hbar \frac{\partial}{\partial t}\Psi(x,t)= \hat H \Psi(x,t). \phantom{XXX}
 \hat H \vert \Psi \rangle= E \vert \Psi \rangle
 \end{equation}
 演算子の固有値は, 状態$\vert \Psi \rangle$における当該物理量の<b>期待値</b>とも呼ばれる.</br>
-すなわち,エネルギーは状態$\vert \Psi \rangle$における系のハミルトニアンの期待値であり,次式のように表される.
+演算子$\hat A$と$\hat B$が交換する,すなわち$\hat A\hat B=\hat B\hat A$の場合には固有値と呼ばれる.</br>
+交換しない場合,すなわち$\hat A\hat B-\hat B\hat A\ne 0$の場合には期待値と呼ばれる.
+$\hat H$がエネルギー$E$と交換する場合, Eは状態$\vert \Psi \rangle$における系のハミルトニアンの固有値であり,次式のように表される.
 \begin{equation}
 E=\langle \Psi \vert \hat H \vert \Psi \rangle
 \end{equation}
-状態として, 波動関数$\Psi(\pmb r)$を対応させる場合には,ハミルトニアン$\hat H$は$\pmb r$の関数となり,期待値$E$は次のように表される.
+状態として, 波動関数$\Psi(\pmb r)$を対応させる場合には,ハミルトニアン$\hat H$は$\pmb r$の関数となり,固有値$E$は次のように表される.
 \begin{equation}
 E=\langle \Psi \vert \hat H \vert \Psi \rangle=\int \Psi^{*}(\pmb r)\hat H(\pmb r)\Psi(\pmb r)d\pmb r
 \end{equation}
@@ -150,13 +152,20 @@ $\hat A=\hat A^{+}$ならば,演算子$\hat A$は<b>エルミート</b>である
 \begin{equation}
 \Delta A=\langle \Psi \vert (\hat A - a)^2\vert\Psi \rangle
 \end{equation}
-$a$は$\hat A$の期待値（固有値）である.すなわち,
+$a$は$\hat A$の期待値である.すなわち,
 \begin{equation}
 a=\langle \Psi \vert \hat A \vert\Psi \rangle,\\
 \hat A \vert\Psi \rangle=a \vert\Psi \rangle.
 \end{equation}
 
-(15)式において,$\vert\Psi \rangle$が$\hat A$の固有値状態であるとすれば,
+(15)式において,$\vert\Psi \rangle$が$\hat A$の固有状態であるとすれば,$\Delta A=0$である.</br>
+ここで固有状態というのは、演算子$\hat A$が,固有値$E$をもつ演算子$\hat H$と交換関係にあり,$\hat H$の状態$\vert\Psi \rangle$と比例し,その比例定数を$a$
+とすると,
+\begin{equation}
+\hat A \vert\Psi \rangle=a \vert\Psi \rangle.
+\end{equation}
+になる,という意味合いである.</br>
+逆に固有状態になければ,$\Delta A \ne 0$となる.
 <p></p>
 <H5>
  <b>ボーア半径とリュードベリ定数</b>
