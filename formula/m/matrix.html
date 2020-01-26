@@ -1,0 +1,63 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+
+<body>
+<H2>
+物理のノート
+</H2>
+ <H3>行列</H3>
+<H4>行列の固有値と固有ベクトル</H4>
+<p></p>
+$A=(a_{ij})$をn次の正方行列とするとき,
+\[
+A\pmb x=\lambda \pmb A 
+\]
+を満たす$\lambda$（一般的には,複素数である）および,ベクトル$\pmb x\ne \pmb o$が存在するならば,
+$\lambda$を行列$A$の固有値という(
+一般的には,複素数である).<br>
+また,$\pmb x$を$\lambda$に対する固有ベクトルと呼ぶ.
+<p></p>  
+\begin{equation}
+p_n(\lambda)=\lvert A-\lambda I\rvert \\
+=
+\begin{vmatrix}
+a_{11}-\lambda & a_{12} & \dots & a_{1n}\\
+a_{21} & a_{22}-\lambda & \dots & a_{2n}\\
+\dots & \dots &\dots & \dots \\ 
+a_{n1} &\dots   & \dots & a_{nn}-\lambda\\
+\end{vmatrix}
+\\
+=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dotx +a_{n-1}\lambda+a_n
+\end{equation}
+(1)式を$A$の固有多項式という.<br>
+また,
+\begin{equation}
+P_n(\lambda)=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dotx +a_{n-1}\lambda+a_n=0 
+\end{equation}
+を固有方程式という.<br>
+$A$の固有値は,(2)式の固有方程式の根と一致する（n個の根を有する）.
+
+
+<p></p>
+<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+</body>
+</html>
