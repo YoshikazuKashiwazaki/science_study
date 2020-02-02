@@ -84,7 +84,7 @@ p_n(\lambda)=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n=0
  を<b>固有方程式</b>という.<br>
 $A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根を有する）.
 <p></p>
- <H4><b>小行列式と余因子</b></H4>
+ <H4><b>小行列式</b></H4>
 <p></p>
 次のような$2\times2$行列を考える.
 	 \begin{equation}
@@ -94,7 +94,7 @@ $A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根�
  \end{pmatrix}
  \end{equation}	 
 		 ここで,この行列の要素$c$に着目する.<br>
-		 $b$は,この行列の1行目と2列目が交差するところに位置する.<br>
+		 $c$は,この行列の1行目と2列目が交差するところに位置する.<br>
 		 そこで,この行列の1行目と2列目を消去すると,要素$b$が残る.
 		 このことを,次のように呼ぶ.<br>
 		 $c$のマイナー（minor）は,
@@ -102,6 +102,27 @@ $A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根�
 \Delta_{1,2}=b
 		 \end{equation}	 
 		 である.
+		 <p></p>		 $3\times3$行列の場合は次のようになる.
+	 \begin{equation}
+ A=
+		 \begin{pmatrix} 
+ a_{1,1} & a_{1,2}& a_{1,3}\\
+ a_{2,1} & a_{2,2}& a_{2,3}\\
+a_{3,1} & a_{3,2}& a_{3,3}
+ \end{pmatrix}
+ \end{equation}	 
+		 ここで,この行列の要素$a_{2,3}$に着目する.<br>
+		 $a_{2,3}$は,この行列の2行目と3列目が交差するところに位置する.<br>
+		 そこで,この行列の2行目と3列目を消去すると,次のような行列式が残るとする.
+		<br>
+		 すなわち$a_{2,3}$のマイナー（minor）は,
+\begin{equation}
+\Delta_{2,3}=
+\begin{vmatrix}
+a_{1,1} & a_{1,2}\\
+a_{3,1} & a_{3,2}
+\end{vmatrix}
+\end{equation}		 と呼び,この行列式を小行列式（minor of a matrix）と呼ぶ.
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
