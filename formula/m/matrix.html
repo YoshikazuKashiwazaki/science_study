@@ -143,14 +143,39 @@ a_{1,1} & a_{1,2} & \dots & a_{1,n}\\
 a_{2,1} & a_{2,2} & \dots & a_{2,n}\\
 \dots & \dots &\dots & \dots \\ 
 a_{n,1} &\dots   & \dots & a_{n,n}
-\end{vmatrix}
- =a_{i,1}(-1)^{i+1} \Delta_{i,1} +{i,2}(-1)^{i+2} \Delta_{i,2} +{i,3}(-1)^{i+3} \Delta_{i,3}\dots  +{i,n}(-1)^{i+n} \Delta_{i,n} .
+\end{vmatrix}\\
+ =a_{i,1}(-1)^{i+1} \Delta_{i,1} +a_{i,2}(-1)^{i+2} \Delta_{i,2} +a_{i,3}(-1)^{i+3} \Delta_{i,3}\dots  +a_{i,n}(-1)^{i+n} \Delta_{i,n} .
 \end{equation}
 		  $j$列目を利用して求める場合,
 \begin{equation}
-\lvert A \rvert=
- =a_{1,j}(-1)^{1+j} \Delta_{1,j} +{2,j}(-1)^{2+j} \Delta_{2,j} +{3,j}(-1)^{3+j} \Delta_{3,j}\dots  +{n,j}(-1)^{n+j} \Delta_{n,j} .
+\lvert A \rvert
+ =a_{1,j}(-1)^{1+j} \Delta_{1,j} +a_{2,j}(-1)^{2+j} \Delta_{2,j} +a_{3,j}(-1)^{3+j} \Delta_{3,j}\dots  +a_{n,j}(-1)^{n+j} \Delta_{n,j} .
 \end{equation}
+$2\times2$行列$A$の行列式$\lvert A \rvert$は,1行目に着目すると,(8)式より,
+		 \begin{equation}
+\lvert A \rvert=
+\begin{vmatrix}
+a_{1,1} & a_{1,2} \\
+a_{2,1} & a_{2,2} 
+\end{vmatrix}\\
+\\
+ =a_{1,1}(-1)^{1+1} \Delta_{1,1} +a_{1,2}(-1)^{1+2} \Delta_{1,2}\\
+ =a_{1,1} a_{2,2} -a_{1,2} a_{2,1}		 
+\end{equation}	
+	 \begin{equation}
+		 A=
+ \begin{pmatrix} 
+ a & b\\
+ c & d 
+ \end{pmatrix}
+ \end{equation}	 
+		 とすると,(10)式より,
+\end{equation}	
+	 \begin{equation}
+		 \lvert A \rvert=ad-bc
+ \end{equation}	 
+		 
+		 
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
