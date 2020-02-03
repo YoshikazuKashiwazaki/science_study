@@ -244,10 +244,15 @@ a_{3,1} & a_{3,2} & a_{3,3}\\
 =a_{1,1}a_{2,2} a_{3,3}+a_{1,2}a_{2,3} a_{3,1}+a_{1,3}a_{2,1} a_{3,2} -(a_{1,1}a_{2,3} a_{3,2} +a_{1,2}a_{2,1} a_{3,3}  +a_{1,3}a_{2,2} a_{3,1})\\		 
 \end{equation}	 
   これは,<a><href="https://yoshikazukashiwazaki.github.io/science_study/formula/v/vector.html">ベクトル解析の公式</a>にも現れる行列式の計算である.
-		 \begin{equation}
-\text{grad }\phi =\nabla\phi \equiv \left(\frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z}\right) \qquad（\text{grad}(=gradient)は, \nabla（nabla）とも書かれる）
-\end{equation}
 \begin{equation}
+\text{rot } \pmb A=\nabla\times \pmb A=
+\begin{vmatrix}
+\pmb i &\pmb j &\pmb k\\
+\frac{\partial}{\partial x} &\frac{\partial}{\partial y} &\frac{\partial}{\partial z}\\
+A_x &A_y &A_z 
+\end{vmatrix}
+\end{equation}
+		 \begin{equation}
 \text{rot }\pmb A =\nabla\times \pmb A \equiv \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x},\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \qquad（\text{rot}は, rotation（回転）の意味で,\text{curl}, \nabla \timesとも書かれる）
 \end{equation}
 		 <p></p>
