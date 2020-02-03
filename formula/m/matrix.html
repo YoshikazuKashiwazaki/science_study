@@ -29,8 +29,8 @@
 <H1>
 物理のノート
 </H1>
-		 <H3><b>行列</b></H3>
- <H4><b>行列の固有値と固有ベクトル</b></H4>
+		 <H2><b>行列</b></H2>
+ <H3><b>行列の固有値と固有ベクトル</b></H3>
 <p></p>
 $A=(a_{ij})$を$n$次の正方行列とするとき,
 \[
@@ -40,7 +40,7 @@ A\pmb x=\lambda \pmb x
  $\lambda$を行列$A$の<b>固有値</b>という(一般的には,複素数である).<br>
  また,$\pmb x$を$\lambda$に対する<b>固有ベクトル</b>と呼ぶ.
 <p></p>  
-<H4><b>固有方程式</b></H4>
+<H3><b>固有方程式</b></H3>
 
 \begin{equation}
 p_n(\lambda)=\lvert A-\lambda I\rvert \\
@@ -84,7 +84,7 @@ p_n(\lambda)=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n=0
  を<b>固有方程式</b>という.<br>
 $A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根を有する）.
 <p></p>
- <H4><b>小行列式</b></H4>
+ <H3><b>小行列式</b></H3>
 <p></p>
 次のような$2\times2$行列を考える.
 	 \begin{equation}
@@ -125,14 +125,14 @@ a_{3,1} & a_{3,2}
 		 \end{equation}	
 		 と呼び,この行列式を<b>小行列式</b>（minor of a matrix）と呼ぶ.
 		 <p></p>
- <H4><b>余因子</b></H4>
+ <H3><b>余因子</b></H3>
 <p></p>
 		 余因子（Cofactor）は, 次のように定義される.
 		 \begin{equation}
 C_{i,j}=(-1)^{i+j}\Delta_{i,j}
 		 \end{equation}	
 		 <p></p>  
-<H4><b>小行列式と余因子を用いた行列式の計算</b></H4>
+<H3><b>小行列式と余因子を用いた行列式の計算</b></H3>
 		 <p></p>
 		 $n \times n$行列$A$の行列式$\lvert A \rvert$は,小行列式と余因子を用いて,次のように定義される.<br>
 		 $i$行目を利用して求める場合,
@@ -153,6 +153,8 @@ a_{n,1} &\dots   & \dots & a_{n,n}
  =a_{1,j}C_{1,j} +a_{2,j}C_{2,j} +a_{3,j}C_{3,j}\dots  +a_{n,j}C_{n,j} \\		 
  =a_{1,j}(-1)^{1+j} \Delta_{1,j} +a_{2,j}(-1)^{2+j} \Delta_{2,j} +a_{3,j}(-1)^{3+j} \Delta_{3,j}\dots  +a_{n,j}(-1)^{n+j} \Delta_{n,j} .
 \end{equation}
+
+		 <H4><b>$2 \times 2$行列における行列式の計算</b></H4>		 
 $2\times2$行列$A$の行列式$\lvert A \rvert$は,1行目に着目すると,(8)式より,
 		 \begin{equation}
 \lvert A \rvert=
@@ -187,7 +189,19 @@ a_{2,1} & a_{2,2}
 		 =ad-cb=ad-bc
 \end{equation}	
 となり,(12)式と一致する.
-<p></p>
+<H4><b>$3 \times 3$行列における行列式の計算</b></H4>		 
+		 <p></p>
+		 $3\times3$行列$A$の行列式$\lvert A \rvert$は,1行目に着目すると,(8)式より,
+		 \begin{equation}
+\lvert A \rvert=
+\begin{vmatrix}
+a_{1,1} & a_{1,2} & a_{1,3} \\
+a_{2,1} & a_{2,2} & a_{2,3}\\
+a_{3,1} & a_{3,2} & a_{3,3}\\		 
+\end{vmatrix}\\
+ =a_{1,1}(-1)^{1+1} \Delta_{1,1} +a_{1,2}(-1)^{1+2} \Delta_{1,2}+a_{1,3}(-1)^{1+3} \Delta_{1,3}\\		 
+\end{equation}
+		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
 	 </div>
