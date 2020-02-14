@@ -45,9 +45,25 @@ A=
  c & d 
  \end{pmatrix}
  \end{equation}
-この逆行列$A^{T}$は,次のように定義される.
+この逆行列$A^{-1}$は,次のように定義される.
+		  \begin{equation}
+A^{-1}=\frac{1}{\lvert A \rvert }A^{T}	
+		 \end{equaiton}
+		 $A^{T}$は,転置行列である.転置行列は,行列の要素$x_{i,j}$を$x_{j,i}$と置き換えたものである.<br>
+(1)式で表される行列$A$の転置行列$A^{T}$は
 		 \begin{equation}
-A^{T}=\frac{1}{\lvert A \rvert }		 
+A^{T}=
+\begin{pmatrix} 
+ a & c\\
+ b & d 
+ \end{pmatrix}
+ \end{equation}
+	となる.
+		 <p></p>
+		 これを用いて,逆行列$A^{-1}$を求めると次のようになる.
+		 \begin{equation}
+A^{-1}=\frac{1}{\lvert A \rvert }A^{T}	\\
+=\frac{1}{\lvert A \rvert }		 
 
 		 \begin{pmatrix} 
 (-1)^{1+1}\Delta_{1,1} & (-1)^{1+2}\Delta_{1,2}\\
@@ -57,14 +73,14 @@ A^{T}=\frac{1}{\lvert A \rvert }
 =
  \frac{1}{ad-bc }
  \begin{pmatrix} 
-d & (-1)c\\
-(-1)b & a
+d & (-1)b\\
+(-1)c & a
  \end{pmatrix}\\
 =
  \frac{1}{ad-bc }
  \begin{pmatrix} 
-d & -c\\
--b & a
+d & -b\\
+-c & a
  \end{pmatrix}
  \end{equation}
 		 この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert=ad-bc \ne 0$が条件となる.
