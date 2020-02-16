@@ -1,0 +1,93 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
+<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
+<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
+<link rel="stylesheet" href="../css/style_b.css">
+</head>
+
+<body>
+ <div id="pagebody">
+<div id="header">
+<h1><a href="index.html"><img src="https://yoshikazukashiwazaki.github.io/science_study/images/bg_img_2.png"></a></h1>
+</div>
+<H1>
+物理のノート
+</H1>
+ <H2><b>行列</b></H2>
+<H3><b>行列の固有値と固有ベクトル</b></H3>
+<p></p>
+$A=(a_{ij})$を$n$次の正方行列とするとき,
+\[
+A\pmb x=\lambda \pmb x 
+\]
+を満たす$\lambda$および,ベクトル$\pmb x\ne \pmb o$が存在するならば,
+ $\lambda$を行列$A$の<b>固有値</b>という(一般的には,複素数である).<br>
+ また,$\pmb x$を$\lambda$に対する<b>固有ベクトル</b>と呼ぶ.
+<p></p>  
+<H3><b>固有方程式</b></H3>
+
+\begin{equation}
+p_n(\lambda)=\lvert A-\lambda I\rvert \\
+=
+\begin{vmatrix}
+a_{11}-\lambda & a_{12} & \dots & a_{1n}\\
+a_{21} & a_{22}-\lambda & \dots & a_{2n}\\
+\dots & \dots &\dots & \dots \\ 
+a_{n1} &\dots   & \dots & a_{nn}-\lambda\\
+\end{vmatrix}
+\\
+ =(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n
+\end{equation}
+ (1)式を$A$の<b>固有多項式</b>という.<br>
+ $I$は単位行列である.
+ \[
+I=
+ \begin{pmatrix} 
+ 1 & 0 & \dots & 0\\
+ 0 & 1 & \dots & 0\\
+  \dots & \dots &  \dots & \dots\\
+ 0 & 0 & \dots & 1
+ \end{pmatrix}
+ \]
+ なお,行列を囲む記号()(parenthesis：パーレン)は,
+ \[
+I=
+ \begin{bmatrix} 
+ 1 & 0 & \dots & 0\\
+ 0 & 1 & \dots & 0\\
+  \dots & \dots &  \dots & \dots\\
+ 0 & 0 & \dots & 1
+ \end{bmatrix}
+ \]
+ のように[]（bracket：ブラケット）でも表される.本サイトでは、基本的にパーレン表記とする.
+ <p></p>
+さてさらに,
+\begin{equation}
+p_n(\lambda)=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n=0 
+\end{equation}
+ を<b>固有方程式</b>という.<br>
+$A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根を有する）.
+<p></p>
+ <p></p>
+<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+<div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
+ </div>
+ </div>
+ </body>
+</html>
