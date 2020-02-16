@@ -30,60 +30,6 @@
 物理のノート
 </H1>
 		 <H2><b>行列</b></H2>
- <H3><b>行列の固有値と固有ベクトル</b></H3>
-<p></p>
-$A=(a_{ij})$を$n$次の正方行列とするとき,
-\[
-A\pmb x=\lambda \pmb x 
-\]
-を満たす$\lambda$および,ベクトル$\pmb x\ne \pmb o$が存在するならば,
- $\lambda$を行列$A$の<b>固有値</b>という(一般的には,複素数である).<br>
- また,$\pmb x$を$\lambda$に対する<b>固有ベクトル</b>と呼ぶ.
-<p></p>  
-<H3><b>固有方程式</b></H3>
-
-\begin{equation}
-p_n(\lambda)=\lvert A-\lambda I\rvert \\
-=
-\begin{vmatrix}
-a_{11}-\lambda & a_{12} & \dots & a_{1n}\\
-a_{21} & a_{22}-\lambda & \dots & a_{2n}\\
-\dots & \dots &\dots & \dots \\ 
-a_{n1} &\dots   & \dots & a_{nn}-\lambda\\
-\end{vmatrix}
-\\
- =(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n
-\end{equation}
- (1)式を$A$の<b>固有多項式</b>という.<br>
- $I$は単位行列である.
- \[
-I=
- \begin{pmatrix} 
- 1 & 0 & \dots & 0\\
- 0 & 1 & \dots & 0\\
-  \dots & \dots &  \dots & \dots\\
- 0 & 0 & \dots & 1
- \end{pmatrix}
- \]
- なお,行列を囲む記号()(parenthesis：パーレン)は,
- \[
-I=
- \begin{bmatrix} 
- 1 & 0 & \dots & 0\\
- 0 & 1 & \dots & 0\\
-  \dots & \dots &  \dots & \dots\\
- 0 & 0 & \dots & 1
- \end{bmatrix}
- \]
- のように[]（bracket：ブラケット）でも表される.本サイトでは、基本的にパーレン表記とする.
- <p></p>
-さてさらに,
-\begin{equation}
-p_n(\lambda)=(-1)^n \lambda^n + a_1\lambda^{n-1} +\dots +a_{n-1}\lambda+a_n=0 
-\end{equation}
- を<b>固有方程式</b>という.<br>
-$A$の固有値は,(2)式の固有方程式の根と一致する（$n$個の根を有する）.
-<p></p>
  <H3><b>小行列式</b></H3>
 <p></p>
 次のような$2\times2$行列を考える.
