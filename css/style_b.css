@@ -37,6 +37,33 @@ hr {
 	margin:10px 0px;		/*マージン*/
 	border:1px dotted #cccccc;	/*内容の区切り線, dotted(点線表示)*/
 }
+div#main h2 {
+	width:160px; height:43px;	/*幅と高さ*/
+	padding:17px 0px 0px 100px;	/*パディング*/
+	font-size:16px;			/*フォントサイズ*/
+	background-image:url(images/bg_h2.png);	/*背景画像*/
+	background-repeat:no-repeat;	/*背景画像の繰り返し*/
+	background-color:#000033;	/*背景色*/
+	color:#ffffff;			/*文字色*/
+}
+div#main h3 {
+	width:160px; height:35px;	/*幅と高さ*/
+	padding:10px 0px 10px 100px;	/*パディング*/
+	font-size:14px;			/*フォントサイズ*/
+	background-image:url(images/bg_h2.png);	/*背景画像*/
+	background-repeat:no-repeat;	/*背景画像の繰り返し*/
+	background-color:#fffff;	/*背景色*/
+	color:#000033;			/*文字色*/
+}
+div#main h4 {
+	width:160px; height:27px;	/*幅と高さ*/
+	padding:10px 0px 10px 100px;	/*パディング*/
+	font-size:12px;			/*フォントサイズ*/
+	background-image:url(images/bg_h2.png);	/*背景画像*/
+	background-repeat:no-repeat;	/*背景画像の繰り返し*/
+	background-color:#fffff;	/*背景色*/
+	color:#000033;			/*文字色*/
+}
 
 /*============================================
 Header
@@ -101,25 +128,6 @@ h2 {
 	background-color:#000033;	/*背景色*/
 	color:#ffffff;			/*文字色*/
 }
-h3 {
-	width:160px; height:35px;	/*幅と高さ*/
-	padding:10px 0px 10px 100px;	/*パディング*/
-	font-size:14px;			/*フォントサイズ*/
-	background-image:url(images/bg_h2.png);	/*背景画像*/
-	background-repeat:no-repeat;	/*背景画像の繰り返し*/
-	background-color:#fffff;	/*背景色*/
-	color:#000033;			/*文字色*/
-}
-h4 {
-	width:160px; height:27px;	/*幅と高さ*/
-	padding:10px 0px 10px 100px;	/*パディング*/
-	font-size:12px;			/*フォントサイズ*/
-	background-image:url(images/bg_h2.png);	/*背景画像*/
-	background-repeat:no-repeat;	/*背景画像の繰り返し*/
-	background-color:#fffff;	/*背景色*/
-	color:#000033;			/*文字色*/
-}
-
 div#submenu {
 	width:260px;			/*幅の指定*/
 	margin:10px 10px 10px 25px;	/*位置調整*/
