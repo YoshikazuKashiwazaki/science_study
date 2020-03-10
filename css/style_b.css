@@ -25,6 +25,7 @@ div#pagebody {
 	background-repeat:repeat-y;			/*背景画像を縦方向(y)に繰り返す*/
 }
 img {border:0;} 				/*画像のボーダーをnにする*/
+iframe {border:10;} 
 p {
 	width:660px;		/*幅の指定*/
 	margin:10px;		/*マージン*/
