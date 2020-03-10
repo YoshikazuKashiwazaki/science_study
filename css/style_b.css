@@ -11,7 +11,7 @@ Whole Style
 	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
 }
 body {
-	background-color:#D0B0FF;	/*ページ全体の背景色*/
+	background-color:#EEEEEE;	/*ページ全体の背景色*/
 	background-image:url("images/bg_body.png");	/*ウェブページ全体の背景画像*/
 	font-size:95%;			/* フォントサイズ */
 	font-family: "ＭＳ ゴシック",sans-serif;	/* フォント種類*/
