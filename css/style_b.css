@@ -102,9 +102,18 @@ h2 {
 	color:#ffffff;			/*文字色*/
 }
 h3 {
-	width:160px; height:43px;	/*幅と高さ*/
+	width:160px; height:35px;	/*幅と高さ*/
 	padding:10px 0px 10px 100px;	/*パディング*/
-	font-size:16px;			/*フォントサイズ*/
+	font-size:14px;			/*フォントサイズ*/
+	background-image:url(images/bg_h2.png);	/*背景画像*/
+	background-repeat:no-repeat;	/*背景画像の繰り返し*/
+	background-color:#fffff;	/*背景色*/
+	color:#000033;			/*文字色*/
+}
+h4 {
+	width:160px; height:27px;	/*幅と高さ*/
+	padding:10px 0px 10px 100px;	/*パディング*/
+	font-size:12px;			/*フォントサイズ*/
 	background-image:url(images/bg_h2.png);	/*背景画像*/
 	background-repeat:no-repeat;	/*背景画像の繰り返し*/
 	background-color:#fffff;	/*背景色*/
