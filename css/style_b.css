@@ -70,7 +70,8 @@ ul#menu {
 	padding:15px 0px 0px 0px;	/*上下左右のパディング*/
 	text-align:center;		/*テキストの揃え方*/
 	text-decoration:none;		/*リンク部分の下線有無*/
-	background-image:url(images/bg_menu1.png);	/*背景画像を指定*/
+	/*background-image:url(images/bg_menu1.png);*/	/*背景画像を指定*/
+	background-image:url(images/bg_img_2.png);
 	background-repeat:no-repeat; 			/*背景画像の繰り返し*/
 }
 #menu li a:hover {
