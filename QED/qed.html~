@@ -26,15 +26,15 @@ displayIndent: "2em"
 <h1><a href="index.html"><img src="https://yoshikazukashiwazaki.github.io/science_study/images/bg_img_2.png" width="640" height="8"></a></h1>
 </div>
 <div id="main">
-<h2>
+<H2>
 物理のノート
- </h2>
-<h3>
+ </H2>
+<H3>
 電磁気場の理論
-</h3>
-<h4>
+</H3>
+<H4>
 ベクトルポテンシャルとスカラーポテンシャルによる表現
-</h4>
+</H4>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/em/field.html">マクスウェル方程式</a>における, 磁場に関するガウスの法則
 \[
 \text{div } \pmb B=0 \qquad(\text{磁場に関するガウスの法則}）
@@ -89,9 +89,9 @@ $\epsilon_0\mu_0=c^{-2}$なので,
 \]
 
 <p></p>
-<h5>
+<H5>
 スカラーポテンシャル（ポテンシャル場）の補足
- </h5>
+ </H5>
 $V(x)$または,変数を省略して$V$は, 上述では（高校物理で習うように）「位置エネルギー」と呼んでいるが, 一般に「（スカラー）ポテンシャル」と称する（「ポテンシャル場」とも記される）. 
 </br>
 重力（万有引力）や静電気（電気のクーロン・ポテンシャル）は, ポテンシャル場（スカラーポテンシャル）である.
