@@ -56,7 +56,7 @@ div#main h2 {
 	color:#000033;			/*文字色*/
 }
 div#main h3 {
-	width:160px; height:27px;	/*幅と高さ*/
+	width:; height:27px;	/*幅と高さ*/
 	padding:10px 0px 10px 100px;	/*パディング*/
 	font-size:12px;			/*フォントサイズ*/
 	background-image:url(images/bg_h2.png);	/*背景画像*/
