@@ -37,7 +37,7 @@ hr {
 	margin:10px 0px;		/*マージン*/
 	border:1px dotted #cccccc;	/*内容の区切り線, dotted(点線表示)*/
 }
-div#main h2 {
+div#main h1 {
 	width:160px; height:43px;	/*幅と高さ*/
 	padding:17px 0px 0px 100px;	/*パディング*/
 	font-size:16px;			/*フォントサイズ*/
@@ -46,7 +46,7 @@ div#main h2 {
 	background-color:#000033;	/*背景色*/
 	color:#ffffff;			/*文字色*/
 }
-div#main h3 {
+div#main h2 {
 	width:160px; height:35px;	/*幅と高さ*/
 	padding:10px 0px 10px 100px;	/*パディング*/
 	font-size:14px;			/*フォントサイズ*/
@@ -55,7 +55,7 @@ div#main h3 {
 	background-color:#ffffff;	/*背景色*/
 	color:#000033;			/*文字色*/
 }
-div#main h4 {
+div#main h3 {
 	width:160px; height:27px;	/*幅と高さ*/
 	padding:10px 0px 10px 100px;	/*パディング*/
 	font-size:12px;			/*フォントサイズ*/
