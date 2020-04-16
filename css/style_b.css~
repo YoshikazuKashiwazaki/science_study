@@ -43,8 +43,8 @@ div#main h1 {
 	font-size:16px;			/*フォントサイズ*/
 	background-image:url(images/bg_h2.png);	/*背景画像*/
 	background-repeat:no-repeat;	/*背景画像の繰り返し*/
-	background-color:#000033;	/*背景色*/
-	color:#ffffff;			/*文字色*/
+	background-color:#ffffff;	/*背景色*/
+	color:#62162e;			/*文字色*/
 }
 div#main h2 {
 	width:160px; height:35px;	/*幅と高さ*/
