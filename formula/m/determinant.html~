@@ -121,7 +121,7 @@ Determinant of matrix
 =====================
 det = 4.0
 </code></pre>
-得られた上三角行列は分数で示すと次のとおりである.
+得られた上三角行列は分数表記では次のとおりである.
 \begin{equation}
 \lvert A \rvert=
 \begin{vmatrix} 
