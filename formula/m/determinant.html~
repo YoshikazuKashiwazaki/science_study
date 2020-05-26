@@ -15,6 +15,7 @@
     displayIndent: "2em"
   });
 </script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
@@ -33,7 +34,7 @@
  <H3><b>上三角型行列の行列式</b></H3>
 
 <p></p>
-$3\times 3$行列において<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">上三角型の行列式</a>は, 対角要素の積で表された.すなわち,
+$3\times 3$行列において<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">上三角型の行列式</a>（determinant）は, 対角要素の積で表された.すなわち,
 		 \begin{equation}
 \lvert A \rvert=
 \begin{vmatrix}
@@ -135,9 +136,15 @@ $pivot$（枢軸要素）は,行列式の計算に用いられる対角要素で
 \begin{equation}
 m_{i,p} = \frac{a_{i,p}}{a_{p,p}}
 \end{equation}
-$i = 2,3$<br>
-で表され, 上三角型行列に変形するために,$pivot$の値を用いてその都度計算で得られる値である.
-
+$i = 2,3$（$3\times 3$行列の場合）<br>
+で表され, 上三角型行列に変形するために,$pivot$の値を用いてその都度計算で得られる変数である.
+<br>
+上記行列の行列式（$det$）は,
+\[
+3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
+\]3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
+\]3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
+\]
 
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
