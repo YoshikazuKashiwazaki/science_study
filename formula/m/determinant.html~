@@ -54,12 +54,11 @@ a_{1,1} & a_{1,2} & a_{1,3} \\
 <br>
 例えば,次のような$3\times 3$行列を考える.
 \begin{equation}
-\lvert A \rvert= 
-\begin{vmatrix}  
+\begin{pmatrix}  
 3 & 1 & 2 \\
 5 & 1 & 3 \\
 4 & 2 & 1 \\
-\end{vmatrix}    
+\end{pmatrix}    
 \end{equation}
 この行列を上三角型に変形して,対角要素の積を求める.<br>
 ここではそのアルゴリズムをpythonで実装した.
@@ -96,6 +95,7 @@ print('Determinant of matrix')
 print('=====================')
 print('det = {}'.format(det))
 </code></pre>
+<br>
 Canopyでの実行結果は次のようになった.
 <pre><code class="prettyprint">
 ===========
@@ -124,12 +124,11 @@ det = 4.0
 </code></pre>
 得られた上三角行列は分数表記では次のとおりである.
 \begin{equation}
-\lvert A \rvert=
-\begin{vmatrix} 
+\begin{pmatrix} 
 3 & 1 & 2 \\
 0 & -\frac{2}{3} & -\frac{1}{3} \\
 0 & 0 & -2 \\
-\end{vmatrix}
+\end{pmatrix}
 \end{equation}
 $pivot$（枢軸要素）は,行列式の計算に用いられる対角要素である.<br>
 また$m$は,
@@ -138,13 +137,12 @@ m_{i,p} = \frac{a_{i,p}}{a_{p,p}}
 \end{equation}
 $i = 2,3$（$3\times 3$行列の場合）<br>
 で表され, 上三角型行列に変形するために,$pivot$の値を用いてその都度計算で得られる変数である.
-<br>
+<p></p>
 上記行列の行列式（$det$）は,
 \[
-3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
-\]3 \times \left( -\frac{2}{3} \right) \times \(-2\) = 4
+3 \times \left( -\frac{2}{3} \right) \times (-2) = 4
 \]
-
+である.
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
