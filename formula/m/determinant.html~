@@ -142,8 +142,7 @@ $i = 2,3$（$3\times 3$行列の場合）<br>
 上記行列の行列式（$det$）は,
 \[
 3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
-\]3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
-\]3 \times \(  -\frac{2}{3} \) \times \(-2\) = 4
+\]3 \times \left( -\frac{2}{3} \right) \times \(-2\) = 4
 \]
 
 		 <p></p>
