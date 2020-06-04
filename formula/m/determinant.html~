@@ -150,6 +150,10 @@ $i = 2,3$（$3\times 3$行列の場合）<br>
 これに対して,対角要素に$1$のみが残るように計算する連立1次方程式の数値解法に<b>Gauss-Jordanの消去法</b>がある.これを応用して行列式を求める方法を考える.<br>
 まず,次のような連立1次方程式を例にGauss-Jordanの消去法で解と行列式を求める.<br>方程式の左辺の係数にだけ着目すると先にGaussの単純消去法で行列式を求めた行列の要素と同じである.
 \begin{equation}
+3 x_1 + x_2 + 2 x_3 = 13
+5 x_1 + x_2 + 3 x_3 = 20
+4 x_1 + 2 x_2 + x_3 = 13
+\end{equation}
 
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
