@@ -449,7 +449,10 @@ determinant of matrix
 =====================
 det = 4.0
 </code></pre>
-
+<br>
+行列式の計算は次のようになる.
+\begin{equation}
+3 \times \left(-\frac{2}{3}\right) \times (-2) = 4
 
 <H3><b>部分ピボット選択（行交換）を伴う掃き出し法</b></H3>
 <p></p>
@@ -901,6 +904,16 @@ det = 4.0
 \begin{equation}
 5 \times 1.2 \times \frac{2}{3} = 4
 \end{equation}
+行列式は,行交換によって変化しない.
+<p></p>
+ピボットの選択は,対角要素が$0$になって計算処理の中に無限大（$\infty$）が入り込むことを防ぐほかに,
+<ul>
+ <li>入力データの誤差の伝播を抑える.</li>
+ <li>計算途中の丸め誤差の影響を小さくする.</li>
+ <li>ピボットとしてできるだけ絶対値の大きいものを選ぶことで途中の除算におけるオーバーフローの発生の予防が期待される.</li>
+</ul>
+という利点がある.
+
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
