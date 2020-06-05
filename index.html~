@@ -18,7 +18,7 @@
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
-<link rel="stylesheet" href="css/style_b.css">
+<link rel="stylesheet" href="../css/style_b.css">
 </head>
 
 <body>
@@ -94,7 +94,7 @@
      <li>線形代数</li>
    <ul>
     <li><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">小行列式と余因子</a></li>
-    <ul><li><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/determinant.html">行列式の数値計算</a>（Gaussの単純消去法とGauss-Jordan消去法の利用,部分ピボット選択法（行交換）を用いた同消去法</li></ul>
+    <ul><li><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/determinant.html">行列式の数値計算</a></li></ul>
     <li><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">逆行列</a></li>
     <li><a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/eigenvalue.html">行列の固有値と固有ベクトル</a></li>
   </ul>
