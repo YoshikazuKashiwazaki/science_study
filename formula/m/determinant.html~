@@ -19,7 +19,7 @@
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
-<link rel="stylesheet" href="../css/style_b.css">
+<link rel="stylesheet" href="../../css/style_b.css">
 </head>
 
 <body>
@@ -339,9 +339,9 @@ arrayp = np.array([[0.,0.,0.],[0.,0.,0.],[0.,0.,0.]])
 arrayq = np.array([[0.,0.,0.],[0.,0.,0.],[0.,0.,0.]])
 print('array2 =')
 print(array2)
-print('====================================')
-print('Gauss-Jordan Elimination（掃き出し法')
-print('====================================')
+print('=====================================')
+print('Gauss-Jordan Elimination（掃き出し法）')
+print('=====================================')
 #n = 3  ##元の数はこの場合,3
 det = 1.0  
 for k in range(0,3,1): 
@@ -371,7 +371,7 @@ print('=====================')
 print('det = {}'.format(det))
 </code></pre>
 <br>
-実行結果も示す.
+計算途中の様子と計算結果はこちら.
 <pre><code class="prettyprint">
 =============
 3 * 3 array
@@ -449,6 +449,140 @@ determinant of matrix
 det = 4.0
 </code></pre>
 
+
+<H3><b>部分ピボット選択（行交換）を伴う掃き出し法</b></H3>
+ここまでのGaussの単純消去法,およびGauss-Jordan消去法では,正方行列の対角線上に並ぶ要素が$0$の場合,除算ができない.<br>
+例えば,次の連立1次方程式のような場合である.
+\begin{equation}
+\phantom{XXXX} 36 x_2 + 71 x_3 = 100 \\
+-36 x_1 \phantom{XXXX} + 68 x_3 = 50 \\
+-75 x_1 -70 x_2 \phantom{XXXX} = 0 
+\end{equation}
+この連立方程式を先のGauss-Jordan消去法を用いて計算すると次のような結果になる.
+<pre><code class="prettyprint">
+=============
+3 * 4 array
+=============
+array2 =
+[[   0.   36.   71.  100.]
+ [ -36.    0.   68.   50.]
+ [ -75.  -70.    0.    0.]]
+========================
+Gauss-Jordan Elimination
+========================
+array2 =
+[[   0.   inf   71.  100.]
+ [ -36.    0.   68.   50.]
+ [ -75.  -70.    0.    0.]]
+array2 =
+[[   0.   inf   inf  100.]
+ [ -36.    0.   68.   50.]
+ [ -75.  -70.    0.    0.]]
+array2 =
+[[  0.  inf  inf  inf]
+ [-36.   0.  68.  50.]
+ [-75. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.   0.  68.  50.]
+ [-75. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  68.  50.]
+ [-75. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  50.]
+ [-75. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  inf]
+ [-75. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  inf]
+ [  0. -70.   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  inf]
+ [  0.  inf   0.   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  inf]
+ [  0.  inf  inf   0.]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  inf  inf]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  nan  inf]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  inf  inf  inf]
+ [  0.  inf  nan  nan]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  nan  inf  inf]
+ [  0.   1.  nan  nan]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  nan  nan  inf]
+ [  0.   1.  nan  nan]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  inf  inf  inf]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan  inf  inf]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan  nan  inf]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan  nan  nan]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan  nan  nan]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan   1.  nan]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan   1.  nan]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan   1.  nan]]
+array2 =
+[[  1.  nan  nan  nan]
+ [  0.   1.  nan  nan]
+ [  0.  nan   1.  nan]]
+x_1 = nan, x_2 = nan, x_3 = nan
+=====================
+determinant of matrix
+=====================
+det = nan
+</code></pre> 
+<br>
+$1$行$1$列目のピボットが$0$なので,$1$行目$2$列目から$4$列目までの要素を割ると無限大（infinity）になっている.
+<br>
+無限大を用いて計算するとNaN（Not a Number：非数）という欠損値が表示される.$2$行$3$列にNaNと記されたところは
+\[
+\inf - \inf \inf
+\]
+という計算がなされている.
+<p></p>
+
+そこで,要素が$0$ではない行と入れ替えるアルゴリズムの修正を行う.この修正を行なったアルゴリズムは部分ピボット選択による,または行交換を伴う（Gaussの）消去法（掃き出し法）と呼ばれる.<br>
 
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
