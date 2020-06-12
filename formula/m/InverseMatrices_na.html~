@@ -31,7 +31,7 @@
 </H1>
 		 <H2><b>逆行列</b></H2>
  <H3><b>逆行列の数値計算</b></H3>
-		 逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html>次のように定義</a>される.$2\times2$正方行列を例にする.
+		 逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">次のように定義</a>される.$2\times2$正方行列を例にする.
 <p></p>
 \begin{equation}
 A^{-1}=\frac{1}{\lvert A \rvert }A^{T}  \\

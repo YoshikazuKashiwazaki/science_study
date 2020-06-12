@@ -31,7 +31,8 @@
 </H1>
 		 <H2><b>逆行列</b></H2>
  <H3><b>逆行列の数値計算</b></H3>
-		 逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">次のように定義</a>される.$2\times2$正方行列を例にする.
+<p></p>
+逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">次のように定義</a>される.$2\times2$正方行列を例にする.
 <p></p>
 \begin{equation}
 A^{-1}=\frac{1}{\lvert A \rvert }A^{T}  \\
@@ -61,31 +62,11 @@ d & -b\\
 -c & a
 \end{pmatrix}
 \end{equation}
-\begin{equation}
-A^{-1}=\frac{1}{\lvert A \rvert }A^{T}	\\
-=\frac{1}{\lvert A \rvert }		 
-\begin{pmatrix} 
-(-1)^{1+1}\Delta_{1,1} & (-1)^{1+2}\Delta_{1,2}\\
-(-1)^{2+1}\Delta_{2,1} & (-1)^{2+2}\Delta_{2,2} 
-\end{pmatrix}
-=
-\frac{1}{ad-bc }
-\begin{pmatrix} 
-d & (-1)b\\
-(-1)c & a
-\end{pmatrix}\\
-=
-\frac{1}{ad-bc }
-\begin{pmatrix} 
-d & -b\\
--c & a
-\end{pmatrix}
-\end{equation}
 この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert= \ne 0$が条件となる.
 		 
 		 <p></p>  
 この定義に従って,逆行列$A^{-1}$を求める.
-<\ br>
+<p><\p>
 まず転置行列を求めるアルゴリズムの実装例を示す.
 <p></p>
 
