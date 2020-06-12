@@ -92,6 +92,36 @@ d & -b\\
 		 この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert=ad-bc \ne 0$が条件となる.
 		 
 		 <p></p>  
+行列と逆行列には次の関係がある.
+\begin{equation}
+A A^{-1}=I
+\end{equation}
+$I$は対角要素のみ$1$でその他は$0$が並ぶ単位行列である.
+上述の$2\times2$行列を例に計算してみる.
+
+\begin{equation}
+A A^{-1}=
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}
+\frac{1}{ad-bc }
+\begin{pmatrix}
+d & -b\\
+-c & a
+\end{pmatrix}
+=\frac{1}{ad-bc }
+\begin{pmatrix}
+ad-bc & -ba+ab\\
+dc-cd & -bc+ad
+ \end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}
+=I
+\end{equation}
 
 <p></p>
 
