@@ -32,23 +32,30 @@
 		 <H2><b>逆行列</b></H2>
  <H3><b>逆行列の数値計算</b></H3>
 <p></p>
-逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">次のように定義</a>される.$2\times2$正方行列を例にする.
+逆行列$A^{-1}$は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/InverseMatrices.html">次のように定義</a>される.<br>
+次の$2\times2$正方行列の場合,
+\begin{equation}
+A=
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}
+,
+\end{equation}
+の場合,逆行列$A^{-1}$は次のようになる.
 <p></p>
 \begin{equation}
-A^{-1}=\frac{1}{\lvert A \rvert }A^{T}  \\
+A^{-1}
 =\frac{1}{\lvert A \rvert }
- 
 \begin{pmatrix}
-C_{1,1} & C_{1,2}\\
-C_{2,1} & C_{2,2}
+C_{1,1} & C_{2,1}\\
+C_{1,2} & C_{2,2}
 \end{pmatrix}
 =\frac{1}{\lvert A \rvert }
- 
 \begin{pmatrix}
-(-1)^{1+1}\Delta_{1,1} & (-1)^{1+2}\Delta_{1,2}\\
-(-1)^{2+1}\Delta_{2,1} & (-1)^{2+2}\Delta_{2,2}
+(-1)^{1+1}\Delta_{1,1} & (-1)^{2+1}\Delta_{2,1}\\
+(-1)^{1+2}\Delta_{1,2} & (-1)^{2+2}\Delta_{2,2}
 \end{pmatrix}
- 
 =
 \frac{1}{ad-bc }
 \begin{pmatrix}
@@ -62,12 +69,31 @@ d & -b\\
 -c & a
 \end{pmatrix}
 \end{equation}
-この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert= \ne 0$が条件となる.
+この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert \ne 0$が条件となる.
 		 
-		 <p></p>  
-この定義に従って,逆行列$A^{-1}$を求める.
-<p><\p>
-まず転置行列を求めるアルゴリズムの実装例を示す.
+<p></p>  
+この定義に従って,次の$2\times 2$正方行列の逆行列を求める.
+\begin{equation}
+A=
+\begin{pmatrix}
+1 & 3\\
+2 & 4
+\end{pmatrix}
+\end{equation}
+とすると,
+\begin{equation}
+A^{-1}=\frac{1}{1\dot 4-3\dot 2}
+\begin{pmatrix}
+4 & (-1)3\\
+(-1)2 & 1
+\end{pmatrix}\\
+=-\frac{1}{2}
+\begin{pmatrix}
+4 & -3\\
+-2 & 1
+\end{pmatrix}\\
+\end{equation}
+<br>
 <p></p>
 
 		 <p></p>
