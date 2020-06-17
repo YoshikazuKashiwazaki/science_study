@@ -22,76 +22,56 @@
 </head>
 
 <body>
-	 <div id="pagebody">
-	<div id="header">
-		<h1><a href="index.html"><img src="https://yoshikazukashiwazaki.github.io/science_study/images/bg_img_2.png"></a></h1>
-	</div>
+<div id="pagebody">
+<div id="header">
+<h1><a href="index.html"><img src="https://yoshikazukashiwazaki.github.io/science_study/images/bg_img_2.png"></a></h1>
+</div>
 <H1>
 物理のノート
 </H1>
-		 <H2><b>逆行列</b></H2>
- <H3><b>逆行列の定義</b></H3>
-		 逆行列は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて定義される.
+<H2><b>逆行列</b></H2>
+<H3><b>逆行列の定義</b></H3>
+逆行列は,行列式と<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">余因子（Cofactor）</a>を用いて定義される.
 <p></p>
-		 余因子（Cofactor）は, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">小行列</a>を用いて,次のように定義される.
-		 \begin{equation}
+ 余因子（Cofactor）は, <a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/matrix.html">小行列</a>を用いて,次のように定義される.
+\begin{equation}
 C_{i,j}=(-1)^{i+j}\Delta_{i,j}
-		 \end{equation}	
+\end{equation}	
 さて,次のような$2\times2$の正方行列$A$を例にする.
 \begin{equation}
 A=
 \begin{pmatrix} 
  a & b\\
  c & d 
- \end{pmatrix}
- \end{equation}
-この逆行列$A^{-1}$は,次のように定義される.
-		  \begin{equation}
-A^{-1}=\frac{1}{\lvert A \rvert }A^{T}	
-		 \end{equation}
-		 $A^{T}$は,転置行列である.転置行列は,行列の要素$x_{i,j}$を$x_{j,i}$と置き換えたものである.<br>
-(2)式で表される行列$A$の転置行列$A^{T}$は
-		 \begin{equation}
-A^{T}=
-\begin{pmatrix} 
- a & c\\
- b & d 
- \end{pmatrix}
- \end{equation}
-	となる.
-		 <p></p>
-		 これを用いて,逆行列$A^{-1}$を求めると次のようになる.
-		 \begin{equation}
-A^{-1}=\frac{1}{\lvert A \rvert }A^{T}	\\
-=\frac{1}{\lvert A \rvert }
- 
-                  \begin{pmatrix}
+\end{pmatrix}
+\end{equation}
+ <p></p>
+この逆行列$A^{-1}$は余因子を用いて次のように計算される.
+\begin{equation}
+A^{-1}=
+\frac{1}{\lvert A \rvert }		 
+\begin{pmatrix}
 C_{1,1} & C_{1,2}\\
 C_{2,1} & C_{2,2}
 \end{pmatrix}
 =\frac{1}{\lvert A \rvert }		 
-
-		 \begin{pmatrix} 
+\begin{pmatrix} 
 (-1)^{1+1}\Delta_{1,1} & (-1)^{1+2}\Delta_{1,2}\\
 (-1)^{2+1}\Delta_{2,1} & (-1)^{2+2}\Delta_{2,2} 
- \end{pmatrix}
-		 
-=
- \frac{1}{ad-bc }
- \begin{pmatrix} 
+\end{pmatrix}
+=\frac{1}{ad-bc }
+\begin{pmatrix} 
 d & (-1)b\\
 (-1)c & a
- \end{pmatrix}\\
-=
- \frac{1}{ad-bc }
- \begin{pmatrix} 
+\end{pmatrix}\\
+=\frac{1}{ad-bc }
+\begin{pmatrix} 
 d & -b\\
 -c & a
- \end{pmatrix}
- \end{equation}
-		 この定義が示すように,逆行列が存在するには, 行列式$\lvert A \rvert=ad-bc \ne 0$が条件となる.
-		 
-		 <p></p>  
+\end{pmatrix}
+\end{equation}
+この計算式が示すように,逆行列が存在するには, 行列式$\lvert A \rvert=ad-bc \ne 0$が条件となる.
+<p></p>  
 行列と逆行列には次の関係がある.
 \begin{equation}
 A A^{-1}=I
@@ -112,8 +92,8 @@ d & -b\\
 \end{pmatrix}
 =\frac{1}{ad-bc }
 \begin{pmatrix}
-ad-bc & -ba+ab\\
-dc-cd & -bc+ad
+ad-bc & -ab+ab\\
+cd-cd & -bc+ad
  \end{pmatrix}
 =
 \begin{pmatrix}
