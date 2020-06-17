@@ -15,6 +15,7 @@
     displayIndent: "2em"
   });
 </script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
@@ -102,6 +103,59 @@ A^{-1}=\frac{1}{1\cdot 4-3\cdot 2}
 ところで,この$2\times 2$正方行列の逆行列は,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/m/determinant.html">Gauss-Jordan消去法（掃き出し法）</a>で用いた数値計算を次のように改良して求めることができる.
 <p></p>
 <pre><code class="prettyprint">
+=============
+2 * 2 array
+=============
+array2 =
+[[ 1.  3.  1.  0.]
+ [ 2.  4.  0.  1.]]
+=====================================
+Gauss-Jordan Elimination（掃き出し法)
+=====================================
+array2 =
+[[ 2.  2.  0.  1.]
+ [ 1.  3.  1.  0.]]
+array2 =
+[[ 2.  2.  0.  1.]
+ [ 1.  3.  1.  0.]]
+array2 =
+[[ 2.   2.   0.   0.5]
+ [ 1.   3.   1.   0. ]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   3.   1.   0. ]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   1.   1.   0. ]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   1.   1.   0. ]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   1.   1.  -0.5]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   1.   1.  -0.5]]
+array2 =
+[[ 1.   2.   0.   0.5]
+ [ 0.   1.   1.  -0.5]]
+array2 =
+[[ 1.   0.   0.   0.5]
+ [ 0.   1.   1.  -0.5]]
+array2 =
+[[ 1.   0.  -2.   0.5]
+ [ 0.   1.   1.  -0.5]]
+array2 =
+[[ 1.   0.  -2.   1.5]
+ [ 0.   1.   1.  -0.5]]
+=====================
+determinant of matrix
+=====================
+det = 2.0
+</code></pre>
+<br>
+Pythonで実装したアルゴリズムは次の通りである.
+<pre><code class="prettyprint">
 #!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
 import numpy as np
@@ -149,14 +203,17 @@ for k in range(0,2,1):
             else:
                 array2[i,j] = array2[i,j] 
                 
-#print('x_1 = {0}, x_2 = {1}, x_3 = {2}'.format(array2[0,3], array2[1,3], array2[2,3]))                
 ##行列式の計算結果
 print('=====================')
 print('determinant of matrix')
 print('=====================')
 print('det = {}'.format(det)) 
 </code></pre> 
-		 <p></p>
+<br>
+このアルゴリズムでは,行列$A$の列を右に拡張し,$2\times2$単位行列を加えている.
+<br>
+この状態で,掃き出し法（Gauss-Jordan消去法）を実行すると,実行結果には$2\times2$単位行列と逆行列$A^{-1}$が並んだ$2\times4$行列が得られる.
+<p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
 	 </div>

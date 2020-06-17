@@ -15,6 +15,7 @@
     displayIndent: "2em"
   });
 </script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
 <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
@@ -152,6 +153,7 @@ determinant of matrix
 =====================
 det = 2.0
 </code></pre>
+<br>
 Pythonで実装したアルゴリズムは次の通りである.
 <pre><code class="prettyprint">
 #!/usr/bin/python2.7
@@ -210,7 +212,7 @@ print('det = {}'.format(det))
 <br>
 このアルゴリズムでは,行列$A$の列を右に拡張し,$2\times2$単位行列を加えている.
 <br>
-この状態で,掃き出し法（Gauss-Jordan消去法）を実行すると,実行結果には$2\times2$単位行列と逆行列$A^{-1}$が並んだ$2\times4$行列が得られる.
+この状態で,掃き出し法（Gauss-Jordan消去法）を実行すると,実行結果には$2\times2$単位行列と逆行列$A^{-1}$が並んだ$2\times4$行列が前述のように得られる.
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
