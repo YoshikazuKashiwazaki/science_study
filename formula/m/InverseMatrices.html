@@ -104,7 +104,74 @@ cd-cd & -bc+ad
 \end{equation}
 
 <p></p>
+同様に,$3\times3$正方行列$A$の逆行列$A^{-1}$は余因子を用いて次のように表される.
 
+\begin{equation}
+A^{-1}=
+\frac{1}{\lvert A \rvert }		 
+\begin{pmatrix}
+C_{1,1} & C_{1,2} & C_{1,3}\\
+C_{2,1} & C_{2,2} & C_{2,3}\\
+C_{3,1} & C_{3,2} & C_{3,3}
+\end{pmatrix}
+=\frac{1}{\lvert A \rvert }		 
+\begin{pmatrix} 
+(-1)^{1+1}\Delta_{1,1} & (-1)^{2+1}\Delta_{2,1} & (-1)^{3+1}\Delta_{3,1}\\
+(-1)^{1+2}\Delta_{1,2} & (-1)^{2+2}\Delta_{2,2} & (-1)^{3+2}\Delta_{3,2}\\
+(-1)^{1+3}\Delta_{1,3} & (-1)^{2+3}\Delta_{2,3} & (-1)^{3+3}\Delta_{3,3}
+\end{pmatrix}
+=\frac{1}{\lvert A \rvert }		 
+\begin{pmatrix} 
+\begin{vmatrix}
+a_{2,2} & a_{2,3} \\
+a_{3,2} & a_{3,3} 
+\end{vmatrix}
+&
+-
+\begin{vmatrix}
+a_{1,2} & a_{1,3} \\
+a_{3,2} & a_{3,3} 
+\end{vmatrix}
+&
+\begin{vmatrix}
+a_{1,2} & a_{1,3} \\
+a_{2,2} & a_{2,3} 
+\end{vmatrix}
+\\
+-
+\begin{vmatrix}
+a_{2,1} & a_{2,3} \\
+a_{3,1} & a_{3,3} 
+\end{vmatrix}
+&
+\begin{vmatrix}
+a_{1,1} & a_{1,3} \\
+a_{3,1} & a_{3,3} 
+\end{vmatrix}
+&
+-
+\begin{vmatrix}
+a_{1,1} & a_{1,3} \\
+a_{2,1} & a_{2,3} 
+\end{vmatrix}
+\\
+\begin{vmatrix}
+a_{2,1} & a_{2,2} \\
+a_{3,1} & a_{3,2} 
+\end{vmatrix}
+&
+-
+\begin{vmatrix}
+a_{1,1} & a_{1,2} \\
+a_{3,1} & a_{3,2} 
+\end{vmatrix}
+&
+\begin{vmatrix}
+a_{1,1} & a_{1,2} \\
+a_{2,1} & a_{2,2} 
+\end{vmatrix}
+\end{pmatrix}
+\end{equation}
 		 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
