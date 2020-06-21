@@ -16,9 +16,6 @@
   });
 </script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
-<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">-->
-<!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">-->
 <link rel="stylesheet" href="../../css/style_b.css">
 </head>
 
@@ -214,7 +211,57 @@ print('det = {}'.format(det))
 <br>
 この状態で,掃き出し法（Gauss-Jordan消去法）を実行すると,実行結果には$2\times2$単位行列と逆行列$A^{-1}$が並んだ$2\times4$行列が前述のように得られる.
 <p></p>
+念のため,検算をしてみよう.
+<br />
+ある行列とその逆行列の積は単位行列になる.
+\[
+AA^{-1}=I
+\]
+行列同士の積の定義に沿ってコードを実装する.
+<pre><code class="prettyprint">
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+import numpy as np
+print('==========================')
+print('2 * 2 array multiplication')
+print('==========================')
+a = np.array([[1.,3.],[2.,4.]])
+b = np.array([[-2.,1.5],[1.,-0.5]])
+c = np.array([[0.,0.],[0.,0.]])
+#行列Aをaとする.
+print('a =')
+print(a)
+#行列Aの逆行列をbとする.
+print('b =')
+print(b)
 
+for i in range(0,2,1): 
+    for j in range(0,2,1):
+            for k in range(0,2,1):
+                c[i,j] += a[i,k]*b[k,j]
+        
+#行列aと行列bの乗算結果を行列cとする.
+print('c =')
+print(c)
+</code></pre>
+<br />
+実行結果は次の通り.
+<pre><code class="prettyprint">
+==========================
+2 * 2 array multiplication
+==========================
+a =
+[[ 1.  3.]
+ [ 2.  4.]]
+b =
+[[-2.   1.5]
+ [ 1.  -0.5]]
+c =
+[[ 1.  0.]
+ [ 0.  1.]]
+</code></pre>
+<br />
+単位行列が得られた.
 <H3><b>逆行列の数値計算（$3\times 3$正方行列）</b></H3>
 $3\times3$正方行列についても同様に,逆行列を求めてみる.
 <br />
@@ -475,8 +522,50 @@ print('determinant of matrix')
 print('=====================')
 print('det = {}'.format(det))  
 </code></pre>
+<br />
+行列とその逆行列の積が単位行列になるか確かめてみる.
+<pre><code class="prettyprint">
+==========================
+3 * 3 array multiplication
+==========================
+a =
+[[ 3.  1.  2.]
+ [ 5.  1.  3.]
+ [ 4.  2.  1.]]
+b =
+[[-1.25  0.75  0.25]
+ [ 1.75 -1.25  0.25]
+ [ 1.5  -0.5  -0.5 ]]
+c =
+[[ 1.  0.  0.]
+ [ 0.  1.  0.]
+ [ 0.  0.  1.]]
+</code></pre>
+<br />
+$3\times3$行列乗算のコードを記す.
+<pre><code class="prettyprint">
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+import numpy as np
+print('==========================')
+print('3 * 3 array multiplication')
+print('==========================')
+a = np.array([[3.,1.,2.],[5.,1.,3.],[4.,2.,1.]])
+b = np.array([[-1.25,0.75,0.25],[1.75,-1.25,0.25],[1.5,-0.5,-0.5]])
+c = np.array([[0.,0.,0.],[0.,0.,0.],[0.,0.,0.]])
+print('a =')
+print(a)
+print('b =')
+print(b)
 
-
+for i in range(0,3,1): 
+    for j in range(0,3,1):
+            for k in range(0,3,1):
+                c[i,j] += a[i,k]*b[k,j]
+        
+print('c =')
+print(c)
+</code></pre>
 
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
