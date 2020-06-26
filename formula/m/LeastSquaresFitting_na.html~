@@ -50,7 +50,7 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 x^0_1 & x^1_1 & \dots & x^M_1 \\
 x^0_2 & x^1_2 & \dots & x^M_2}\\
 \dots & \dots & \dots & \dots \\ 
-x^0_M & x^1_M & \dots & x^M_M}
+x^0_M & x^1_M & \dots & x^M_M
 \end{pmatrix}
 \end{equation}
 
