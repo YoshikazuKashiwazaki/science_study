@@ -22,7 +22,7 @@
 <body>
 	 <div id="pagebody">
 	<div id="header">
-		<h1><a href="index.html"><img src="https://yoshikazukashiwazaki.github.io/science_study/images/bg_img_2.png"></a></h1>
+		<h1><a href="index.html"></a></h1>
 	</div>
 <H1>
 物理のノート
@@ -32,7 +32,7 @@
 <p></p>
 観測点$x$に対して得られた観測値を$t$とする.
 <br />
-$N$組の$x,t$の組み合わせを${(x_n,t_n)}^{N}_{n=1}$と表すことにする.<br />
+$N$組の$x,t$の組み合わせを$\lbrace(x_n,t_n)\rbrace^{N}_{n=1}$と表すことにする.<br />
 この時, $N+1$番目の観測点$x_{n+1}$において観測される$t_{n+1}$はどのような値になると予測されるだろうか.
 <p></p>
 この予測を行うには,$x$と$t$の間にある<b>関数関係</b>を推測する.<p></p>
@@ -44,13 +44,14 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 \end{equation}
 
 
-
 \begin{equation}
+\Phi=
 \begin{pmatrix}
-a & b\\
-c & d
+x^0_1 & x^1_1 & \dots & x^M_1 \\
+x^0_2 & x^1_2 & \dots & x^M_2}\\
+\dots & \dots &\dots & \dots \\ 
+x^0_M &\dots   & \dots & x^M_M}
 \end{pmatrix}
-,
 \end{equation}
 
 
