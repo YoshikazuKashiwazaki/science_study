@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<link rel="stylesheet" href="../../css/style_b.css">
+</head>
+
+<body>
+	 <div id="pagebody">
+	<div id="header">
+		<h1><a href="index.html"></a></h1>
+	</div>
+<H1>
+物理のノート
+</H1>
+		 <H2><b>最小二乗法</b></H2>
+<H3><b>多項式近似による関数関係の推測</b></H3>
+<p></p>
+観測点$x$に対して得られた観測値を$t$とする.
+<br />
+$N$組の$x,t$の組み合わせを${(x_n,t_n)}^{N}_{n=1}$と表すことにする.<br />
+この時, $N+1$番目の観測点$x_{n+1}$において観測される$t_{n+1}$はどのような値になると予測されるだろうか.
+<p></p>
+この予測を行うには,$x$と$t$の間にある<b>関数関係</b>を推測する.<p></p>
+ここでは,推測する関数$f(x)$を次のような,$M$を最大次数とする多項式で近似されると仮定する.
+
+\begin{equation}
+f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
+=\sum^M_{m=0} \omega_m x^m
+\end{equation}
+
+
+
+\begin{equation}
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}
+,
+\end{equation}
+
+
+<p></p>
+<a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+<p></p>
+
+<div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
+	 </div>
+ </div>
+ </body>
+</html>
