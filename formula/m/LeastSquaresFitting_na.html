@@ -36,7 +36,7 @@ $N$組の$x,t$の組み合わせを$\lbrace(x_n,t_n)\rbrace^{N}_{n=1}$と表す�
 この時, $N+1$番目の観測点$x_{n+1}$において観測される$t_{n+1}$はどのような値になると予測されるだろうか.
 <p></p>
 この予測を行うには,$x$と$t$の間にある<b>関数関係</b>を推測する.<p></p>
-ここでは,推測する関数$f(x)$を次のような,$M$を最大次数とする多項式で近似されると仮定する.
+ここでは,推測する関数$f(x)$を次のような,$M$を最大次数とする多項式で近似されるものと仮定する.
 
 \begin{equation}
 f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
@@ -50,8 +50,7 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 \begin{equation}
 E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrace f(x_n)-t_n\rbrace^2 }{2}\\
 =\frac{1}{2}\sum_{n=1}^M \lbrace{f(x_n)-t_n\rbrace^2\\
-=\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2\\
-
+=\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2
 \end{equation}
 二乗誤差を定義した(2)式（これを<b>誤差関数</b>と称することもある）の$3$行目には(1)式が代入されている.
 <p></p>
@@ -60,7 +59,7 @@ E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrac
 二乗誤差$E$を最小にする係数を求めるには,次の偏微分係数が$0$になる（微小変化に対して導関数が変化しない）ことが条件となる.
 
 \begin{equation}
-\frac{\delta E}{\delta \omega_m}=0
+\frac{\partial E}{\partial \omega_m}=0
 \end{equation}
 ここで,$(m=0,\dots,M)$.
 <br />
@@ -74,8 +73,8 @@ g(x)=\sum^M_{m=0} \omega_m x^m-t_n
 \end{equation}
 と置き換えて計算すると,次のような過程および結果になる.
 
-\end{equation}
-\frac{\delta E}{\delta \omega_m}=\frac{\delta}{\delta \omega_m}\left[\frac{1}{2}\lbrace g(x_1)\rbrace^2 +,\dots,\frac{1}{2}\lbrace g(x_N)\rbrace^2\right]\\
+\begin{equation}
+\frac{\partial E}{\partial \omega_m}=\frac{\partial}{\partial \omega_m}\left[\frac{1}{2}\lbrace g(x_1)\rbrace^2 +,\dots,\frac{1}{2}\lbrace g(x_N)\rbrace^2\right]\\
 =\sum_{n=1}^N g(x_n) g^{'}(x_n)\\
 =\sum_{n=1}^N \left(\sum^M_{m^{'}=0} \omega_m^{'} x^{m^{'}}-t_n\right)x_n^m\\ 
 =\sum^M_{m^{'}=0} \omega_m^{'} \sum_{n=1}^N x_n^{m^{'}} x_n^m -\sum_{n=1}^N t_n x_n^m\\ 
