@@ -43,6 +43,44 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 =\sum^M_{m=0} \omega_m x^m
 \end{equation}
 
+推測される関数$f(x)$は,(1)式より未知の係数$\lbrace \omega_0,\dots,\omega_M\rbrace$（これをまとめて$\lbrace{\omega_m}_{m=0}^M \rbrace$と表記する）すなわちパラメーターを決定すると明らかになる.
+<p></p>
+ここで, 推定される関数から計算で得られる$f(x)$と,実際の観測値$t_n$を比較するために,次の値をここでの誤差$E$と定義し,<b>二乗誤差</b>と呼ぶ.
+
+\begin{equation}
+E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrace f(x_n)-t_n\rbrace^2 }{2}\\
+=\frac{1}{2}\sum_{n=1}^M \lbrace{f(x_n)-t_n\rbrace^2\\
+=\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2\\
+
+\end{equation}
+二乗誤差を定義した(2)式（これを<b>誤差関数</b>と称することもある）の$3$行目には(1)式が代入されている.
+<p></p>
+さて(2)式を,未知の係数$\lbrace{\omega_m}_{m=0}^M \rbrace$の関数を見なすと,二乗誤差$E$を最小にする係数および次数$M$を求めることが,観測点を予測する最も近似された関数を求めることになる.この手法を<b>最小二乗法</b>という.
+<p></p>
+二乗誤差$E$を最小にする係数を求めるには,次の偏微分係数が$0$になる（微小変化に対して導関数が変化しない）ことが条件となる.
+
+\begin{equation}
+\frac{\delta E}{\delta \omega_m}=0
+\end{equation}
+ここで,$(m=0,\dots,M)$.
+<br />
+なお,係数の組をベクトル$\pmb \omega=(\omega_0,\dots,\omega_M)^T$とすれば,<a href="https://yoshikazukashiwazaki.github.io/science_study/formula/v/vector.html">勾配ベクトル$\nabla E(\pmb\omega)=\pmb 0$である</a>といえる.
+<p></p>
+(2)式を(3)式に代入して偏微分する.
+<br />
+途中まで,
+\begin{equation}
+g(x)=\sum^M_{m=0} \omega_m x^m-t_n
+\end{equation}
+と置き換えて計算すると,次のような過程および結果になる.
+
+\end{equation}
+\frac{\delta E}{\delta \omega_m}=\frac{\delta}{\delta \omega_m}\left[\frac{1}{2}\lbrace g(x_1)\rbrace^2 +,\dots,\frac{1}{2}\lbrace g(x_N)\rbrace^2\right]\\
+=\sum_{n=1}^N g(x_n) g^{'}(x_n)\\
+=\sum_{n=1}^N \left(\sum^M_{m^{'}=0} \omega_m^{'} x^{m^{'}}-t_n\right)x_n^m\\ 
+=\sum^M_{m^{'}=0} \omega_m^{'} \sum_{n=1}^N x_n^{m^{'}} x_n^m -\sum_{n=1}^N t_n x_n^m\\ 
+=0
+\end{equation}
 
 \begin{equation}
 \Phi=
