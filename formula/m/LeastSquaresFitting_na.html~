@@ -48,13 +48,24 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 ここで, 推定される関数から計算で得られる$f(x)$と,実際の観測値$t_n$を比較するために,次の値をここでの誤差$E$と定義し,<b>二乗誤差</b>と呼ぶ.
 
 \begin{equation}
-E=\frac{{f(x_1)-t_1}^2 +{f(x_2)-t_2}^2+ \dots + {f(x_n)-t_n}^2}{2}\\
+E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbracef(x_n)-t_n\rbrace^2}{2}\\
 =\frac{1}{2}\sum_{n=1}^M \lbrace f(x_n)-t_n\rbrace^2\\
 =\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2
 \end{equation}
 二乗誤差を定義した(2)式（これを<b>誤差関数</b>と称することもある）の$3$行目には(1)式が代入されている.
 <p></p>
 さて(2)式を,未知の係数$\lbrace\omega_m\rbrace_{m=0}^M $の関数を見なすと,二乗誤差$E$を最小にする係数および次数$M$を求めることが,観測点を予測する最も近似された関数を求めることになる.この手法を<b>最小二乗法</b>という.
+<p></p>
+例えば,$M=0$の場合,(1)の多項式は
+\[
+f(x)=\omega_0
+\]
+という定数項で表される$x$軸に平行な直線となる.
+$M=1$の場合は,
+\[
+f(x)=\omega_0 + \omega_1 x
+\]
+で表される傾きと切片を有する直線になる.
 <p></p>
 二乗誤差$E$を最小にする係数を求めるには,次の偏微分係数が$0$になる（微小変化に対して導関数が変化しない）ことが条件となる.
 
@@ -97,7 +108,7 @@ x^0_M & x^1_M & \dots & x^M_M
 すると,(5)式は次のように書き換えられる.
 
 \begin{equation}
-\pmb\omega^T \Phi^T \Phi - \pmb t^T \Phi = 0,
+\pmb\omega^T \Phi^T \Phi - \pmb t^T \Phi = 0,\\
 \pmb\omega = (\Phi^T\Phi)^{-1} \Phi \pmb t
 \end{equation}
 
