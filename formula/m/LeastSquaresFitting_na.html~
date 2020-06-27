@@ -48,7 +48,7 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 ここで, 推定される関数から計算で得られる$f(x)$と,実際の観測値$t_n$を比較するために,次の値をここでの誤差$E$と定義し,<b>二乗誤差</b>と呼ぶ.
 
 \begin{equation}
-E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbracef(x_n)-t_n\rbrace^2}{2}\\
+E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrace f(x_n)-t_n\rbrace^2}{2}\\
 =\frac{1}{2}\sum_{n=1}^M \lbrace f(x_n)-t_n\rbrace^2\\
 =\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2
 \end{equation}
