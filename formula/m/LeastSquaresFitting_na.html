@@ -189,7 +189,6 @@ x^0_N & x^1_N
 \end{pmatrix}		 
 \end{equation}		 
 と置き換えて,(14)式を変形する.
-
 \begin{equation}
 \begin{pmatrix}
 \omega_0 \\
@@ -209,10 +208,8 @@ x_1 & x_2 & \dots & x_N
 \end{pmatrix} 
 \end{pmatrix}^{-1}
 \begin{pmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\dots & \dots \\ 
-1 & x_N 
+1 & 1 & \dots &1 \\
+x_1 & x_2 & \dots & x_N
 \end{pmatrix} 
 \begin{pmatrix}
 t_1 \\
@@ -221,7 +218,21 @@ t_2 \\
 t_N 
 \end{pmatrix} 		 
 \end{equation}	
-したがって,
+なお,
+\begin{equation}
+\begin{pmatrix}
+1 & x_1 \\
+1 & x_2 \\
+\dots & \dots \\ 
+1 & x_N 
+\end{pmatrix}^{T}
+=		 
+\begin{pmatrix}
+1 & 1 & \dots &1 \\
+x_1 & x_2 & \dots & x_N
+\end{pmatrix}
+\end{equation}		 
+である.<br />したがって,
 \begin{equation}
 \pmb\omega = (\Phi^T\Phi)^{-1} \Phi^T \pmb t
 \end{equation}
