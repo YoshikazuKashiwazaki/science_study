@@ -49,8 +49,8 @@ f(x)=\omega_0 x^0 + \omega_1 x^1 +\omega_2 x^2 + \dots + \omega_M x^M \\
 
 \begin{equation}
 E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrace f(x_n)-t_n\rbrace^2}{2}\\
-=\frac{1}{2}\sum_{n=1}^M \lbrace f(x_n)-t_n\rbrace^2\\
-=\frac{1}{2}\sum_{n=1}^M \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2
+=\frac{1}{2}\sum_{n=1}^N \lbrace f(x_n)-t_n\rbrace^2\\
+=\frac{1}{2}\sum_{n=1}^N \left(\sum^M_{m=0} \omega_m x^m-t_n\right)^2
 \end{equation}
 二乗誤差を定義した(2)式（これを<b>誤差関数</b>と称することもある）の$3$行目には(1)式が代入されている.
 <p></p>
@@ -120,18 +120,26 @@ f(x)=\omega_0 + \omega_1 x
 \]
 で表される傾きと切片を有する直線になることは先述した.(2)式より
 \begin{equation}
-E=\frac{1}{2}\sum_{n=1}^M \lbrace f(x_n)-t_n\rbrace^2\\
-=\frac{1}{2}\sum_{n=1}^M \left[ (\omega_0 + \omega_1 x) - t_n\right]^2
+E=\frac{1}{2}\sum_{n=1}^N \lbrace f(x_n)-t_n\rbrace^2\\
+=\frac{1}{2}\sum_{n=1}^N \left[ (\omega_0 + \omega_1 x_n) - t_n\right]^2
 \end{equation}		 
-(2)式を$\omega_0,\omega_1$で偏微分すると(5)式より,
+(8)式を$\omega_0,\omega_1$で偏微分すると(5)式より,
 \begin{equation}
-\frac{\partial E}{\partial \omega_0}=\sum_{n=1}^M \left[(\omega_0 + \omega_1 x) - t_n\right]=0
+\frac{\partial E}{\partial \omega_0}=\sum_{n=1}^N \left[(\omega_0 + \omega_1 x_n) - t_n\right]=0
 \end{equation}		 
 および
 \begin{equation}
-\frac{\partial E}{\partial \omega_1}=\sum_{n=1}^M \left[(\omega_0 + \omega_1 x) - t_n\right]x=0
+\frac{\partial E}{\partial \omega_1}=\sum_{n=1}^N \left[(\omega_0 + \omega_1 x_n) - t_n\right]x_n=0
 \end{equation}		 
-得られる.		 
+が得られる.(9)(10)式をそれぞれ整理すると
+\begin{equation}
+N \omega_0 + \omega_1 \sum_{n=1}^N x_n) = \sum_{n=1}^N t_n
+\end{equation}		 
+および
+\begin{equation}
+\omega_0 \sum_{n=1}^N + \omega_1 \sum_{n=1}^N x_n^2) = \sum_{n=1}^N x_n t_n
+\end{equation}		 
+となる.		 
 <p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <p></p>
