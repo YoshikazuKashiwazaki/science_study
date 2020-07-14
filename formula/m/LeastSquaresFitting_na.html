@@ -101,6 +101,13 @@ x^0_2 & x^1_2 & \dots & x^M_2 \\
 \dots & \dots & \dots & \dots \\ 
 x^0_N & x^1_N & \dots & x^M_N
 \end{pmatrix}
+=		 
+\begin{pmatrix}
+1 & x_1 & \dots & x^M_1 \\
+1 & x_2 & \dots & x^M_2 \\
+\dots & \dots & \dots & \dots \\ 
+1 & x_N & \dots & x^M_N
+\end{pmatrix}
 \end{equation}
 
 さらに,先ほど勾配ベクトルのところで触れた,未知の係数の組を表したベクトル$\pmb \omega$と,観測値の組であるベクトル$\pmb t =(t_1,\dots,t_N)^T$を用意する.<br />
@@ -112,7 +119,7 @@ x^0_N & x^1_N & \dots & x^M_N
 \pmb\omega = (\Phi^T\Phi)^{-1} \Phi^T \pmb t.
 \end{equation}
 
-<H3><b>$M=1$での最小二乗法</b></H3>
+<H3><b>$M=1$での最小二乗法による(7)式の確認</b></H3>
 <p></p>
 $M=1$の場合は,
 \[
@@ -232,7 +239,7 @@ t_N
 x_1 & x_2 & \dots & x_N
 \end{pmatrix}
 \end{equation}		 
-である.<br />したがって,
+である（$T$は転置行列を表している）.<br />したがって,
 \begin{equation}
 \pmb\omega = (\Phi^T\Phi)^{-1} \Phi^T \pmb t
 \end{equation}
