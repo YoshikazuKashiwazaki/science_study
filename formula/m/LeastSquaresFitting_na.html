@@ -144,11 +144,28 @@ N \omega_0 + \omega_1 \sum_{n=1}^N x_n = \sum_{n=1}^N t_n
 \begin{pmatrix}
 N & \sum_{n=1}^N x_n \\
 \sum_{n=1}^N x_n & \sum_{n=1}^N x_n^2 
-\end{pmatrix} \\
+\end{pmatrix} 
 \begin{pmatrix}
 \omega_0 \\
 \omega_1
-\end{pmatrix}	\\
+\end{pmatrix}	
+=		 
+\begin{pmatrix}
+\sum_{n=1}^N t_n \\
+\sum_{n=1}^N x_n t_n 
+\end{pmatrix} 		 
+\end{equation}			 
+ゆえに,
+\begin{equation}
+\begin{pmatrix}
+\omega_0 \\
+\omega_1
+\end{pmatrix}	
+=
+\begin{pmatrix}
+N & \sum_{n=1}^N x_n \\
+\sum_{n=1}^N x_n & \sum_{n=1}^N x_n^2 
+\end{pmatrix} ^{-1}
 \begin{pmatrix}
 \sum_{n=1}^N t_n \\
 \sum_{n=1}^N x_n t_n 
