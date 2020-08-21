@@ -56,7 +56,7 @@ E=\frac{\lbrace f(x_1)-t_1\rbrace^2 +\lbrace f(x_2)-t_2\rbrace^2+ \dots + \lbrac
 <p></p>
 さて(2)式を,未知の係数$\lbrace\omega_m\rbrace_{m=0}^M $の関数を見なすと,二乗誤差$E$を最小にする係数および次数$M$を求めることが,観測点を予測する最も近似された関数を求めることになる.この手法を<b>最小二乗法</b>という.
 <p></p>
-例えば,$M=0$の場合,多項式(1)は
+例えば,$M=0$の場合,(1)の多項式は
 \[
 f(x)=\omega_0
 \]
@@ -85,7 +85,7 @@ g(x)=\sum^M_{m=0} \omega_m x^m-t_n
 と置き換えて計算すると,次のような過程および結果になる.
 
 \begin{equation}
-\frac{\partial E}{\partial \omega_m}=\frac{\partial}{\partial \omega_m}\left[\frac{1}{2}\lbrace g(x_1)\rbrace^2 +,\dots,+ \frac{1}{2}\lbrace g(x_N)\rbrace^2\right]\\
+\frac{\partial E}{\partial \omega_m}=\frac{\partial}{\partial \omega_m}\left[\frac{1}{2}\lbrace g(x_1)\rbrace^2 +,\dots,\frac{1}{2}\lbrace g(x_N)\rbrace^2\right]\\
 =\sum_{n=1}^N g(x_n) g^{'}(x_n)\\
 =\sum_{n=1}^N \left(\sum^M_{m^{'}=0} \omega_{m^{'}} x^{m^{'}}-t_n\right)x_n^m\\ 
 =\sum^M_{m^{'}=0} \omega_{m^{'}} \sum_{n=1}^N x_n^{m^{'}} x_n^m -\sum_{n=1}^N t_n x_n^m\\ 
