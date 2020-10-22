@@ -50,7 +50,7 @@ y-f(x_0)=f'(x_0)(x-x_0)
 0-f(x_0)=f'(x_0)(x_1-x_0)
 \end{equation}
 \begin{equation}
--f(x_0)=f'(x_0)(x_1-x_0)
+-f(x_0)=f'(x_0)(x_1-x_0) \\
 x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}
 \end{equation}
 を得る.
@@ -64,9 +64,9 @@ x_{n+1} = x_{n} - \frac{f(x_n)}{f'(x_n)}
 ニュートン法を用いて,$2$の平方根$\sqrt 2$を求めてみる.
 <p><p>
 求める平方根を$x$とすると,代数的には$x^2-2=0$を解くことに等しい.<br />
-ここで$f(x)=x^2-2$とおくと,$f'(x)=2x$である.(4)式より
+ここで$f(x)=x^2-2$とおくと,$f'(x)=2x$である.(4)式に代入して
 \begin{equation}
-x_{n+1} = x_{n} - \frac{x_n^2-2)}{2x_n)}
+x_{n+1} = x_{n} - \frac{x_n^2-2}{2x_n}=\frac12\left(x_n + \frac{2}{x_n}\right)
 \end{equation}
 このアルゴリズムをpythonで実装した例を示す.
 <p></p>
@@ -130,7 +130,7 @@ Newton法
 収束条件に至るまでの反復計算は 4 回.
 </code></pre>
 
-
+<p></p>
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <p></p>
 

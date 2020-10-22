@@ -117,6 +117,20 @@ Newton法
 
 コンピュータでは無限回の演算は実行しない.ある程度の精度に達したと判定したならば演算を有限回で終了する.そのときの値を近似値として用いる.<p></p>
 なお,$\sqrt 10$の値を上述のpythonプログラムで計算すると次のような結果が得られる.
+<pre><code class="prettyprint"> 
+=============
+Newton法
+=============
+入力値の平方根（正の値）を表示する.
+収束判定定数（eps）は 5e-06 .
+
+> 10
+入力値は 10.0 である.
+平方根は 3.16227766017 .
+収束条件に至るまでの反復計算は 4 回.
+</code></pre>
+
+
 <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <p></p>
 
