@@ -96,7 +96,7 @@ print('=====================')
 print('det = {}'.format(det))
 </code></pre>
 <br>
-Canopyでの実行結果は次のようになった. ターミナルで実行しても同様である.
+Canopyでの実行結果は次のようになった.
 <pre><code class="prettyprint">
 ===========
 3 * 3 array
