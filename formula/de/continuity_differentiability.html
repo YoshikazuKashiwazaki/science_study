@@ -29,7 +29,7 @@
 <H3>
 8-21 レポート
 </H3>
-(A)関数の連続性と微分可能性について述べなさい。
+【問題】(A) 関数の連続性と微分可能性について述べなさい。
 <p></p>
 
 【解答】
@@ -48,22 +48,23 @@ $a+h=x$と表し,
 =\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\
 \end{equation}
 が存在するとき, $f(x)$は$a$において微分可能である, という.<br />
-その極限値を$f'(a)と書き, $f(x)$の$a$における微分係数と呼ぶ.
+その極限値を$f'(a)$と書き, $f(x)$の$a$における微分係数と呼ぶ.
 <p></p>
 [定理] 関数$y=f(x)$が$a$で微分可能ならば, $a$で連続である.
 <p></p>
 [証明]<br />
-連続性の定義にしたがって,$\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
+連続性の定義にしたがって,$\displaystyle\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
 \begin{equation}
-\lim_{x\to a} (f(x)-f(a)=\lim_{x\to a} \left(\frac{f(a+h)-f(a)}{x-a}\dot (x-a)\right)\
-=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\dot \lim_{x\to a}(x-a)
-=f'(a)\dot 0 = 0
+\lim_{x\to a} (f(x)-f(a))=\lim_{x\to a} \lbrace\frac{f(a+h)-f(a)}{x-a}\cdot (x-a)\rbrace\
+=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a) \
+=f'(a)\cdot 0 = 0
 \end{equation}
 ゆえに, 定理が証明された.
 
 <p></p>
 微分可能な関数は連続である.
 しかし, 連続な関数は微分可能とは限らない.
-
+<p></p>
+たとえば, $y=|x|$は$x=0$で連続であるが, $x=0$で微分可能ではない.
 </body>
 </html>
