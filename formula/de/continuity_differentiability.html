@@ -1,0 +1,50 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+<link rel="stylesheet" href="../css/style_a.css">
+</head>
+
+<body>
+<H2>
+演習微分積分('19)
+</H2>
+
+<H3>
+8-21 レポート
+</H3>
+2階線形常微分方程式
+\begin{equation}
+a_1 \frac{d^2}{dx^2}f(t) +a_2\frac{d}{dx}f(t)+a_3f(t)=g(t),\\
+a_1 f^{''} +a_2 f^{'}+a_3 f=g.
+\end{equation}
+において, $g_1(t)$, $g_2(t)$とした場合の解をそれぞれ$f_1(t)$, $f_2(t)$とする.</br>
+このとき,
+\begin{equation}
+g(t)=b_1 g_1(t)+b_2 g_2(t)
+\end{equation}
+の解は,次のようになる.
+\begin{equation}
+f(t)=b_1 f_1(t)+b_2 f_2(t)
+\end{equation}
+すなわち, 2つの解の一次結合が解になる. このようにいくつかの解を重ね合わせて新しい解を作ること（<b>重ね合わせの原理</b>という）ができる性質を有することを<b>線形性</b>と呼ぶ.　また, この線形性を備えた系を<b>線形システム</b>と称する.
+ <p></p>
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+</body>
+</html>
