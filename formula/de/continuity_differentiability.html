@@ -30,40 +30,40 @@
 8-21 レポート
 </H3>
 (A)関数の連続性と微分可能性について述べなさい。
+<p></p>
 
 【解答】
-区間$I$で定義された関数$f(x)$がある.
+区間$I$で定義された関数$f(x)$がある.<br />
 点$a\in I$に対して,
 \begin{equation}
-\lim_{x\to\a} f(x)=f(a)
+\lim_{x\to a} f(x)=f(a)
 \end{equation}
 が成り立つとき, $f(a)$は$a$で連続である, という.
+<p></p>
+一方, 関数$y=f(x)$の平均変化率$\displaystyle\frac{\Delta y}{\Delta x}$において, $h=\Delta x$を$0$に近づける極限を考える.<br />
+$a+h=x$と表し,
+\begin{equation}
+\lim_{\Delta x\to 0} \frac{\Delta y}{\Delta x}\
+=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}\
+=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\
+\end{equation}
+が存在するとき, $f(x)$は$a$において微分可能である, という.<br />
+その極限値を$f'(a)と書き, $f(x)$の$a$における微分係数と呼ぶ.
+<p></p>
+[定理] 関数$y=f(x)$が$a$で微分可能ならば, $a$で連続である.
+<p></p>
+[証明]<br />
+連続性の定義にしたがって,$\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
+\begin{equation}
+\lim_{x\to a} (f(x)-f(a)=\lim_{x\to a} \left(\frac{f(a+h)-f(a)}{x-a}\dot (x-a)\right)\
+=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\dot \lim_{x\to a}(x-a)
+=f'(a)\dot 0 = 0
+\end{equation}
+ゆえに, 定理が証明された.
 
-一方, 関数$y=f(x)$の平均変化率$\displaystyle\frac{\triangle y}{\triangle x}$において, $h=\triangle x$を$0$に近づける極限を考える.
-
+<p></p>
 微分可能な関数は連続である.
 しかし, 連続な関数は微分可能とは限らない.
 
-微分可能性とは, 関数$f$が区間$(a,b)$において,
-\begin{equation}
-\lim_{x\to\infty}\frac{f(c+h)-f(c)
-
-2階線形常微分方程式
-\begin{equation}
-a_1 \frac{d^2}{dx^2}f(t) +a_2\frac{d}{dx}f(t)+a_3f(t)=g(t),\\
-a_1 f^{''} +a_2 f^{'}+a_3 f=g.
-\end{equation}
-において, $g_1(t)$, $g_2(t)$とした場合の解をそれぞれ$f_1(t)$, $f_2(t)$とする.</br>
-このとき,
-\begin{equation}
-g(t)=b_1 g_1(t)+b_2 g_2(t)
-\end{equation}
-の解は,次のようになる.
-\begin{equation}
-f(t)=b_1 f_1(t)+b_2 f_2(t)
-\end{equation}
-すなわち, 2つの解の一次結合が解になる. このようにいくつかの解を重ね合わせて新しい解を作ること（<b>重ね合わせの原理</b>という）ができる性質を有することを<b>線形性</b>と呼ぶ.　また, この線形性を備えた系を<b>線形システム</b>と称する.
- <p></p>
- <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 </body>
 </html>
