@@ -52,9 +52,12 @@ $a+h=x$と表し,
 [定理] 関数$y=f(x)$が$a$で微分可能ならば, $a$で連続である.
 <p></p>
 2(a)<br />
-
+m=nのとき,
 \[
-\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]e^{i\omega t} dt=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x)dx \right] e^{i\omega t} dt\\
+\int_{0}^{L} \Psi_m(x)*\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin (\frac{n\pi}{L} x)* \sqrt\frac{2}{L}\sin (\frac{n\pi}{L} x)dx\\
+=\frac{2}{L} \int_{0}^{L} \sin^2 (\frac{n\pi}{L} x)dx\\
+=\frac{2}{L} \frac{1}{2} \int_{0}^{L} (1-\cos(\frac{n\pi}{L})dx
+=\frac{1}{L} [x]_{0}^{L} - \frac{L}{n\pi}[sin\frac{n\pi}{L}x]_{0}^{L}=1-0=1
 \]
 連続性の定義$(1)$にしたがって,$\displaystyle\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
 \begin{equation}
