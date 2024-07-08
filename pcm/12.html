@@ -1,0 +1,78 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+<link rel="stylesheet" href="../css/style_a.css">
+</head>
+
+<body>
+<H2>
+物理のノート
+</H2>
+演習>1,2
+<p></p>
+<H3>
+関数の連続性と微分可能性
+</H3>
+区間$I$で定義された関数$f(x)$がある.<br />
+点$a\in I$に対して,
+\begin{equation}
+\lim_{x\to a} f(x)=f(a)
+\end{equation}
+が成り立つとき, $f(x)$は$a$で連続である, という.
+<p></p>
+$\varepsilon-\delta$論法では, 任意の$\varepsilon \gt 0$に対して, ある$\delta\gt 0$を適当にとることで, $0\lt x-a \lt\delta$をみたす, すべての$x\in I$に対して$|f(x)-f(a)|\lt\varepsilon$が成り立つようにできる, と表される.
+<p></p>
+一方, 関数$y=f(x)$の平均変化率$\displaystyle\frac{\Delta y}{\Delta x}$において, $h=\Delta x$を$0$に近づける極限を考える.<br />
+$a+h=x$と表し,
+\begin{equation}
+\lim_{\Delta x\to 0} \frac{\Delta y}{\Delta x}\
+=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}\
+=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\
+\end{equation}
+が存在するとき, $f(x)$は$a$において微分可能である, という.<br />
+その極限値を$f'(a)$と書き, 「$f(x)$の$a$における微分係数」と呼ぶ.
+<p></p>
+[定理] 関数$y=f(x)$が$a$で微分可能ならば, $a$で連続である.
+<p></p>
+2(a)<br />
+
+\[
+\int_{-\infty}^{\infty} \left[f_1(t)*f_2(t) \right]e^{i\omega t} dt=\int_{-\infty}^{\infty} \left[\int_{-\infty}^{\infty} f_1(x)f_2(t-x)dx \right] e^{i\omega t} dt\\
+\]
+連続性の定義$(1)$にしたがって,$\displaystyle\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
+\begin{equation}
+\lim_{x\to a} (f(x)-f(a))=\lim_{x\to a} \left\lbrace\frac{f(a+h)-f(a)}{x-a}\cdot (x-a)\right\rbrace\\
+=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a) \
+=f'(a)\cdot 0 = 0
+\end{equation}
+ゆえに, 定理が証明された.
+
+<p></p>
+微分可能な関数は連続である.
+しかし, 連続な関数は微分可能とは限らない.
+<p></p>
+たとえば, $y=|x|$は$x=0$で連続であるが, $x=0$で微分可能ではない.
+<p></p>
+ <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
+<div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
+ </div>
+ </div>
+</body>
+</html>
