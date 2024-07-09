@@ -28,7 +28,7 @@
 演習>1,2
 <p></p>
 <H3>
-関数の連続性と微分可能性
+第1回, 第2回レポート課題
 </H3>
 問題1<br />
 <p></p>
@@ -45,12 +45,12 @@ $m=n$のとき,
 \]
 <p></p>
 $m\neq n$のとき,
-\begin{equation}
-\lim_{x\to a} (f(x)-f(a))=\lim_{x\to a} \left\lbrace\frac{f(a+h)-f(a)}{x-a}\cdot (x-a)\right\rbrace\\
-=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a) \
-=f'(a)\cdot 0 = 0
-\end{equation}
-ゆえに, 定理が証明された.
+\[
+\int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{m\pi}{L} x\right) \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right)dx\\
+=\frac{2}{L}\frac{1}{2} \int_{0}^{L} \left(\cos\frac{(m-n)\pi}{L}x -\cos\frac{(m+n)\pi}{L}x\right)dx
+=\frac{2}{L} \frac{1}{2} \int_{0}^{L} \left(1-\cos\left(\frac{n\pi}{L}\right)\right)dx\\
+=\frac{1}{L} \left[x\right]_{0}^{L} - \frac{L}{n\pi}\left[\sin\frac{n\pi}{L}x\right]_{0}^{L}=1-0=1
+\]
 
 <p></p>
 微分可能な関数は連続である.
