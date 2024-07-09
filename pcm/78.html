@@ -30,51 +30,30 @@
 <H3>
 第7回, 第8回レポート課題
 </H3>
-円形ディスクを中心を原点とする2次元曲座標で微小分割すると, 面積要素は
+円形ディスクを中心を原点とする2次元曲座標で微小分割すると, 面積要素は\\
 $ds=rdrd\theta$.
 <p></p>
-この素片上の電荷は
+この素片上の電荷は\\
 $dq=\sigma dS=\sigma rdrd\theta$.
-
+<p></p>
+また,\\
 \[
-\int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right) \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right)dx\\
-=\frac{2}{L} \int_{0}^{L} \sin^2 \left(\frac{n\pi}{L} x\right)dx
-=\frac{2}{L} \frac{1}{2} \int_{0}^{L} \left(1-\cos\frac{2n\pi}{L}\right)dx\\
-=\frac{1}{L} \left[x\right]_{0}^{L} - \frac{L}{2n\pi}\left[\sin\frac{2n\pi}{L}x\right]_{0}^{L}=1-0=1
+\lvert\pmb x - \pmb y\rvert = \sqrt{r^2+z^2} .
 \]
-<p></p>
-$m\neq n$のとき,
+よって$dq$による静電ポテンシャルは
 \[
-\int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{m\pi}{L} x\right) \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right)dx\\
-=\frac{2}{L}\frac{1}{2} \int_{0}^{L} \left(\cos\frac{(m-n)\pi}{L}x -\cos\frac{(m+n)\pi}{L}x\right)dx\\
-=\frac{1}{L} \left(\frac{L}{(m-n)\pi}\left[-\sin\frac{(m-n)\pi}{L}x\right]_{0}^{L} -\frac{L}{(m+n)\pi}\left[-\sin\frac{(m+n)\pi}{L}x\right]_{0}^{L}\right)\\
-=0-0=0
+dV=k\frac{\sigma rdrd\theta}{\sqrt r^2+z^2} ,
+k=\frac{1}{4\pi\epsilon}.
 \]
-<p></p>
-2(b)<br />
-<p></p>
+これを半径$r\in[b,a]$, $\theta \in[0, 2\pi]$で積分すると,
 \[
-\int_{\frac{1}{4}L}^{\frac{3}{4}L} \left\lvert\Psi_{1}(x)\right\rvert dx=\int_{\frac{1}{4}L}^{\frac{3}{4}L}\left( \sqrt\frac{2}{L}\sin \frac{\pi}{L} x\right)^2 dx\\
-=\frac{2}{L} \frac{1}{2} \int_{\frac{1}{4}L}^{\frac{3}{4}L} \left(1-\cos\frac{2\pi}{L}\right)dx\\
-=\frac{1}{L} \left[x\right]_{\frac{1}{4}L}^{\frac{3}{4}L} - \frac{L}{2\pi}\left[\sin\frac{2\pi}{L}x\right]_{\frac{1}{4}L}^{\frac{3}{4}L}\\
-=\frac{1}{L} \left(\frac{2}{4}L - \frac{L}{\pi}\left(\sin\frac{3\pi}{2}-\sin\frac{\pi}{2}\right)\right)=\frac{1}{2}-\frac{1}{\pi}(-1-1)\\
-=\frac{1}{2}+\frac{2}{\pi}
+V(z)=k\iint\frac{\sigma dS}{\lvert\pmb x - \pmb y\rverti}\\
+=k\sigma\left(\int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}\right)\left(\int_{0}^{2\pi} d\theta\right) = 2\pi k\sigma \int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}\\
+=2\pi k\sigma[\sqrt{r^2+z^2]_{b}^{a}=2\pi k\sigma(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})\\
+=\frac{\sigma}{2\epsilon}(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})
 \]
-
+となり, 静電ポテンシャルが得られる.
 <p></p>
-2(c)<br />
-<p></p>
-\[
-\int_{0}^{L} \Psi_{1}(x)^{*}\hat{p}\Psi_{1}(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right) (-i)\hbar\frac{d}{dx} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right)dx\\
-=-\frac{2i}{L}\frac{h}{2\pi} \int_{0}^{L} \sin\left(\frac{\pi}{L}x\right)\frac{d}{dx}\left(\sin\frac{\pi}{L}x\right)dx
-=-\frac{ih}{\pi L} \int_{0}^{L} \sin\left(\frac{\pi}{L}x\right) \frac{\pi}{L}\cos\left(\frac{\pi}{L}x\right) dx\\
-=-\frac{ih}{L^2} \int_{0}^{L} \sin\left(\frac{\pi}{L}x\right) \cos\left(\frac{\pi}{L}x\right) dx
-=-\frac{ih}{2L^2} \int_{0}^{L} \sin\left(\frac{2\pi}{L}x\right) dx\\
-=\frac{ih}{2L^2}\frac{L}{2\pi} \left[\cos\frac{2\pi}{L}x\right]_{0}^{L}
-=\frac{ih}{4\pi L} (\cos 2\pi-\cos 0)=0
-\]
-
-
 
 
 <p></p>
