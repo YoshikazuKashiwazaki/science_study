@@ -30,26 +30,30 @@
 <H3>
 第7回, 第8回レポート課題
 </H3>
-円形ディスクを中心を原点とする2次元曲座標で微小分割すると, 面積要素は\\
+円形ディスクを中心を原点とする2次元曲座標で微小分割すると, 面積要素は
+\[
 $ds=rdrd\theta$.
+\]
 <p></p>
-この素片上の電荷は\\
+この素片上の電荷は
+\[
 $dq=\sigma dS=\sigma rdrd\theta$.
+\]
 <p></p>
-また,\\
+また,
 \[
 \lvert\pmb x - \pmb y\rvert = \sqrt{r^2+z^2} .
 \]
-よって$dq$による静電ポテンシャルは
+よって, $dq$による静電ポテンシャルは
 \[
-dV=k\frac{\sigma rdrd\theta}{\sqrt r^2+z^2} ,
-k=\frac{1}{4\pi\epsilon}.
+dV=k\frac{\sigma rdrd\theta}{\sqrt{r^2+z^2}} ,\\
+k=\frac{1}{4\pi\epsilon_{0}}.
 \]
 これを半径$r\in[b,a]$, $\theta \in[0, 2\pi]$で積分すると,
 \[
 V(z)=k\iint\frac{\sigma dS}{\lvert\pmb x - \pmb y\rverti}\\
 =k\sigma\left(\int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}\right)\left(\int_{0}^{2\pi} d\theta\right) = 2\pi k\sigma \int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}\\
-=2\pi k\sigma[\sqrt{r^2+z^2]_{b}^{a}=2\pi k\sigma(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})\\
+=2\pi k\sigma[\sqrt{r^2+z^2}_{b}^{a}=2\pi k\sigma(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})\\
 =\frac{\sigma}{2\epsilon}(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})
 \]
 となり, 静電ポテンシャルが得られる.
