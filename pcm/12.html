@@ -68,17 +68,16 @@ $m\neq n$のとき,
 \[
 \int_{0}^{L} \Psi_{1}(x)^{*}\hat{p}\Psi_{n}(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right) (-i)\hbar\frac{d}{dx} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right)dx\\
 =-\frac{2i}{L}\frac{h}{2\pi} \int_{0}^{L} \sin\frac{\pi}{L} x\frac{d}{dx}\left(\sin\frac{\pi}{L}x\right)dx
-=\frac{2}{L} \frac{1}{2} \int_{0}^{L} \left(1-\cos\left(\frac{2n\pi}{L}\right)\right)dx\\
-=\frac{1}{L} \left[x\right]_{0}^{L} - \frac{L}{2n\pi}\left[\sin\frac{2n\pi}{L}x\right]_{0}^{L}=1-0=1
+=-\frac{ih}{L\pi} \int_{0}^{L} \sin\frac{\pi}{L}x \frac{\pi}{L}\cos\frac{\pi}{L}x dx
+=-\frac{ih}{L^2} \int_{0}^{L} \sin\frac{\pi}{L}x \cos\frac{\pi}{L}x dx\\
+=-\frac{ih}{2L^2} \int_{0}^{L} \sin\frac{2\pi}{L}x dx\\
+=\frac{ih}{2L^2}\frac{L}{2\pi} \left[\cos\frac{2\pi}{L}x\right]_{0}^{L}
+=\frac{ih}{4\pi L} (\cos 2\pi-\cos 0)=0
 \]
 
 
 
 
-微分可能な関数は連続である.
-しかし, 連続な関数は微分可能とは限らない.
-<p></p>
-たとえば, $y=|x|$は$x=0$で連続であるが, $x=0$で微分可能ではない.
 <p></p>
  <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
 <div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
