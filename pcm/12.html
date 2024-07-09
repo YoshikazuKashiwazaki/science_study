@@ -30,36 +30,21 @@
 <H3>
 関数の連続性と微分可能性
 </H3>
-区間$I$で定義された関数$f(x)$がある.<br />
-点$a\in I$に対して,
-\begin{equation}
-\lim_{x\to a} f(x)=f(a)
-\end{equation}
-が成り立つとき, $f(x)$は$a$で連続である, という.
+問題1<br />
 <p></p>
-$\varepsilon-\delta$論法では, 任意の$\varepsilon \gt 0$に対して, ある$\delta\gt 0$を適当にとることで, $0\lt x-a \lt\delta$をみたす, すべての$x\in I$に対して$|f(x)-f(a)|\lt\varepsilon$が成り立つようにできる, と表される.
 <p></p>
-一方, 関数$y=f(x)$の平均変化率$\displaystyle\frac{\Delta y}{\Delta x}$において, $h=\Delta x$を$0$に近づける極限を考える.<br />
-$a+h=x$と表し,
-\begin{equation}
-\lim_{\Delta x\to 0} \frac{\Delta y}{\Delta x}\
-=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}\
-=\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\
-\end{equation}
-が存在するとき, $f(x)$は$a$において微分可能である, という.<br />
-その極限値を$f'(a)$と書き, 「$f(x)$の$a$における微分係数」と呼ぶ.
 <p></p>
-[定理] 関数$y=f(x)$が$a$で微分可能ならば, $a$で連続である.
-<p></p>
+問題2<br />
 2(a)<br />
-m=nのとき,
+$m=n$のとき,
 \[
-\int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right) \sqrt\frac{2}{L}\sin (\frac{n\pi}{L} x)dx\\
-=\frac{2}{L} \int_{0}^{L} \sin^2 (\frac{n\pi}{L} x)dx\\
-=\frac{2}{L} \frac{1}{2} \int_{0}^{L} (1-\cos(\frac{n\pi}{L}))dx
-=\frac{1}{L} [x]_{0}^{L} - \frac{L}{n\pi}[\sin\frac{n\pi}{L}x]_{0}^{L}=1-0=1
+\int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right) \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right)dx\\
+=\frac{2}{L} \int_{0}^{L} \sin^2 \left(\frac{n\pi}{L} x\right)dx
+=\frac{2}{L} \frac{1}{2} \int_{0}^{L} \left(1-\cos\left(\frac{n\pi}{L}\right)\right)dx\\
+=\frac{1}{L} \left[x\right]_{0}^{L} - \frac{L}{n\pi}\left[\sin\frac{n\pi}{L}x\right]_{0}^{L}=1-0=1
 \]
-連続性の定義$(1)$にしたがって,$\displaystyle\lim_{x\to a} f(x)=f(a)$が成り立つかどうか確かめる.
+<p></p>
+$m\neq n$のとき,
 \begin{equation}
 \lim_{x\to a} (f(x)-f(a))=\lim_{x\to a} \left\lbrace\frac{f(a+h)-f(a)}{x-a}\cdot (x-a)\right\rbrace\\
 =\lim_{x\to a} \frac{f(a+h)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a) \
