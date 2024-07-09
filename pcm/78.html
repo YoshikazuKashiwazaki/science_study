@@ -22,22 +22,18 @@
 </head>
 
 <body>
-<H2>
-物理のノート
-</H2>
-演習>7,8
 <p></p>
 <H3>
 第7回, 第8回レポート課題
 </H3>
 円形ディスクを中心を原点とする2次元曲座標で微小分割すると, 面積要素は
 \[
-ds=rdrd\theta.
+ds=r\,dr\,d\theta.
 \]
 <p></p>
 この素片上の電荷は
 \[
-dq=\sigma dS=\sigma rdrd\theta.
+dq=\sigma dS=\sigma r\,dr\,d\theta.
 \]
 <p></p>
 また,
@@ -46,13 +42,13 @@ dq=\sigma dS=\sigma rdrd\theta.
 \]
 よって, $dq$による静電ポテンシャルは
 \[
-dV=k\frac{\sigma rdrd\theta}{\sqrt{r^2+z^2}} ,\\
+dV=k\frac{\sigma r\,dr\,d\theta}{\sqrt{r^2+z^2}} ,\\
 k=\frac{1}{4\pi\epsilon_{0}}.
 \]
 これを半径$r\in[b,a]$, $\theta \in[0, 2\pi]$で積分すると,
 \[
-V(z)=k\iint\frac{\sigma dS}{\lvert\pmb x - \pmb y\rvert}\\
-=k\sigma\left(\int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}}\right)\left(\int_{0}^{2\pi} d\theta\right)
+V(z)=k\iint\limits_{D}\frac{\sigma\,dS}{\lvert\pmb x - \pmb y\rvert}\\
+=k\sigma\left(\int_{b}^{a}\frac{r\,dr}{\sqrt{r^2+z^2}}\right)\left(\int_{0}^{2\pi} \,d\theta\right)
 =2\pi k\sigma\int_{b}^{a}\frac{rdr}{\sqrt{r^2+z^2}}\\
 =2\pi k\sigma[\sqrt{r^2+z^2}]_{b}^{a}
 =2\pi k\sigma(\sqrt{a^2+z^2}-\sqrt{b^2+z^2})\\
@@ -62,9 +58,6 @@ V(z)=k\iint\frac{\sigma dS}{\lvert\pmb x - \pmb y\rvert}\\
 <p></p>
 
 
-<p></p>
- <a href="https://yoshikazukashiwazaki.github.io/science_study/index.html">index.htmlに戻る</a>
-<div id="footer"><small>Physics & Mathematics - Yoshikazu Kashiwazaki</small></div>
  </div>
  </div>
 </body>
