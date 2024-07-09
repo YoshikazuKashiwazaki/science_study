@@ -48,25 +48,29 @@ $m\neq n$のとき,
 \[
 \int_{0}^{L} \Psi_m(x)^{*}\Psi_n(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{m\pi}{L} x\right) \sqrt\frac{2}{L}\sin \left(\frac{n\pi}{L} x\right)dx\\
 =\frac{2}{L}\frac{1}{2} \int_{0}^{L} \left(\cos\frac{(m-n)\pi}{L}x -\cos\frac{(m+n)\pi}{L}x\right)dx\\
-=\frac{1}{L} \left(\frac{L}{(m-n)\pi}\left[-\sin\frac{(m-n)\pi}{L}x\right]_{0}^{L} -\frac{L}{(m+n)\pi}\left[-\sin\frac{(m+n)\pi}{L}x\right]_{0}^{L}\right)dx\\
+=\frac{1}{L} \left(\frac{L}{(m-n)\pi}\left[-\sin\frac{(m-n)\pi}{L}x\right]_{0}^{L} -\frac{L}{(m+n)\pi}\left[-\sin\frac{(m+n)\pi}{L}x\right]_{0}^{L}\right)\\
 =0-0=0
 \]
 <p></p>
 2(b)<br />
 <p></p>
-<p></p>
 \[
 \int_{\frac{1}{4}L}^{\frac{3}{4}L} \left\lvert\Psi_{1}(x)\right\rvert dx=\int_{\frac{1}{4}L}^{\frac{3}{4}L}\left( \sqrt\frac{2}{L}\sin \frac{\pi}{L} x\right)^2 dx\\
 =\frac{2}{L} \frac{1}{2} \int_{\frac{1}{4}L}^{\frac{3}{4}L} \left(1-\cos\left(\frac{2\pi}{L}\right)\right)dx\\
 =\frac{1}{L} \left[x\right]_{\frac{1}{4}L}^{\frac{3}{4}L} - \frac{L}{2\pi}\left[\sin\frac{2\pi}{L}x\right]_{\frac{1}{4}L}^{\frac{3}{4}L}\\
-=\frac{1}{L} \left(\frac{2}{4}L - \frac{L}{\pi}\left[\sin\frac{3\pi}{2}-\sin\frac{\pi}{2}\right)\right)=\frac{1}{2}-\frac{1}{\pi}(-1-1)\\
+=\frac{1}{L} \left(\frac{2}{4}L - \frac{L}{\pi}\left(\sin\frac{3\pi}{2}-\sin\frac{\pi}{2}\right)\right)=\frac{1}{2}-\frac{1}{\pi}(-1-1)\\
 =\frac{1}{2}+\frac{2}{\pi}
 \]
 
 <p></p>
 2(c)<br />
 <p></p>
-<p></p>
+\[
+\int_{0}^{L} \Psi_{1}(x)^{*}\hat{p}\Psi_{n}(x)dx=\int_{0}^{L} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right) (-i)\hBar\frac{d}{dx} \sqrt\frac{2}{L}\sin \left(\frac{\pi}{L} x\right)dx\\
+=\frac{2}{L} \int_{0}^{L} \sin^2 \left(\frac{n\pi}{L} x\right)dx
+=\frac{2}{L} \frac{1}{2} \int_{0}^{L} \left(1-\cos\left(\frac{2n\pi}{L}\right)\right)dx\\
+=\frac{1}{L} \left[x\right]_{0}^{L} - \frac{L}{2n\pi}\left[\sin\frac{2n\pi}{L}x\right]_{0}^{L}=1-0=1
+\]
 
 
 
