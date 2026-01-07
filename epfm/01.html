@@ -29,17 +29,24 @@
 <p></p>
 速度$v$で周回する質量$m$の静止衛星の力学的エネルギー$E$は,
 \[
-E=\frac{1}{2}mv^2+mg(h+R)
+E=\frac{1}{2}m\pmb{v}^2+\frac{1}{2}m\pmb{r}^2\omega^2 .
 \]
-ここで$h$は,地表から静止衛星までの高さである.
+ここで$r$は,地表から静止衛星までの高さである$h$に地球の半径$R$を加えた距離である.
 <p></p>
-地球の回転速度を$V$とすると, 地表から衛星が静止しているようにみえるためには
+両辺を時間微分すると
 \[
-V:v=R:(h+R)
+frac{d}{dt}E=m\pmv{v}frac{d\pmb{v}}{dt}+m\pmb{r}\omega^2 frac{d\pmb{r}}{dt}=0
 \]
-すなわち,
+両辺を$\pmb{v}$で割ると,
 \[
-v=\frac{V}{R}(h+R)
+m\frac{d\pmb{v}}{dt}+m\pmb{r}\omega^2=0
+-G\frac{Mm}{r^2}\hat{\pmb{r}}+m\pmb{r}\omega^2=0
+-G\frac{Mm}{r^3}+m\pmb{r}\omega^2=0
+-G\frac{M}{r^3}+\pmb{r}\omega^2=0
+\]
+ここで$G$はニュートンの重力定数で
+\[
+G=\frac{gR^2}{M}=9.8 * (6400 * 10^3)^2 / 5.97 * 10^24= 6.72375 * 10^{-11}
 \]
 
 <p></p>
